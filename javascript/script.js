@@ -106,7 +106,7 @@ function checkFadeIn() {
 window.addEventListener("scroll", checkFadeIn);
 
 //枠線がスーっと伸びる
-let lineActiveTarget = document.querySelectorAll(".extend");
+let lineActiveTarget = document.querySelectorAll(".works__extend");
 window.addEventListener("scroll", () => {
   for (let i = 0; i < lineActiveTarget.length; i++) {
     const rect = lineActiveTarget[i].getBoundingClientRect().top;
@@ -119,7 +119,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let lineActiveTarget2 = document.querySelectorAll(".extend2");
+let lineActiveTarget2 = document.querySelectorAll(".works__extend2");
 window.addEventListener("scroll", () => {
   for (let i = 0; i < lineActiveTarget2.length; i++) {
     const rect = lineActiveTarget2[i].getBoundingClientRect().top;
@@ -132,7 +132,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let lineActiveTarget3 = document.querySelectorAll(".extend3");
+let lineActiveTarget3 = document.querySelectorAll(".works__extend3");
 window.addEventListener("scroll", () => {
   for (let i = 0; i < lineActiveTarget3.length; i++) {
     const rect = lineActiveTarget3[i].getBoundingClientRect().top;
@@ -145,7 +145,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let lineActiveTarget4 = document.querySelectorAll(".extend4");
+let lineActiveTarget4 = document.querySelectorAll(".works__extend4");
 window.addEventListener("scroll", () => {
   for (let i = 0; i < lineActiveTarget4.length; i++) {
     const rect = lineActiveTarget4[i].getBoundingClientRect().top;
