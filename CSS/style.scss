@@ -1307,11 +1307,11 @@ ul {
   }
 }
 
-/* price-table.html ----------------------------------------------*/
+/* priceTable.html ----------------------------------------------*/
 
 .price__title {
   padding-top: 80px;
-  .price__img-wrapper {
+  .price__imgWrap {
     margin: 60px auto 0 auto;
     width: 20%;
   }
@@ -1320,7 +1320,7 @@ ul {
 @media (max-width: 1280px) {
   .price__title {
     padding-top: 160px;
-    .price__img-wrapper {
+    .price__imgWrap {
       width: 30%;
     }
   }
@@ -1329,38 +1329,38 @@ ul {
 @media (max-width: 767px) {
   .price__title {
     padding-top: 0;
-    .price__img-wrapper {
+    .price__imgWrap {
       margin: 0 auto 0 auto;
       width: 40%;
     }
   }
 }
 
-.price-table__container {
+.priceTable__container {
   margin-top: 100px;
   border: 20px solid #4fc0ac;
   background: #ffffff;
   padding-top: 100px;
-  .price-table__area {
+  .priceTable__area {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 
-    .price-table__wrap {
+    .priceTable__wrap {
       padding-bottom: 80px;
-      .price-table__item {
+      .priceTable__item {
         padding-top: 28px;
       }
     }
   }
 }
 
-.price__br-sp {
+.price__br--sp {
   display: none;
 }
 
 @media (max-width: 767px) {
-  .price__br-sp {
+  .price__br--sp {
     display: block;
   }
 }

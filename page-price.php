@@ -2,85 +2,85 @@
 <main>
         <section id="price" class="content">
                 <div class="price__title level1__title">
-                    <h1 class="price__text--title level1__heading--en">PRICE</h1>
-                    <p class="price__text--subtitle level1__heading--ja">料金</p>
-                    <div class="price__img-wrapper">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/price-image1.png" alt="料金を説明する人" class="price__img" width="400" height="200" decoding="async">
+                    <h1 class="level1__heading--en">PRICE</h1>
+                    <p class="level1__heading--ja">料金</p>
+                    <div class="price__imgWrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/price-image1.png" alt="料金を説明する人"  width="400" height="200" decoding="async">
                     </div>
-                    <!-- /.price__img-wrapper -->
+                    <!-- /.price__imgWrap -->
                 </div>
                 <!-- /.price__title -->
-                <div class="price-table__container">
-                    <div class="price-table__area">
-                        <div class="price-table__title level2__title">
-                            <h2 class="price-table__heading level2__heading--en campaign__font-color">
-                                サイトOPEN<br class="price__br-sp">記念価格
+                <div class="priceTable__container">
+                    <div class="priceTable__area">
+                        <div class="priceTable__title level2__title">
+                            <h2 class="priceTable__heading level2__heading--en campaign__font-color">
+                                サイトOPEN<br class="price__br--sp">記念価格
                             </h2>
                         </div>
-                        <!-- /.price-table__title -->
-                        <div class="price-table__wrap">
+                        <!-- /.priceTable__title -->
+                        <div class="priceTable__wrap">
                             <h3 class="level3__heading level3__heading--align-left">
                                 1.コーディング
                             </h3>
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・TOPページ</h4>
-                                <p class="price__text--example-height">最低10000円～(高さ約7000px以下想定)</p>
+                            <div class="priceTable__item">
+                                <h4 >・TOPページ</h4>
+                                <p >最低10000円～(高さ約7000px以下想定)</p>
                             </div>
-                            <!-- /.price-table__item -->
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・下層ページ</h4>
-                                <p class="price__text--example-height">最低5000円～(高さ約3500px以下想定)</p>
+                            <!-- /.priceTable__item -->
+                            <div class="priceTable__item">
+                                <h4 >・下層ページ</h4>
+                                <p >最低5000円～(高さ約3500px以下想定)</p>
                             </div>
-                            <!-- /.price-table__item -->
+                            <!-- /.priceTable__item -->
                         </div>
-                        <!-- /.price-table__wrap -->
-                        <div class="price-table__wrap">
+                        <!-- /.priceTable__wrap -->
+                        <div class="priceTable__wrap">
                             <h3 class="level3__heading level3__heading--align-left">
                                 2.コーディング ＋<br>
                                 デザイン or WordPress化のどちらか片方
                             </h3>
                             <!-- <div class="price__wrap--example-title"> -->
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・TOPページ</h4>
-                                <p class="price__text--example-height">
+                            <div class="priceTable__item">
+                                <h4 >・TOPページ</h4>
+                                <p >
                                     最低20000円～(高さ約7000px以下想定)
                                 </p>
                             </div>
-                            <!-- /.price-table__item -->
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・下層ページ</h4>
-                                <p class="price__text--example-height">
+                            <!-- /.priceTable__item -->
+                            <div class="priceTable__item">
+                                <h4 >・下層ページ</h4>
+                                <p >
                                     最低10000円～(高さ約3500px以下想定)
                                 </p>
                             </div>
-                            <!-- /.price-table__item -->
+                            <!-- /.priceTable__item -->
                         </div>
-                        <!-- /.price-table__wrap -->
-                        <div class="price-table__wrap">
+                        <!-- /.priceTable__wrap -->
+                        <div class="priceTable__wrap">
                             <h3 class="level3__heading level3__heading--align-left">
                                 3.コーディング ＋<br>
                                 デザイン + WordPress化全て
                             </h3>
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・TOPページ</h4>
-                                <p class="price__text--example-height">
+                            <div class="priceTable__item">
+                                <h4 >・TOPページ</h4>
+                                <p >
                                     最低30000円～(高さ約7000px以下想定)
                                 </p>
                             </div>
-                            <!-- /.price-table__item -->
-                            <div class="price-table__item">
-                                <h4 class="price__text--example-title">・下層ページ</h4>
-                                <p class="price__text--example-height">
+                            <!-- /.priceTable__item -->
+                            <div class="priceTable__item">
+                                <h4 >・下層ページ</h4>
+                                <p >
                                     最低20000円～(高さ約3500px以下想定)
                                 </p>
                             </div>
-                            <!-- /.price-table__item -->
+                            <!-- /.priceTable__item -->
                         </div>
-                        <!-- /.price-table__wrap -->
+                        <!-- /.priceTable__wrap -->
                     </div>
-                    <!-- /.price-table__area -->
+                    <!-- /.priceTable__area -->
                 </div>
-                <!-- /.price-table__container -->
+                <!-- /.priceTable__container -->
         </section>
         <section id="inquiry" class="content content__pb">    
                 <div class="inquiry__inner">
