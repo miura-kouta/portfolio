@@ -278,7 +278,7 @@ ul {
 .header__inner .header__container .header__listMenu .header__listItem {
   padding-right: 40px;
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
@@ -286,15 +286,15 @@ ul {
   overflow: hidden;
   transition: all 0.2s;
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link:hover {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   background: #e6adb7;
   color: #fff;
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link:hover {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   transition-delay: 0.5s;
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link::before,
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link::after {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink::before,
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink::after {
   content: "";
   position: absolute;
   left: 0;
@@ -303,16 +303,16 @@ ul {
   background: #e6adb7;
   transition: all 0.5s;
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link::before {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink::before {
   top: 0;
   transform: translateX(-100%);
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link::after {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink::after {
   bottom: 0;
   transform: translateX(100%);
 }
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link:hover::before,
-.header__inner .header__container .header__listMenu .header__listItem .header-nav__link:hover::after {
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover::before,
+.header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover::after {
   transform: translateX(0);
 }
 .header__inner .header__container .header__listMenu .header__listItem:last-child {

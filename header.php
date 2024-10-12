@@ -32,7 +32,7 @@
                 <div class="header__logo">
                     <h1 class="level1__heading header__logoTitle">
                         <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.png" alt="ロゴ" class="header-utilities__img" width="140" height="55" decoding="async">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.png" alt="ロゴ" width="140" height="55" decoding="async">
                         </a>
                     </h1>
                 </div>
@@ -40,32 +40,32 @@
                     <nav class="header-listNav">
                         <ul class="header__listMenu">    
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/'); ?>#main" class="header-nav__link">
+                                <a href="<?php echo home_url('/'); ?>#main" class="header__listLink">
                                 TOP
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/works'); ?>" class="header-nav__link">
+                                <a href="<?php echo home_url('/works'); ?>" class="header__listLink">
                                     WORKS
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/'); ?>#services" class="header-nav__link">
+                                <a href="<?php echo home_url('/'); ?>#services" class="header__listLink">
                                     SERVICES
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/'); ?>#about" class="header-nav__link">
+                                <a href="<?php echo home_url('/'); ?>#about" class="header__listLink">
                                     ABOUT
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/price'); ?>" class="header-nav__link">
+                                <a href="<?php echo home_url('/price'); ?>" class="header__listLink">
                                     PRICE
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/contact'); ?>" class="header-nav__link">
+                                <a href="<?php echo home_url('/contact'); ?>" class="header__listLink">
                                     CONTACT
                                 </a>
                             </li>
