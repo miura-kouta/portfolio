@@ -473,7 +473,7 @@ ul {
   }
 }
 
-.going-up__wrapArrow {
+.goingUp__wrapArrow {
   position: fixed;
   bottom: 5px;
   right: 5px;
@@ -564,7 +564,7 @@ ul {
     opacity: 0;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
     /* 枠線が動くアニメーション---------------------------------*/
-    .line {
+    .works__line {
       position: relative;
 
       .works__thumb--site {
@@ -678,16 +678,16 @@ ul {
     }
   }
   .works__item:nth-child(2) {
-    .line::before {
+    .works__line::before {
       animation-delay: 2s;
     }
-    .line2::before {
+    .works__line2::before {
       animation-delay: 2.5s;
     }
-    .line::after {
+    .works__line::after {
       animation-delay: 2s;
     }
-    .line2::after {
+    .works__line2::after {
       animation-delay: 2.5s;
     }
 
@@ -696,16 +696,16 @@ ul {
     }
   }
   .works__item:nth-child(3) {
-    .line::before {
+    .works__line::before {
       animation-delay: 3s;
     }
-    .line2::before {
+    .works__line2::before {
       animation-delay: 3.5s;
     }
-    .line::after {
+    .works__line::after {
       animation-delay: 3s;
     }
-    .line2::after {
+    .works__line2::after {
       animation-delay: 3.5s;
     }
     .line3Active {

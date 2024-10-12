@@ -3,12 +3,12 @@
 <main id=main>
     <div class="goingUp">    
         <div class="goingUp__wrapCircle fade-in2 fade-in-circle">
-            <a href="#firstView" class="going-up__linkCircle">
+            <a href="#firstView" class="goingUp__linkCircle">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images1.png" alt="円" width="273" height="273" decoding="async">
             </a>
         </div>
-        <div class="going-up__wrapArrow  fade-in2 fade-in-circle">
-            <a href="#firstView" class="going-up__linkArrow">
+        <div class="goingUp__wrapArrow  fade-in2 fade-in-circle">
+            <a href="#firstView" class="goingUp__linkArrow">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images2.png" alt="矢印" width="178" height="316" decoding="async">
             </a>
         </div>
@@ -71,46 +71,46 @@
                     <!-- level2__title./ -->
                     <div class="works__container">
                         <div class="works__item extend4">
-                            <div class="line extend">
-                                <div class="line2 extend2">
-                                    <a href="https://mk-craft.tokyo/cosme/" class="works__item__link" target="_blank">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/cosme-image.jpg" alt="制作サイトその1" class="works__item__thumb extend3" width="400" height="240" decoding="async">
+                            <div class="works__line extend">
+                                <div class="works__line2 extend2">
+                                    <a href="https://mk-craft.tokyo/cosme/" class="works__link" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/cosme-image.jpg" alt="制作サイトその1" class="extend3" width="400" height="240" decoding="async">
                                     </a>
                                 </div>
-                                <!-- /.line2 -->
+                                <!-- /.works__line2 -->
                             </div>
-                            <!-- /.line -->
+                            <!-- /.works__line -->
                         </div>
                         <!-- /.works__item -->
                         <div class="works__item extend4">
-                            <div class="line extend">
-                                <div class="line2 extend2">
-                                    <a href="https://www.mk-craft.tokyo/portfolio/" class="works__item__link line2 " target="_blank">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/works-image4.jpg" alt="制作サイトその3" class="works__item__thumb extend3" width="400" height="240" decoding="async">
+                            <div class="works__line extend">
+                                <div class="works__line2 extend2">
+                                    <a href="https://www.mk-craft.tokyo/portfolio/" class="works__link line2 " target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/works-image4.jpg" alt="制作サイトその3" class="extend3" width="400" height="240" decoding="async">
                                     </a>
                                 </div>
-                                <!-- /.line2 -->
+                                <!-- /.works__line2 -->
                             </div>
-                            <!-- /.line -->
+                            <!-- /.works__line -->
                         </div>
                         <!-- /.works__item -->
 
                         <div class="works__item extend4">
-                            <div class="line extend">
-                                <div class="line2 extend2">
-                                    <a href="https://mk-craft.tokyo/bread/" class="works__item__link" target="_blank">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/bread.jpg" alt="制作サイトその2" class="works__item__thumb extend3" width="400" height="240" decoding="async">
+                            <div class="works__line extend">
+                                <div class="works__line2 extend2">
+                                    <a href="https://mk-craft.tokyo/bread/" class="works__link" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/bread.jpg" alt="制作サイトその2" class="extend3" width="400" height="240" decoding="async">
                                     </a>
                                 </div>
-                                <!-- /.line2 -->
+                                <!-- /.works__line2 -->
                             </div>
-                            <!-- /.line -->
+                            <!-- /.works__line -->
                         </div>
                         <!-- /.works__item -->
 
                     </div>
                     <div class="works__btn">
-                        <a href="<?php echo home_url('/works'); ?>" class="works__btn__link">
+                        <a href="<?php echo home_url('/works'); ?>" class="works__linkBtn">
                             view more
                         </a>
                     </div>
