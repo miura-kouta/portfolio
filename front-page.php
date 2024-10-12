@@ -110,7 +110,7 @@
 
                     </div>
                     <div class="works__btn">
-                        <a href="<?php echo home_url('/works'); ?>" class="works__linkBtn">
+                        <a href="<?php echo home_url('/allworks'); ?>" class="works__linkBtn">
                             view more
                         </a>
                     </div>
