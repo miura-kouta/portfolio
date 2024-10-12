@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 <main>
 
-<section id="products" class="content" >
-                <div class="products__title level1__title">
-                    <h1 class="products__heading--en level1__heading--en">WORKS</h1>
-                    <p class="products__heading--ja level1__heading--ja">制作実績一覧</p>
-                    <div class="products__img-wrapper">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/products-image1.png" alt="制作実績のサイトを紹介する人達" class="products__img" width="400" height="200" decoding="async">
+<section id="allWorks" class="content" >
+                <div class="allWorks__title level1__title">
+                    <h1 class="allWorks__heading--en level1__heading--en">WORKS</h1>
+                    <p class="allWorks__heading--ja level1__heading--ja">制作実績一覧</p>
+                    <div class="allWorks__imgWrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/allWorks-image1.png" alt="制作実績のサイトを紹介する人達"  width="400" height="200" decoding="async">
                     </div>
-                    <!-- /.products__img-wrapper -->
+                    <!-- /.allWorks__imgWrap -->
                 </div>
-                <!-- /.products__title -->
+                <!-- /.allWorks__title -->
 
             <div class="loop__content loop__content--right">
                 <div class="loop__contentItem--blog">

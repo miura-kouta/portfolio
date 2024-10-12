@@ -122,55 +122,54 @@
                     <p class="level2__heading--ja">お手伝いできること</p>
                 </div>
                 <!-- /.level2__title -->
-                    <div class="services-media fade-in fade-in-left">
-                        <figure class="services-media__img-wrapper--pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(PC)" class="services-media__img" width="400" height="240" decoding="async">
+                    <div class="services__media fade-in fade-in-left">
+                        <figure class="services__imgWrap--pc">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(PC)" width="400" height="240" decoding="async">
                         </figure>
-                        <div class="services-media__body">
-                            <!-- <h3 class="level2__heading services-media__title">1.Webデザイン</h3> -->
-                            <h3 class="level3__heading services-media__title">1.Webデザイン</h3>
-                            <figure class="services-media__img-wrapper--sp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(SP)" class="services-media__img" width="400" height="240" decoding="async">
+                        <div class="services__body">
+                            <h3 class="level3__heading services__titleMedia">1.Webデザイン</h3>
+                            <figure class="services__imgWrap--sp">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(SP)" width="400" height="240" decoding="async">
                             </figure>
-                            <p class="service-media__text">
+                            <p class="service__text">
                                 お客様のニーズを第一に考え、ユーザーが見やすいデザインを採用します。また、デザインの美しさと機能性のバランスを追求し、ユーザーに感動を与えるWebサイトを実現します。
                             </p>
                         </div>
-                        <!-- /.services-media__body -->
+                        <!-- /.services__body -->
                     </div>
-                    <!-- /.services-media -->
-                    <div class="services-media fade-in fade-in-right">
-                        <figure class="services-media__img-wrapper--pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(PC)" class="services-media__img" width="400" height="240" decoding="async">
+                    <!-- /.services__media -->
+                    <div class="services__media fade-in fade-in-right">
+                        <figure class="services__imgWrap--pc">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(PC)" width="400" height="240" decoding="async">
                         </figure>
-                        <div class="services-media__body">
-                            <h3 class="level3__heading services-media__title">2.Webサイト制作</h3>
-                            <figure class="services-media__img-wrapper--sp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(SP)" class="services-media__img" width="400" height="240" decoding="async">
+                        <div class="services__body">
+                            <h3 class="level3__heading services__titleMedia">2.Webサイト制作</h3>
+                            <figure class="services__imgWrap--sp">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(SP)" width="400" height="240" decoding="async">
                             </figure>
-                            <p class="service-media__text">
+                            <p class="service__text">
                                 ご提示頂いたデザインカンプから丁寧にコーディングを行います。JavaScriptによる動きのあるコーディングも可能です。
                             </p>
                         </div>
-                        <!-- /.services-media__body -->
+                        <!-- /.services__body -->
                     </div>
-                    <!-- /.services-media -->
-                    <div class="services-media fade-in fade-in-left">
-                        <figure class="services-media__img-wrapper--pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(PC)" class="services-media__img" width="400" height="240" decoding="async">
+                    <!-- /.services__media -->
+                    <div class="services__media fade-in fade-in-left">
+                        <figure class="services__imgWrap--pc">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(PC)" width="400" height="240" decoding="async">
                         </figure>
-                        <div class="services-media__body">
-                            <h3 class="level3__heading services-media__title">3.WordPressによるWEBサイト構築</h3>
-                            <figure class="services-media__img-wrapper--sp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(SP)" class="services-media__img" width="400" height="240" decoding="async">
+                        <div class="services__body">
+                            <h3 class="level3__heading services__titleMedia">3.WordPressによるWEBサイト構築</h3>
+                            <figure class="services__imgWrap--sp">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(SP)" width="400" height="240" decoding="async">
                             </figure>
-                            <p class="service-media__text">
+                            <p class="service__text">
                                 ご希望であればWordpressによるオリジナルテーマや既存テーマを用いてWebコーディングも承ります。
                             </p>
                         </div>
-                        <!-- /.services-media__body -->
+                        <!-- /.services__body -->
                     </div>
-                    <!-- /.services-media -->                
+                    <!-- /.services__media -->                
             </section>
             <section id="about" class="content">
                 <div class="level2__title">
