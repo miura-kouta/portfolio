@@ -206,10 +206,8 @@ class Main {
   _loading() {
     document.addEventListener("DOMContentLoaded", () => {
       const webStorage = () => {
-        const lodingContainer = document.querySelector(
-          ".loding__container--whole"
-        );
-        const lodingContainer2 = document.querySelector(".loding__box--move");
+        const lodingContainer = document.querySelector(".loding__container");
+        const lodingContainer2 = document.querySelector(".loding__box");
         const lodingContainer3 = document.querySelector(".loding__text--on");
 
         if (sessionStorage.getItem("access")) {
@@ -230,19 +228,11 @@ class Main {
           const removeClasses = (delay) => {
             setTimeout(() => {
               if (lodingContainer)
-                lodingContainer.classList.remove("loding__container--whole");
+                lodingContainer.classList.remove("loding__container");
               if (lodingContainer2)
-                lodingContainer2.classList.remove("loding__box--move");
+                lodingContainer2.classList.remove("loding__box");
               if (lodingContainer3)
                 lodingContainer3.classList.remove("loding__text--on");
-            }, delay);
-          };
-
-          // クラスを追加する処理
-          const addClass = (delay) => {
-            setTimeout(() => {
-              if (lodingContainer)
-                lodingContainer.classList.add("loding__container--whole-off");
             }, delay);
           };
 

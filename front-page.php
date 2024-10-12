@@ -217,17 +217,19 @@
             </section>
 
     <!-- ローディングアニメーション -->
-    <div class="loding__container--whole ">
-        <div class="loding__box--move">
-            <div class="loding__item--circle"></div>
-            <div class="loding__item--circle"></div>
-            <div class="loding__item--circle"></div>
-            <div class="loding__item--shadow"></div>
-            <div class="loding__item--shadow"></div>
-            <div class="loding__item--shadow"></div>
+    <div class="loding__container ">
+        <div class="loding__box">
+            <div class="loding__circle"></div>
+            <div class="loding__circle"></div>
+            <div class="loding__circle"></div>
+            <div class="loding__shadow"></div>
+            <div class="loding__shadow"></div>
+            <div class="loding__shadow"></div>
             <span class="loding__text--on loding__text--off">Loading</span>
         </div>
+        <!-- /.loding__box -->
     </div>
+    <!-- /.loding__container -->
 
 </main>
 <?php get_footer(); ?>

@@ -1085,7 +1085,7 @@ ul {
 }
 
 /*ローディングアニメーション　----------------------------*/
-.loding__container--whole {
+.loding__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1131,7 +1131,7 @@ ul {
   opacity: 0;
 }
 
-.loding__box--move {
+.loding__box {
   width: 200px;
   height: 60px;
   position: absolute;
@@ -1148,7 +1148,7 @@ ul {
   display: block;
 }
 
-.loding__item--circle {
+.loding__circle {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1193,20 +1193,20 @@ ul {
     top: 0%;
   }
 }
-.loding__item--circle:nth-child(2) {
+.loding__circle:nth-child(2) {
   left: 45%;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.loding__item--circle:nth-child(3) {
+.loding__circle:nth-child(3) {
   left: auto;
   right: 15%;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.loding__item--shadow {
+.loding__shadow {
   width: 20px;
   height: 4px;
   border-radius: 50%;
@@ -1248,20 +1248,20 @@ ul {
     opacity: 0.4;
   }
 }
-.loding__item--shadow:nth-child(4) {
+.loding__shadow:nth-child(4) {
   left: 45%;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.loding__item--shadow:nth-child(5) {
+.loding__shadow:nth-child(5) {
   left: auto;
   right: 15%;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.loding__box--move span {
+.loding__box span {
   position: absolute;
   top: 75px;
   font-family: "Lato";
