@@ -1,57 +1,60 @@
 
 <?php get_header(); ?>
 <main id=main>
-    <div class="going-up__wrap">    
-        <div class="going-up__icon--circle fade-in2 fade-in-circle">
-            <a href="#first-view" class="going-up__link--circle">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images1.png" class="going-up__thumb--circle" alt="円" width="273" height="273" decoding="async">
+    <div class="goingUp">    
+        <div class="goingUp__wrapCircle fade-in2 fade-in-circle">
+            <a href="#firstView" class="going-up__linkCircle">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images1.png" alt="円" width="273" height="273" decoding="async">
             </a>
         </div>
-        <div class="going-up__icon--arrow  fade-in2 fade-in-circle">
-            <a href="#first-view" class="going-up__link--arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images2.png" class="going-up__thumb--arrow" alt="矢印" width="178" height="316" decoding="async">
+        <div class="going-up__wrapArrow  fade-in2 fade-in-circle">
+            <a href="#firstView" class="going-up__linkArrow">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/bottom__thumb--images2.png" alt="矢印" width="178" height="316" decoding="async">
             </a>
         </div>
     </div>
-    <section id="first-view" >
-        <div class="first-view__container">
+    <section id="firstView" class="firstView" >
+        <div class="firstView__container">
             <div  class="splide" aria-label="Splideの基本的なHTML">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="first-view__wrap">
-                                <video class="first-view__video" muted autoplay playsinline loop>
+                            <div class="firstView__wrap">
+                                <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4">
                                 </video>
-                                <p class="first-view__text ">
-                                    シンプルさと洗練された技術<br class="first-view__br--sp">
-                                    <span class="first-view__line--sp">―</span>あなたのサイトを際立たせる<span class="first-view__line--sp">―</span>
+                                <p class="firstView__text">
+                                    シンプルさと洗練された技術<br class="firstView__brSp">
+                                    <span class="firstView__lineSp">―</span>あなたのサイトを際立たせる<span class="firstView__lineSp">―</span>
                                 </p>
                             </div>
+                            <!-- /.firstView__wrap -->
                         </li>
                         <li class="splide__slide">
-                            <div class="first-view__wrap">
-                                <video class="first-view__video" muted autoplay playsinline loop>
+                            <div class="firstView__wrap">
+                                <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video2.mp4">
                                 </video>
-                                <p class="first-view__text">
-                                    デザインとコーディングの融合<br class="first-view__br--sp">
-                                    <span class="first-view__line--sp">―</span>
+                                <p class="firstView__text">
+                                    デザインとコーディングの融合<br class="firstView__brSp">
+                                    <span class="firstView__lineSp">―</span>
                                     魅力を形にする
-                                    <span class="first-view__line--sp">―</span>
+                                    <span class="firstView__lineSp">―</span>
                                 </p>
                             </div>
+                            <!-- /.firstView__wrap -->
                         </li>
                         <li class="splide__slide">
-                            <div class="first-view__wrap">
-                                <video class="first-view__video" muted autoplay playsinline loop>
+                            <div class="firstView__wrap">
+                                <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video3.mp4">
                                 </video>
-                                <p class="first-view__text">
-                                    クリエイティブなアイデアを<br class="first-view__br--sp">
-                                    <span class="first-view__line--sp">―</span>リアルなウェブに映し出す<span class="first-view__line--sp">―</span>
+                                <p class="firstView__text">
+                                    クリエイティブなアイデアを<br class="firstView__brSp">
+                                    <span class="firstView__lineSp">―</span>リアルなウェブに映し出す<span class="firstView__lineSp">―</span>
                                 </p>
                             </div>
+                            <!-- /.firstView__wrap -->
                         </li>
                     </ul>
                 </div>
