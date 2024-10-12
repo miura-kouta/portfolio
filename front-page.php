@@ -176,13 +176,13 @@
                     <h2 class="level2__heading--en">ABOUT</h2>
                     <p class="level2__heading--ja">私について</p>
                 </div>
-                <div class="about-media fade-in fade-in-up">
-                    <figure class="about-media__img-wrapper">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.jpg" alt="自分の顔のイメージ" class="about-media__img" width="400" height="240" decoding="async">
+                <div class="about__media fade-in fade-in-up">
+                    <figure class="about__imgWrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.jpg" alt="自分の顔のイメージ" width="400" height="240" decoding="async">
                     </figure>
                     <div class="about__body">
                         <h2 class="level3__heading">三浦　浩太</h2>
-                        <p class="about-media__text TextTyping">
+                        <p class="about__text TextTyping">
                             初めまして、三浦　浩太と申します。<br>
                             フリーランスでWeb制作を行っています。HTML、CSS、JavaScriptを駆使しモダンで魅力的なサイト構築をお手伝いします。また、お客様のアイデアを具体的な形にするため、お客様とのコミュニケーションを大切にします。<br>
                             ぜひ、お気軽にご相談ください。
@@ -197,21 +197,21 @@
                         <p class="level2__heading--ja">お問い合わせ</p>
                     </div>
                     <!-- /.level2__title -->
-                    <div class="inquiry__wrapper fade-in">
+                    <div class="inquiry__wrap fade-in">
                         <p class="inquiry__text ">    
                             Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
                         </p>
-                        <a href="<?php echo home_url('/contact'); ?>" class="inquiry__link">
-                            <div class="inquiry__item">
-                                <div class="inquiry__text-btn">
+                        <a href="<?php echo home_url('/contact'); ?>" class="inquiry__linkBtn">
+                            <div class="inquiry__itemBtn">
+                                <div class="inquiry__textBtn">
                                     CONTACT
                                 </div>
-                                <!-- /.inquiry__text-btn -->
+                                <!-- /.inquiry__textBtn -->
                             </div>
-                            <!-- /.inquiry__item -->
+                            <!-- /.inquiry__itemBtn -->
                         </a>
                     </div>
-                    <!-- /.inquiry__wrapper -->
+                    <!-- /.inquiry__wrap -->
                 </div>
                 <!-- /.inquiry__inner" -->
             </section>

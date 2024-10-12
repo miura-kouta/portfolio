@@ -873,39 +873,39 @@ ul {
   margin-bottom: 0;
 }
 
-.about-media {
+.about__media {
   display: flex;
   justify-content: space-around;
   padding-top: 80px;
 }
-.about-media .about-media__img-wrapper {
+.about__media .about__imgWrap {
   width: 30%;
 }
 @media (max-width: 1280px) {
-  .about-media .about-media__img-wrapper {
+  .about__media .about__imgWrap {
     margin-top: 40px;
   }
 }
 @media (max-width: 767px) {
-  .about-media .about-media__img-wrapper {
+  .about__media .about__imgWrap {
     width: 60%;
   }
 }
-.about-media .about__body {
+.about__media .about__body {
   width: 50%;
   margin-top: 48px;
 }
-.about-media .about__body .about-media__text {
+.about__media .about__body .about__text {
   margin-top: 40px;
 }
 @media (max-width: 767px) {
-  .about-media .about__body {
+  .about__media .about__body {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  .about-media {
+  .about__media {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -950,14 +950,14 @@ ul {
 .inquiry__inner {
   position: relative;
 }
-.inquiry__inner .inquiry__wrapper {
+.inquiry__inner .inquiry__wrap {
   text-align: center;
 }
-.inquiry__inner .inquiry__wrapper .inquiry__text {
+.inquiry__inner .inquiry__wrap .inquiry__text {
   text-align: center;
 }
 
-.inquiry__link .inquiry__item {
+.inquiry__linkBtn .inquiry__itemBtn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -970,12 +970,12 @@ ul {
   font-size: 3.2rem;
   font-weight: bold;
 }
-.inquiry__link .inquiry__item:hover {
+.inquiry__linkBtn .inquiry__itemBtn:hover {
   transition: 0.6s all;
   background: #333333;
   border-radius: 50px;
 }
-.inquiry__link .inquiry__item:hover .inquiry__text-btn {
+.inquiry__linkBtn .inquiry__itemBtn:hover .inquiry__textBtn {
   display: inline-block;
   background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%);
   background: -webkit-linear-gradient(0deg, #8cfae6 0%, #ffc0cb 100%);
@@ -983,7 +983,7 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-.inquiry__item ::before {
+.inquiry__itemBtn ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1004,15 +1004,15 @@ ul {
   transition: 0.6s all;
 }
 
-.inquiry__item :hover::before {
+.inquiry__itemBtn :hover::before {
   background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%) border-box border-box;
 }
 
 @media (max-width: 767px) {
-  .inquiry__link .inquiry__item {
+  .inquiry__linkBtn .inquiry__itemBtn {
     width: 300px;
   }
-  .inquiry__item ::before {
+  .inquiry__itemBtn ::before {
     width: 300px;
   }
 }

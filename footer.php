@@ -9,7 +9,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo home_url('/works'); ?>" class="gnav__link">
+                            <a href="<?php echo home_url('/allworks'); ?>" class="gnav__link">
                                 WORKS
                             </a>
                         </li>

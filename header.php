@@ -45,7 +45,7 @@
                                 </a>
                             </li>
                             <li class="header__listItem">
-                                <a href="<?php echo home_url('/works'); ?>" class="header__listLink">
+                                <a href="<?php echo home_url('/allworks'); ?>" class="header__listLink">
                                     WORKS
                                 </a>
                             </li>
@@ -82,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="header__hamburgerItem border1 border-width1">
-                                <a href="<?php echo home_url('/works'); ?>" class="header__hamburgerLink font1">
+                                <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink font1">
                                     WORKS
                                 </a>
                             </li>
