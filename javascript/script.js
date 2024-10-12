@@ -1,8 +1,8 @@
 //スムーススクロールについてはfooter.phpに記述
 
 //ハンバーガ―メニュー
-const drawerMenu = document.querySelector(".drawer-menu");
-const navi = document.querySelector(".drawer-nav");
+const drawerMenu = document.querySelector(".header__hamburgerBox");
+const navi = document.querySelector(".header__hamburgerNav");
 
 drawerMenu.addEventListener("click", function () {
   drawerMenu.classList.toggle("active");

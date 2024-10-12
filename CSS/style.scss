@@ -267,15 +267,15 @@ ul {
     max-width: 1720px;
     height: 80px;
 
-    .header-utilities {
+    .header__logo {
       width: 140px;
-      .header-utilities__link {
+      .header__logoLink {
         display: flex;
         justify-content: center;
       }
     }
     @media (max-width: 1280px) {
-      .header-utilities {
+      .header__logo {
         display: flex;
         align-items: center;
         margin-left: auto;
@@ -284,14 +284,14 @@ ul {
       }
     }
     @media (max-width: 767px) {
-      .header-utilities {
+      .header__logo {
         height: auto;
       }
     }
-    .header-nav__list {
+    .header__listMenu {
       display: flex;
       font-family: $font-family2;
-      .header-nav__item {
+      .header__listItem {
         padding-right: 40px;
         .header-nav__link {
           display: block;
@@ -331,24 +331,24 @@ ul {
           transform: translateX(0);
         }
       }
-      .header-nav__item:last-child {
+      .header__listItem:last-child {
         padding-right: 0px;
       }
       @media (max-width: 1280px) {
-        .header-nav__item {
+        .header__listItem {
           padding-right: 0;
         }
       }
     }
     @media (max-width: 1280px) {
-      .header-nav__list {
+      .header__listMenu {
         justify-content: space-around;
         align-items: center;
         height: 80px;
       }
     }
     @media (max-width: 767px) {
-      .header-nav__list {
+      .header__listMenu {
         height: auto;
       }
     }
@@ -359,9 +359,9 @@ ul {
     }
 
     //ハンバーガ―メニュー
-    .drawer {
+    .header__hamburger {
       display: none;
-      .drawer-nav {
+      .header__hamburgerNav {
         width: 100%;
         height: 100vh;
         color: #fff;
@@ -374,21 +374,21 @@ ul {
         background-color: rgba(51, 51, 51, 0.9);
         padding-top: 6rem;
 
-        .drawer-nav__item {
+        .header__hamburgerItem {
           padding: 20px 0;
-          .drawer-nav__link {
+          .header__hamburgerLink {
             color: #ffffff;
           }
         }
       }
-      .drawer-nav.active {
+      .header__hamburgerNav.active {
         opacity: 1;
         visibility: visible;
         left: 0;
         color: #ffffff;
       }
 
-      .drawer-menu {
+      .header__hamburgerBox {
         width: 30px;
         height: 23px;
         position: absolute;
@@ -398,43 +398,43 @@ ul {
         cursor: pointer;
         transition: 0.4s;
 
-        .drawer-menu__line {
+        .header__hamburgerLine {
           width: 30px;
           height: 2px;
           background: #ffffff;
           position: absolute;
           transition: 0.4s ease-in-out;
         }
-        .drawer-menu__line:nth-child(1) {
+        .header__hamburgerLine:nth-child(1) {
           top: 0px;
         }
-        .drawer-menu__line:nth-child(2) {
+        .header__hamburgerLine:nth-child(2) {
           top: 8px;
         }
-        .drawer-menu__line:nth-child(3) {
+        .header__hamburgerLine:nth-child(3) {
           top: 16px;
         }
         @media (max-width: 767px) {
-          .drawer-menu__line {
+          .header__hamburgerLine {
             background: #333333;
           }
         }
       }
-      .drawer-menu.active .drawer-menu__line:nth-child(1) {
+      .header__hamburgerBox.active .header__hamburgerLine:nth-child(1) {
         top: 8px;
         left: 0px;
         transform: rotate(-45deg);
         background: #ffffff;
       }
-      .drawer-menu.active .drawer-menu__line:nth-child(2),
-      .drawer-menu.active .drawer-menu__line:nth-child(3) {
+      .header__hamburgerBox.active .header__hamburgerLine:nth-child(2),
+      .header__hamburgerBox.active .header__hamburgerLine:nth-child(3) {
         top: 8px;
         transform: rotate(45deg);
         background: #ffffff;
       }
     }
     @media (max-width: 767px) {
-      .drawer {
+      .header__hamburger {
         display: block;
       }
     }
