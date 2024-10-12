@@ -336,7 +336,7 @@ ul {
   }
 }
 @media (max-width: 767px) {
-  .header__inner .header__container .header-nav {
+  .header__inner .header__container .header-listNav {
     display: none;
   }
 }

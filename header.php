@@ -37,7 +37,7 @@
                     </h1>
                 </div>
 
-                    <nav class="header-nav">
+                    <nav class="header-listNav">
                         <ul class="header-nav__list">    
                             <li class="header-nav__item">
                                 <a href="<?php echo home_url('/'); ?>#main" class="header-nav__link">
