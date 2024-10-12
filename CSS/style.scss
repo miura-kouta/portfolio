@@ -1366,21 +1366,21 @@ ul {
 }
 
 /* page-contact.php ----------------------------------------------*/
-.contact--title {
+.contact__title {
   text-align: center;
   padding-top: 80px;
 
-  .contact--img-wrapper {
+  .contact__imgWrap {
     margin: 60px auto 0 auto;
     width: 20%;
   }
 }
 
 @media (max-width: 1280px) {
-  .contact--title {
+  .contact__title {
     padding-top: 160px;
 
-    .contact--img-wrapper {
+    .contact__imgWrap {
       width: 30%;
     }
   }
@@ -1395,12 +1395,12 @@ ul {
   }
 }
 
-.contact__wrapper {
+.contact__container {
   margin: 100px 0 80px 0;
   background: #f9f9f9;
   border: solid 1px #333333;
 
-  .contact__situation {
+  .contact__boxProgress {
     margin: 0 auto;
     padding: 100px 0 150px 0;
     max-width: 500px;
@@ -1418,7 +1418,7 @@ ul {
     }
   }
 
-  .contact__container--form {
+  .contact__containerForm {
     .wpcf7-form {
       text-align: left;
       margin-right: auto;
@@ -1556,7 +1556,7 @@ ul {
   #wpcf7cpcnf {
     height: auto;
 
-    .contact__situation {
+    .contact__boxProgress {
       display: none;
     }
     .contact__situation--check {
@@ -1598,15 +1598,11 @@ ul {
 }
 
 @media (max-width: 1280px) {
-  .contact__container {
-    padding-top: 160px;
-
-    .contact--img-wrapper {
-      width: 30%;
-    }
+  .contact__imgWrap {
+    width: 30%;
   }
-  .contact__wrapper {
-    .contact__container--form {
+  .contact__container {
+    .contact__containerForm {
       .table-res-form .contact__item--form {
         width: 100%;
       }
@@ -1631,20 +1627,16 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .contact__container {
-    padding-top: 160px;
-
-    .contact--img-wrapper {
-      width: 40%;
-    }
+  .contact__imgWrap {
+    width: 40%;
   }
 
-  .contact__wrapper {
-    .contact__situation {
+  .contact__container {
+    .contact__boxProgress {
       width: 80%;
     }
 
-    .contact__container--form {
+    .contact__containerForm {
       .wpcf7-form {
         width: 90%;
         .contact__tr--form {
@@ -1668,7 +1660,7 @@ ul {
       #wpcf7cpcnf {
         height: auto;
 
-        .contact__situation {
+        .contact__boxProgress {
           display: none;
           width: 80%;
         }
@@ -1689,49 +1681,49 @@ ul {
   }
 }
 
-.contact__situation {
+.contact__boxProgress {
   display: block;
 }
-.contact__situation:nth-child(2) {
+.contact__boxProgress:nth-child(2) {
   display: none;
 }
-.contact__situation:last-child {
+.contact__boxProgress:last-child {
   display: none;
 }
 
 .confirm {
-  .contact__situation {
+  .contact__boxProgress {
     display: none;
   }
 
-  .contact__situation:nth-child(2) {
+  .contact__boxProgress:nth-child(2) {
     display: none;
   }
-  .contact__situation:last-child {
+  .contact__boxProgress:last-child {
     display: none;
   }
 }
 
 .confirm2 {
-  .contact__situation {
+  .contact__boxProgress {
     display: none;
   }
-  .contact__situation:nth-child(2) {
+  .contact__boxProgress:nth-child(2) {
     display: block;
   }
-  .contact__situation:last-child {
+  .contact__boxProgress:last-child {
     display: none;
   }
 }
 
 .confirm3 {
-  .contact__situation {
+  .contact__boxProgress {
     display: none;
   }
-  .contact__situation:nth-child(2) {
+  .contact__boxProgress:nth-child(2) {
     display: none;
   }
-  .contact__situation:last-child {
+  .contact__boxProgress:last-child {
     display: block;
   }
 }
@@ -1742,7 +1734,7 @@ ul {
   }
 }
 
-.contact__text--recapcha {
+.contact__textRecapcha {
   padding-top: 40px;
   padding-bottom: 80px;
   margin-left: auto;

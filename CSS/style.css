@@ -1431,20 +1431,20 @@ ul {
   }
 }
 /* page-contact.php ----------------------------------------------*/
-.contact--title {
+.contact__title {
   text-align: center;
   padding-top: 80px;
 }
-.contact--title .contact--img-wrapper {
+.contact__title .contact__imgWrap {
   margin: 60px auto 0 auto;
   width: 20%;
 }
 
 @media (max-width: 1280px) {
-  .contact--title {
+  .contact__title {
     padding-top: 160px;
   }
-  .contact--title .contact--img-wrapper {
+  .contact__title .contact__imgWrap {
     width: 30%;
   }
 }
@@ -1456,52 +1456,52 @@ ul {
     width: 40%;
   }
 }
-.contact__wrapper {
+.contact__container {
   margin: 100px 0 80px 0;
   background: #f9f9f9;
   border: solid 1px #333333;
 }
-.contact__wrapper .contact__situation {
+.contact__container .contact__boxProgress {
   margin: 0 auto;
   padding: 100px 0 150px 0;
   max-width: 500px;
   width: 100%;
 }
-.contact__wrapper .contact__situation .contact__top-thumb {
+.contact__container .contact__boxProgress .contact__top-thumb {
   width: 100%;
 }
-.contact__wrapper .contact__situation--check {
+.contact__container .contact__situation--check {
   display: none;
 }
-.contact__wrapper .contact__situation--check .contact__top-thumb {
+.contact__container .contact__situation--check .contact__top-thumb {
   width: 100%;
 }
-.contact__wrapper .contact__container--form .wpcf7-form {
+.contact__container .contact__containerForm .wpcf7-form {
   text-align: left;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form {
   border-top: 1px #ddd solid;
   text-align: center;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label {
   display: flex;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__th--form,
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__td--form {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__th--form,
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__td--form {
   text-align: left;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__th--form {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__th--form {
   display: flex;
   align-items: center;
   width: 200px;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__th--form .required {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__th--form .required {
   font-size: 0.8em;
   color: #fff;
   display: inline-block;
@@ -1510,44 +1510,44 @@ ul {
   background: red;
   border-radius: 2px;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__td--form {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__td--form {
   display: flex;
   width: 60%;
   align-items: center;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__td--form .contact__item--form {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__td--form .contact__item--form {
   border: 1px solid #333333;
   background: #ffffff;
   width: 100%;
   padding: 4px;
 }
-.contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .wpcf7-form-control-wrap {
+.contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .wpcf7-form-control-wrap {
   width: 100%;
 }
-.contact__wrapper .contact__container--form .wpcf7-form tr:first-child {
+.contact__container .contact__containerForm .wpcf7-form tr:first-child {
   border-top: none;
 }
-.contact__wrapper .contact__container--form table {
+.contact__container .contact__containerForm table {
   margin-right: auto;
   margin-left: auto;
   width: 60%;
   word-break: break-all;
   word-wrap: break-all;
 }
-.contact__wrapper .contact__container--form table tr {
+.contact__container .contact__containerForm table tr {
   display: flex;
   justify-content: flex-start;
 }
-.contact__wrapper .contact__container--form table tr th,
-.contact__wrapper .contact__container--form table tr td {
+.contact__container .contact__containerForm table tr th,
+.contact__container .contact__containerForm table tr td {
   text-align: left;
   padding-bottom: 40px;
 }
-.contact__wrapper .contact__container--form table tr th {
+.contact__container .contact__containerForm table tr th {
   width: 240px;
   white-space: nowrap;
 }
-.contact__wrapper .contact__container--form table tr th .required {
+.contact__container .contact__containerForm table tr th .required {
   font-size: 0.8em;
   color: #fff;
   display: inline-block;
@@ -1555,29 +1555,29 @@ ul {
   background: red;
   border-radius: 2px;
 }
-.contact__wrapper .contact__container--form table tr td {
+.contact__container .contact__containerForm table tr td {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.contact__wrapper .contact__container--form table tr td p {
+.contact__container .contact__containerForm table tr td p {
   pointer-events: none;
   text-decoration: none;
 }
-.contact__wrapper .contact__container--form table tr:last-child td {
+.contact__container .contact__containerForm table tr:last-child td {
   overflow-y: scroll;
   align-items: flex-start;
   height: 200px;
 }
-.contact__wrapper .contact__wrapper--button {
+.contact__container .contact__wrapper--button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact__wrapper .wpcf7-spinner {
+.contact__container .wpcf7-spinner {
   display: none;
 }
-.contact__wrapper .contact__item--button {
+.contact__container .contact__item--button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1593,22 +1593,22 @@ ul {
   cursor: pointer;
   text-align: center;
 }
-.contact__wrapper .contact__item--button:hover {
+.contact__container .contact__item--button:hover {
   background-color: #bebebe;
 }
-.contact__wrapper #wpcf7cpcnf {
+.contact__container #wpcf7cpcnf {
   height: auto;
 }
-.contact__wrapper #wpcf7cpcnf .contact__situation {
+.contact__container #wpcf7cpcnf .contact__boxProgress {
   display: none;
 }
-.contact__wrapper #wpcf7cpcnf .contact__situation--check {
+.contact__container #wpcf7cpcnf .contact__situation--check {
   display: block;
 }
-.contact__wrapper #wpcf7cpcnf .wpcf7cp-btns {
+.contact__container #wpcf7cpcnf .wpcf7cp-btns {
   text-align: center;
 }
-.contact__wrapper #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control {
+.contact__container #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1623,126 +1623,120 @@ ul {
   color: #fff;
   cursor: pointer;
 }
-.contact__wrapper #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control:hover {
+.contact__container #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control:hover {
   background-color: #bebebe;
 }
-.contact__wrapper .wpcf7 .wpcf7-form .wpcf7-response-output {
+.contact__container .wpcf7 .wpcf7-form .wpcf7-response-output {
   border: none;
   text-align: center;
   font-weight: bold;
 }
 
 @media (max-width: 1280px) {
-  .contact__container {
-    padding-top: 160px;
-  }
-  .contact__container .contact--img-wrapper {
+  .contact__imgWrap {
     width: 30%;
   }
-  .contact__wrapper .contact__container--form .table-res-form .contact__item--form {
+  .contact__container .contact__containerForm .table-res-form .contact__item--form {
     width: 100%;
   }
-  .contact__wrapper .contact__container--form .table-res-form th,
-.contact__wrapper .contact__container--form .table-res-form td {
+  .contact__container .contact__containerForm .table-res-form th,
+.contact__container .contact__containerForm .table-res-form td {
     width: 100%;
     display: block;
   }
-  .contact__wrapper .contact__container--form .table-res-form th {
+  .contact__container .contact__containerForm .table-res-form th {
     text-align: left;
     padding: 12px 12px 0 12px;
     width: 100%;
   }
-  .contact__wrapper .contact__container--form .table-res-form td {
+  .contact__container .contact__containerForm .table-res-form td {
     padding: 12px;
   }
-  .contact__wrapper .contact__container--form table {
+  .contact__container .contact__containerForm table {
     width: 80%;
   }
 }
 @media (max-width: 767px) {
-  .contact__container {
-    padding-top: 160px;
-  }
-  .contact__container .contact--img-wrapper {
+  .contact__imgWrap {
     width: 40%;
   }
-  .contact__wrapper .contact__situation {
+  .contact__container .contact__boxProgress {
     width: 80%;
   }
-  .contact__wrapper .contact__container--form .wpcf7-form {
+  .contact__container .contact__containerForm .wpcf7-form {
     width: 90%;
   }
-  .contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label {
+  .contact__container .contact__containerForm .wpcf7-form .contact__tr--form label {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__th--form {
+  .contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__th--form {
     width: 80%;
     justify-content: center;
   }
-  .contact__wrapper .contact__container--form .wpcf7-form .contact__tr--form label .contact__td--form {
+  .contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__td--form {
     width: 90%;
   }
-  .contact__wrapper .contact__container--form #wpcf7cpcnf {
+  .contact__container .contact__containerForm #wpcf7cpcnf {
     height: auto;
   }
-  .contact__wrapper .contact__container--form #wpcf7cpcnf .contact__situation {
+  .contact__container .contact__containerForm #wpcf7cpcnf .contact__boxProgress {
     display: none;
     width: 80%;
   }
-  .contact__wrapper .contact__container--form #wpcf7cpcnf .contact__situation--check {
+  .contact__container .contact__containerForm #wpcf7cpcnf .contact__situation--check {
     display: block;
   }
-  .contact__wrapper .contact__container--form #wpcf7cpcnf .wpcf7cp-btns {
+  .contact__container .contact__containerForm #wpcf7cpcnf .wpcf7cp-btns {
     text-align: center;
   }
-  .contact__wrapper .contact__container--form #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control {
+  .contact__container .contact__containerForm #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control {
     font-size: 12px;
     width: 120px;
     padding: 8px;
   }
 }
-.contact__situation {
+.contact__boxProgress {
   display: block;
 }
 
-.contact__situation:nth-child(2) {
+.contact__boxProgress:nth-child(2) {
   display: none;
 }
 
-.contact__situation:last-child {
+.contact__boxProgress:last-child {
   display: none;
 }
 
-.confirm .contact__situation {
+.confirm .contact__boxProgress {
   display: none;
 }
-.confirm .contact__situation:nth-child(2) {
+.confirm .contact__boxProgress:nth-child(2) {
   display: none;
 }
-.confirm .contact__situation:last-child {
+.confirm .contact__boxProgress:last-child {
   display: none;
 }
 
-.confirm2 .contact__situation {
+.confirm2 .contact__boxProgress {
   display: none;
 }
-.confirm2 .contact__situation:nth-child(2) {
+.confirm2 .contact__boxProgress:nth-child(2) {
   display: block;
 }
-.confirm2 .contact__situation:last-child {
+.confirm2 .contact__boxProgress:last-child {
   display: none;
 }
 
-.confirm3 .contact__situation {
+.confirm3 .contact__boxProgress {
   display: none;
 }
-.confirm3 .contact__situation:nth-child(2) {
+.confirm3 .contact__boxProgress:nth-child(2) {
   display: none;
 }
-.confirm3 .contact__situation:last-child {
+.confirm3 .contact__boxProgress:last-child {
   display: block;
 }
 
@@ -1750,7 +1744,7 @@ ul {
   display: block !important;
 }
 
-.contact__text--recapcha {
+.contact__textRecapcha {
   padding-top: 40px;
   padding-bottom: 80px;
   margin-left: auto;
