@@ -161,19 +161,19 @@ ul {
   background: #333333;
 }
 
-.level3__heading {
+.c-headingLv3 {
   font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
 }
 
 @media (max-width: 767px) {
-  .level3__heading {
+  .c-headingLv3 {
     font-size: 2rem;
   }
 }
 
-.level3__heading--align-left {
+.c-headingLv3--textlAlignLeft {
   text-align: left;
 }
 

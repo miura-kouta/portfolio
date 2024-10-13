@@ -19,7 +19,7 @@
                         </div>
                         <!-- /.priceTable__title -->
                         <div class="priceTable__wrap">
-                            <h3 class="level3__heading level3__heading--align-left">
+                            <h3 class="c-headingLv3 c-headingLv3--textlAlignLeft">
                                 1.コーディング
                             </h3>
                             <div class="priceTable__item">
@@ -35,7 +35,7 @@
                         </div>
                         <!-- /.priceTable__wrap -->
                         <div class="priceTable__wrap">
-                            <h3 class="level3__heading level3__heading--align-left">
+                            <h3 class="c-headingLv3 c-headingLv3--textlAlignLeft">
                                 2.コーディング ＋<br>
                                 デザイン or WordPress化のどちらか片方
                             </h3>
@@ -57,7 +57,7 @@
                         </div>
                         <!-- /.priceTable__wrap -->
                         <div class="priceTable__wrap">
-                            <h3 class="level3__heading level3__heading--align-left">
+                            <h3 class="c-headingLv3 c-headingLv3--textlAlignLeft">
                                 3.コーディング ＋<br>
                                 デザイン + WordPress化全て
                             </h3>

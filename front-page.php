@@ -129,7 +129,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(PC)" width="400" height="240" decoding="async">
                         </figure>
                         <div class="services__body">
-                            <h3 class="level3__heading services__titleMedia">1.Webデザイン</h3>
+                            <h3 class="c-headingLv3 services__titleMedia">1.Webデザイン</h3>
                             <figure class="services__imgWrap--sp">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(SP)" width="400" height="240" decoding="async">
                             </figure>
@@ -145,7 +145,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(PC)" width="400" height="240" decoding="async">
                         </figure>
                         <div class="services__body">
-                            <h3 class="level3__heading services__titleMedia">2.Webサイト制作</h3>
+                            <h3 class="c-headingLv3 services__titleMedia">2.Webサイト制作</h3>
                             <figure class="services__imgWrap--sp">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/services-image2.jpg" alt="できることその2(SP)" width="400" height="240" decoding="async">
                             </figure>
@@ -161,7 +161,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(PC)" width="400" height="240" decoding="async">
                         </figure>
                         <div class="services__body">
-                            <h3 class="level3__heading services__titleMedia">3.WordPressによるWEBサイト構築</h3>
+                            <h3 class="c-headingLv3 services__titleMedia">3.WordPressによるWEBサイト構築</h3>
                             <figure class="services__imgWrap--sp">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/services-image3.jpg" alt="できることその3(SP)" width="400" height="240" decoding="async">
                             </figure>
@@ -183,7 +183,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.jpg" alt="自分の顔のイメージ" width="400" height="240" decoding="async">
                     </figure>
                     <div class="about__body">
-                        <h2 class="level3__heading">三浦　浩太</h2>
+                        <h2 class="c-headingLv">三浦　浩太</h2>
                         <p class="about__text TextTyping">
                             初めまして、三浦　浩太と申します。<br>
                             フリーランスでWeb制作を行っています。HTML、CSS、JavaScriptを駆使しモダンで魅力的なサイト構築をお手伝いします。また、お客様のアイデアを具体的な形にするため、お客様とのコミュニケーションを大切にします。<br>
