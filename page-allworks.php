@@ -2,9 +2,9 @@
 <main>
 
 <section id="allWorks" class="content" >
-                <div class="allWorks__title level1__title">
-                    <h1 class="allWorks__heading--en level1__heading--en">WORKS</h1>
-                    <p class="allWorks__heading--ja level1__heading--ja">制作実績一覧</p>
+                <div class="headingLv1">
+                    <h1 class="headingLv1__main">WORKS</h1>
+                    <p class="headingLv1__sub">制作実績一覧</p>
                     <div class="allWorks__imgWrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/allWorks-image1.png" alt="制作実績のサイトを紹介する人達"  width="400" height="200" decoding="async">
                     </div>

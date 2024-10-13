@@ -53,69 +53,6 @@
     <!-- javascript -->
     <script src="<?php echo get_template_directory_uri(); ?>/javascript/script.js"></script>
 
-<script>
-//スムーススクロール
-document.addEventListener("DOMContentLoaded", () => {
-    const smoothScrollTrigger2 = document.querySelectorAll('a[href^="<?php echo home_url('/'); ?>#"]');
-    const smoothScrollTrigger3 = '<?php echo home_url('/'); ?>';
-
-    for (let i = 0; i < smoothScrollTrigger2.length; i++) {
-        smoothScrollTrigger2[i].addEventListener("click", (e) => {
-            e.preventDefault();
-
-            let href = smoothScrollTrigger2[i].getAttribute("href");
-            let targetElement;
-
-            // トップページの場合
-            if (document.body.classList.contains('home')) {
-                targetElement = document.getElementById(href.replace(smoothScrollTrigger3 + "#", ""));
-                if (targetElement) {
-                    const rect = targetElement.getBoundingClientRect().top;
-                    const offset = window.pageYOffset;
-                    const gap = 60;
-                    const target = rect + offset - gap;
-
-                    console.log(targetElement);
-
-                    
-                    window.scrollTo({
-                        top: target,
-                        behavior: "smooth",
-                    });
-                } else {
-                    console.log("Target element not found");
-                }
-            } else {
-                // 下層ページの場合、URLにターゲットIDを追加してトップページへリダイレクト
-                const targetID = href.replace(smoothScrollTrigger3 + "#", "");
-                window.location.href = `${smoothScrollTrigger3}?scrollTo=${targetID}`;
-            }
-        });
-    }
-
-    // トップページでURLのパラメータを解析してスクロール
-    const urlParams = new URLSearchParams(window.location.search);
-    const scrollTo = urlParams.get('scrollTo');
-    if (scrollTo) {
-        const targetElement = document.getElementById(scrollTo);
-        if (targetElement) {
-            const rect = targetElement.getBoundingClientRect().top;
-            const offset = window.pageYOffset;
-            const gap = 60;
-            const target = rect + offset - gap;
-
-            window.scrollTo({
-                top: target,
-                behavior: "smooth",
-            });
-        } else {
-            console.log("Target element not found");
-        }
-    }
-});
-
-</script>
-
     <?php wp_footer(); ?>
     </body>
 

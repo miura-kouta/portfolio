@@ -61,22 +61,40 @@ ul {
   list-style: none;
 }
 
-.level1__title {
+.headingLv1 {
   text-align: center;
+  padding-top: 160px;
 }
 
-.level1__heading--en {
+@media (max-width: 1280px) {
+  .headingLv1 {
+    padding-top: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headingLv1 {
+    padding-top: 160px;
+  }
+}
+
+// .level1__heading--en {
+//   font-size: 6rem;
+//   font-weight: bold;
+// }
+
+.headingLv1__main {
   font-size: 6rem;
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  .level1__heading--en {
+  .headingLv1__main {
     font-size: 4rem;
   }
 }
 
-.level1__heading--ja {
+.headingLv1__sub {
   position: relative;
   display: inline-block;
   margin-bottom: 80px;
@@ -85,12 +103,12 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .level1__heading--ja {
+  .headingLv1__sub {
     font-size: 2rem;
   }
 }
 
-.level1__heading--ja::before {
+.headingLv1__sub::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -104,7 +122,7 @@ ul {
   background: #333333;
 }
 
-.level1__heading--ja::after {
+.headingLv1__sub::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1073,28 +1091,23 @@ ul {
   background: #333333;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-.show-loading {
+.showLoading {
   opacity: 1;
   visibility: visible;
 }
 
-.loding__container--whole-off {
-  animation: loding-container 1s ease;
+.showLoadingAnime {
+  animation: lodingOpacity 1s ease;
 }
 
-@keyframes loding-container {
+@keyframes lodingOpacity {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
-
-.loding__container--whole-clear-cache {
-  opacity: 0;
 }
 
 .loding__box {
@@ -1106,11 +1119,11 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-.loding__text--off {
+.loding__text {
   display: none;
 }
 
-.loding__text--on {
+.loding__text--disyplayBlock {
   display: block;
 }
 
@@ -1122,10 +1135,10 @@ ul {
   background: #e6adb7;
   left: 15%;
   transform-origin: 50%;
-  animation: loding-circle 0.5s alternate infinite ease;
+  animation: lodingCircle 0.5s alternate infinite ease;
 }
 
-@keyframes loding-circle {
+@keyframes lodingCircle {
   0% {
     top: 60px;
     height: 5px;
@@ -1161,10 +1174,10 @@ ul {
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: loding-shadow 0.5s alternate infinite ease;
+  animation: lodingShadow 0.5s alternate infinite ease;
 }
 
-@keyframes loding-shadow {
+@keyframes lodingShadow {
   0% {
     transform: scaleX(1.5);
   }
@@ -1309,30 +1322,21 @@ ul {
 
 /* priceTable.html ----------------------------------------------*/
 
-.price__title {
-  padding-top: 80px;
-  .price__imgWrap {
-    margin: 60px auto 0 auto;
-    width: 20%;
-  }
+.price__imgWrap {
+  margin: 60px auto 0 auto;
+  width: 20%;
 }
 
 @media (max-width: 1280px) {
-  .price__title {
-    padding-top: 160px;
-    .price__imgWrap {
-      width: 30%;
-    }
+  .price__imgWrap {
+    width: 30%;
   }
 }
 
 @media (max-width: 767px) {
-  .price__title {
-    padding-top: 0;
-    .price__imgWrap {
-      margin: 0 auto 0 auto;
-      width: 40%;
-    }
+  .price__imgWrap {
+    margin: 0 auto 0 auto;
+    width: 40%;
   }
 }
 
@@ -1366,23 +1370,14 @@ ul {
 }
 
 /* page-contact.php ----------------------------------------------*/
-.contact__title {
-  text-align: center;
-  padding-top: 80px;
-
-  .contact__imgWrap {
-    margin: 60px auto 0 auto;
-    width: 20%;
-  }
+.contact__imgWrap {
+  margin: 60px auto 0 auto;
+  width: 20%;
 }
 
 @media (max-width: 1280px) {
-  .contact__title {
-    padding-top: 160px;
-
-    .contact__imgWrap {
-      width: 30%;
-    }
+  .contact__imgWrap {
+    width: 30%;
   }
 }
 

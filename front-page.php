@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-<main id=main>
+<main id="main">
     <div class="goingUp">    
         <div class="goingUp__wrapCircle fade-in2 fade-in-circle">
             <a href="#firstView" class="goingUp__linkCircle">
@@ -216,20 +216,20 @@
                 <!-- /.inquiry__inner" -->
             </section>
 
-    <!-- ローディングアニメーション -->
-    <div class="loding__container ">
+      <!-- ローディングアニメーション -->
+      <div class="loding__container">
         <div class="loding__box">
-            <div class="loding__circle"></div>
-            <div class="loding__circle"></div>
-            <div class="loding__circle"></div>
-            <div class="loding__shadow"></div>
-            <div class="loding__shadow"></div>
-            <div class="loding__shadow"></div>
-            <span class="loding__text--on loding__text--off">Loading</span>
+          <div class="loding__circle"></div>
+          <div class="loding__circle"></div>
+          <div class="loding__circle"></div>
+          <div class="loding__shadow"></div>
+          <div class="loding__shadow"></div>
+          <div class="loding__shadow"></div>
+          <span class="loding__text loding__text--disyplayBlock">Loading</span>
         </div>
         <!-- /.loding__box -->
-    </div>
-    <!-- /.loding__container -->
+      </div>
+      <!-- /.loding__container -->
 
 </main>
 <?php get_footer(); ?>

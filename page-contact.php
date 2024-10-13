@@ -2,9 +2,9 @@
 <main>
 
         <section id="contact" class="content">
-                <div class="contact__title">
-                    <h1 class="level1__heading--en">CONTACT</h1>
-                    <p class="level1__heading--ja">問い合わせ</p>
+                <div class="headingLv1">
+                    <h1 class="headingLv1__main">CONTACT</h1>
+                    <p class="headingLv1__sub">問い合わせ</p>
                     <div class="contact__imgWrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/contact1.png" alt="問い合わせに答える人"  width="400" height="200" decoding="async">
                     </div>

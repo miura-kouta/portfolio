@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <main>
         <section id="price" class="content">
-                <div class="price__title level1__title">
-                    <h1 class="level1__heading--en">PRICE</h1>
-                    <p class="level1__heading--ja">料金</p>
+                <div class="headingLv1">
+                    <h1 class="headingLv1__main">PRICE</h1>
+                    <p class="headingLv1__sub">料金</p>
                     <div class="price__imgWrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/price-image1.png" alt="料金を説明する人"  width="400" height="200" decoding="async">
                     </div>

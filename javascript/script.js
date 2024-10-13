@@ -1,5 +1,3 @@
-//スムーススクロールについてはfooter.phpに記述
-
 //ハンバーガ―メニュー
 const drawerMenu = document.querySelector(".header__hamburgerBox");
 const navi = document.querySelector(".header__hamburgerNav");
@@ -196,8 +194,8 @@ if (element) {
   });
 }
 
-//ローディングアニメーション
 
+//ローディングアニメーション
 class Main {
   constructor() {
     this._loading();
@@ -208,7 +206,7 @@ class Main {
       const webStorage = () => {
         const lodingContainer = document.querySelector(".loding__container");
         const lodingContainer2 = document.querySelector(".loding__box");
-        const lodingContainer3 = document.querySelector(".loding__text--on");
+        const lodingContainer3 = document.querySelector(".loding__text");
 
         if (sessionStorage.getItem("access")) {
           // 2回目以降アクセス時の処理
@@ -219,9 +217,9 @@ class Main {
         } else {
           // 初回アクセス時の処理
           sessionStorage.setItem("access", "true");
-          // 初回アクセス時に .show-loading クラスを追加
+          // 初回アクセス時に .showLoading クラスを追加
           if (lodingContainer) {
-            lodingContainer.classList.add("show-loading");
+            lodingContainer.classList.add("showLoading");
           }
 
           // クラスを削除する処理
@@ -232,7 +230,17 @@ class Main {
               if (lodingContainer2)
                 lodingContainer2.classList.remove("loding__box");
               if (lodingContainer3)
-                lodingContainer3.classList.remove("loding__text--on");
+                lodingContainer3.classList.remove(
+                  "loding__text--disyplayBlock"
+                );
+            }, delay);
+          };
+
+          // クラスを追加する処理
+          const addClass = (delay) => {
+            setTimeout(() => {
+              if (lodingContainer)
+                lodingContainer.classList.add("showLoadingAnime");
             }, delay);
           };
 
@@ -245,5 +253,4 @@ class Main {
     });
   }
 }
-
 new Main();
