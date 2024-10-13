@@ -192,7 +192,7 @@
                     </div>
                 </div>
             </section>
-               <section id="inquiry" class="content__pb"> 
+               <section id="inquiry" > 
                 <div class="inquiry__inner">
                     <div class="level2__title">
                         <h2 class="level2__heading--en">CONTACT</h2>

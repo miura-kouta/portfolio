@@ -10,7 +10,7 @@
                     </div>
                     <!-- /.allWorks__imgWrap -->
                 </div>
-                <!-- /.allWorks__title -->
+                <!-- /.headingLv1 -->
 
             <div class="loop__content loop__content--right">
                 <div class="loop__contentItem--blog">
@@ -94,7 +94,7 @@
                 <!-- /.loop__content -->
         </section>
 
-            <section id="inquiry" class="content__pb">    
+            <section id="inquiry" >    
                 <div class="inquiry__inner">
                     <div class="level2__title">
                         <h2 class="level2__heading--en">CONTACT</h2>

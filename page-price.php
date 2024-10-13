@@ -9,7 +9,7 @@
                     </div>
                     <!-- /.price__imgWrap -->
                 </div>
-                <!-- /.price__title -->
+                <!-- /.headingLv1 -->
                 <div class="priceTable__container">
                     <div class="priceTable__area">
                         <div class="priceTable__title level2__title">
@@ -82,7 +82,7 @@
                 </div>
                 <!-- /.priceTable__container -->
         </section>
-        <section id="inquiry" class="content__pb">    
+        <section id="inquiry" >    
                 <div class="inquiry__inner">
                     <div class="level2__title">
                         <h2 class="level2__heading--en">CONTACT</h2>
