@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
 
-        <section id="contact" class="content">
+        <section id="contact" class="c-contentContainer">
                 <div class="headingLv1">
                     <h1 class="headingLv1__main">CONTACT</h1>
                     <p class="headingLv1__sub">問い合わせ</p>

@@ -204,8 +204,7 @@ ul {
   color: red;
 }
 
-.content {
-  padding-top: 160px;
+.c-contentContainer {
   padding-left: 100px;
   padding-right: 100px;
   margin-left: auto;
@@ -218,7 +217,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .content {
+  .c-contentContainer {
     padding-left: 20px;
     padding-right: 20px;
   }

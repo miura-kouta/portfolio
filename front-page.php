@@ -63,7 +63,9 @@
             <!-- /.splide -->
         </div>
     </section>
-    <section id="works" class="content">
+
+    <div class="c-contentContainer">
+    <section id="works" >
                     <div class="level2__title">
                         <h2 class="level2__heading--en">WORKS</h2>
                         <p class="level2__heading--ja">制作実績</p>
@@ -116,7 +118,7 @@
                     </div>
                     <!-- /.works__btn -->
             </section>
-            <section id="services" class="content">    
+            <section id="services" >    
                 <div class="level2__title">
                     <h2 class="level2__heading--en">SERVICES</h2>
                     <p class="level2__heading--ja">お手伝いできること</p>
@@ -171,7 +173,7 @@
                     </div>
                     <!-- /.services__media -->                
             </section>
-            <section id="about" class="content">
+            <section id="about" >
                 <div class="level2__title">
                     <h2 class="level2__heading--en">ABOUT</h2>
                     <p class="level2__heading--ja">私について</p>
@@ -190,7 +192,7 @@
                     </div>
                 </div>
             </section>
-            <section id="inquiry" class="content content__pb">    
+               <section id="inquiry" class="content__pb"> 
                 <div class="inquiry__inner">
                     <div class="level2__title">
                         <h2 class="level2__heading--en">CONTACT</h2>
@@ -215,6 +217,8 @@
                 </div>
                 <!-- /.inquiry__inner" -->
             </section>
+    </div>
+    <!-- /.c-contentContainer -->
 
       <!-- ローディングアニメーション -->
       <div class="loding__container">

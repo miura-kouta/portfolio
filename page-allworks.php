@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
 
-<section id="allWorks" class="content" >
+<section id="allWorks" class="c-contentContainer" >
                 <div class="headingLv1">
                     <h1 class="headingLv1__main">WORKS</h1>
                     <p class="headingLv1__sub">制作実績一覧</p>
@@ -94,7 +94,7 @@
                 <!-- /.loop__content -->
         </section>
 
-            <section id="inquiry" class="content content__pb">    
+            <section id="inquiry" class="content__pb">    
                 <div class="inquiry__inner">
                     <div class="level2__title">
                         <h2 class="level2__heading--en">CONTACT</h2>
