@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main >
+<main class="c-content__inner">
         <section id="price" class="c-contentContainer" >
                 <div class="c-headingLv1">
                     <h1 class="c-headingLv1__main">PRICE</h1>

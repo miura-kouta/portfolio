@@ -62,8 +62,8 @@ ul {
 }
 
 .c-headingLv1 {
-  text-align: center;
   padding-top: 160px;
+  text-align: center;
 }
 
 .c-headingLv1__main {
@@ -80,6 +80,7 @@ ul {
 .c-headingLv1__sub {
   position: relative;
   display: inline-block;
+  margin-bottom: 80px;
   font-size: 4rem;
   text-align: center;
 }
@@ -119,6 +120,8 @@ ul {
 }
 
 .c-headingLv2 {
+  padding-top: 160px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -177,8 +180,9 @@ ul {
   text-align: left;
 }
 
-.level4-title {
+.c-headingLv4 {
   font-weight: bold;
+  text-align: center;
 }
 
 .campaign__font-color {
@@ -195,6 +199,7 @@ ul {
 
 .c-content__inner {
   padding-top: 80px;
+  padding-bottom: 160px;
 }
 
 @media (max-width: 1280px) {
@@ -493,8 +498,6 @@ ul {
 
 .firstView__container {
   position: relative;
-  margin-top: 80px;
-
   .firstView__video {
     height: calc(100vh - 80px);
   }
@@ -550,17 +553,6 @@ ul {
       text-align: center;
       white-space: normal;
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .firstView__container {
-    margin-top: 160px;
-  }
-}
-@media (max-width: 767px) {
-  .firstView__container {
-    margin-top: 80px;
   }
 }
 
@@ -851,7 +843,6 @@ ul {
 .about__media {
   display: flex;
   justify-content: space-around;
-  padding-top: 80px;
   .about__imgWrap {
     width: 30%;
   }
@@ -1309,7 +1300,6 @@ ul {
 /* priceTable.html ----------------------------------------------*/
 
 .price__imgWrap {
-  // margin: 60px auto 0 auto;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
@@ -1359,7 +1349,6 @@ ul {
 
 /* page-contact.php ----------------------------------------------*/
 .contact__imgWrap {
-  // margin: 60px auto 0 auto;
   margin-left: auto;
   margin-right: auto;
   width: 20%;

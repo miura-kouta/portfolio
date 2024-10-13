@@ -49,8 +49,8 @@ ul {
 }
 
 .c-headingLv1 {
-  text-align: center;
   padding-top: 160px;
+  text-align: center;
 }
 
 .c-headingLv1__main {
@@ -66,6 +66,7 @@ ul {
 .c-headingLv1__sub {
   position: relative;
   display: inline-block;
+  margin-bottom: 80px;
   font-size: 4rem;
   text-align: center;
 }
@@ -104,6 +105,8 @@ ul {
 }
 
 .c-headingLv2 {
+  padding-top: 160px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -162,8 +165,9 @@ ul {
   text-align: left;
 }
 
-.level4-title {
+.c-headingLv4 {
   font-weight: bold;
+  text-align: center;
 }
 
 .campaign__font-color {
@@ -180,6 +184,7 @@ ul {
 
 .c-content__inner {
   padding-top: 80px;
+  padding-bottom: 160px;
 }
 
 @media (max-width: 1280px) {
@@ -476,7 +481,6 @@ ul {
 
 .firstView__container {
   position: relative;
-  margin-top: 80px;
 }
 .firstView__container .firstView__video {
   height: calc(100vh - 80px);
@@ -534,16 +538,6 @@ ul {
   }
 }
 
-@media (max-width: 1280px) {
-  .firstView__container {
-    margin-top: 160px;
-  }
-}
-@media (max-width: 767px) {
-  .firstView__container {
-    margin-top: 80px;
-  }
-}
 .works__container {
   display: flex;
   justify-content: space-around;
@@ -884,7 +878,6 @@ ul {
 .about__media {
   display: flex;
   justify-content: space-around;
-  padding-top: 80px;
 }
 .about__media .about__imgWrap {
   width: 30%;
