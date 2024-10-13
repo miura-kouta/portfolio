@@ -1,4 +1,4 @@
-    <footer id="footer">
+    <footer id="footer" class="footer">
         <div class="outer__container--margin">
             <div class="footer__container whole__container">
                 <nav class="gnav">
@@ -40,12 +40,7 @@
 
             </div>
         </div>
-
-
-
-
     </footer>
-
     <!-- splide -->
     <?php if (is_front_page()) : ?>
         <script src="<?php echo get_template_directory_uri(); ?>/splide-4.1.3/dist/js/splide.min.js"></script>

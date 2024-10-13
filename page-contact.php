@@ -2,15 +2,15 @@
 <main>
 
         <section id="contact" class="c-contentContainer">
-                <div class="headingLv1">
-                    <h1 class="headingLv1__main">CONTACT</h1>
-                    <p class="headingLv1__sub">問い合わせ</p>
+                <div class="c-headingLv1">
+                    <h1 class="c-headingLv1__main">CONTACT</h1>
+                    <p class="c-headingLv1__sub">問い合わせ</p>
                     <div class="contact__imgWrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/contact1.png" alt="問い合わせに答える人"  width="400" height="200" decoding="async">
                     </div>
                     <!-- /.contact__imgWrap -->
                 </div>
-                <!-- /.headingLv1 -->
+                <!-- /.c-headingLv1 -->
                 <div class="contact__container">
                     <div class="contact__WrapProgress">
                         <div class="contact__boxProgress confirm confirm2 confirm3">

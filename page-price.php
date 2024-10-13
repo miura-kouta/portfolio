@@ -1,19 +1,19 @@
 <?php get_header(); ?>
-<main>
+<main >
         <section id="price" class="c-contentContainer" >
-                <div class="headingLv1">
-                    <h1 class="headingLv1__main">PRICE</h1>
-                    <p class="headingLv1__sub">料金</p>
+                <div class="c-headingLv1">
+                    <h1 class="c-headingLv1__main">PRICE</h1>
+                    <p class="c-headingLv1__sub">料金</p>
                     <div class="price__imgWrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/price-image1.png" alt="料金を説明する人"  width="400" height="200" decoding="async">
                     </div>
                     <!-- /.price__imgWrap -->
                 </div>
-                <!-- /.headingLv1 -->
+                <!-- /.c-headingLv1 -->
                 <div class="priceTable__container">
                     <div class="priceTable__area">
-                        <div class="priceTable__title level2__title">
-                            <h2 class="priceTable__heading level2__heading--en campaign__font-color">
+                        <div class="priceTable__title c-headingLv2">
+                            <h2 class="priceTable__heading c-headingLv2__main campaign__font-color">
                                 サイトOPEN<br class="price__br--sp">記念価格
                             </h2>
                         </div>
@@ -84,11 +84,11 @@
         </section>
         <section id="inquiry" >    
                 <div class="inquiry__inner">
-                    <div class="level2__title">
-                        <h2 class="level2__heading--en">CONTACT</h2>
-                        <p class="level2__heading--ja">お問い合わせ</p>
+                    <div class="c-headingLv2">
+                        <h2 class="c-headingLv2__main">CONTACT</h2>
+                        <p class="c-headingLv2__sub">お問い合わせ</p>
                     </div>
-                    <!-- /.level2__title -->
+                    <!-- /.c-headingLv2 -->
                     <div class="inquiry__wrap fade-in">
                         <p class="inquiry__text ">    
                             Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。

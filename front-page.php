@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-<main id="main">
+<main id="main" >
     <div class="goingUp">    
         <div class="goingUp__wrapCircle fade-in2 fade-in-circle">
             <a href="#firstView" class="goingUp__linkCircle">
@@ -66,11 +66,11 @@
 
     <div class="c-contentContainer">
     <section id="works" >
-                    <div class="level2__title">
-                        <h2 class="level2__heading--en">WORKS</h2>
-                        <p class="level2__heading--ja">制作実績</p>
+                    <div class="c-headingLv2">
+                        <h2 class="c-headingLv2__main">WORKS</h2>
+                        <p class="c-headingLv2__sub">制作実績</p>
                     </div>
-                    <!-- level2__title./ -->
+                    <!-- c-headingLv2./ -->
                     <div class="works__container">
                         <div class="works__item works__extend4">
                             <div class="works__line works__extend">
@@ -119,11 +119,11 @@
                     <!-- /.works__btn -->
             </section>
             <section id="services" >    
-                <div class="level2__title">
-                    <h2 class="level2__heading--en">SERVICES</h2>
-                    <p class="level2__heading--ja">お手伝いできること</p>
+                <div class="c-headingLv2">
+                    <h2 class="c-headingLv2__main">SERVICES</h2>
+                    <p class="c-headingLv2__sub">お手伝いできること</p>
                 </div>
-                <!-- /.level2__title -->
+                <!-- /.c-headingLv2 -->
                     <div class="services__media fade-in fade-in-left">
                         <figure class="services__imgWrap--pc">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/services-image1.jpg" alt="できることその1(PC)" width="400" height="240" decoding="async">
@@ -174,9 +174,9 @@
                     <!-- /.services__media -->                
             </section>
             <section id="about" >
-                <div class="level2__title">
-                    <h2 class="level2__heading--en">ABOUT</h2>
-                    <p class="level2__heading--ja">私について</p>
+                <div class="c-headingLv2">
+                    <h2 class="c-headingLv2__main">ABOUT</h2>
+                    <p class="c-headingLv2__sub">私について</p>
                 </div>
                 <div class="about__media fade-in fade-in-up">
                     <figure class="about__imgWrap">
@@ -194,11 +194,11 @@
             </section>
                <section id="inquiry" > 
                 <div class="inquiry__inner">
-                    <div class="level2__title">
-                        <h2 class="level2__heading--en">CONTACT</h2>
-                        <p class="level2__heading--ja">お問い合わせ</p>
+                    <div class="c-headingLv2">
+                        <h2 class="c-headingLv2__main">CONTACT</h2>
+                        <p class="c-headingLv2__sub">お問い合わせ</p>
                     </div>
-                    <!-- /.level2__title -->
+                    <!-- /.c-headingLv2 -->
                     <div class="inquiry__wrap fade-in">
                         <p class="inquiry__text ">    
                             Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
