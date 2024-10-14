@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <main class="c-content__inner">
-        <section id="contact" class="c-contentContainer">
+    <div class="c-contentContainer">
+        <section id="contact">
                 <div class="c-headingLv1">
                     <h1 class="c-headingLv1__main">CONTACT</h1>
                     <p class="c-headingLv1__sub">問い合わせ</p>
@@ -48,6 +49,7 @@
                 </div>
                 <!-- /.contact__container -->
         </section>
-
+    </div>
+    <!-- /.c-contentContainer -->
 </main>
 <?php get_footer(); ?>

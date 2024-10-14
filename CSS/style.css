@@ -170,10 +170,6 @@ ul {
   text-align: center;
 }
 
-.campaign__font-color {
-  color: red;
-}
-
 .c-contentContainer {
   padding-left: 100px;
   padding-right: 100px;
@@ -182,6 +178,12 @@ ul {
   max-width: 1720px;
 }
 
+@media (max-width: 767px) {
+  .c-contentContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .c-content__inner {
   padding-top: 80px;
   padding-bottom: 160px;
@@ -195,12 +197,6 @@ ul {
 @media (max-width: 767px) {
   .c-content__inner {
     padding-top: 80px;
-  }
-}
-@media (max-width: 767px) {
-  .c-contentContainer {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 .fade-in {
@@ -265,6 +261,7 @@ ul {
 }
 .header__inner .header__container .header__logo {
   width: 140px;
+  transition: 1s all;
 }
 .header__inner .header__container .header__logo .header__logoLink {
   display: flex;
@@ -799,7 +796,7 @@ ul {
   font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
-  transition: 2s all;
+  transition: 1s all;
 }
 
 .works__btn:hover {
@@ -1290,62 +1287,62 @@ ul {
     margin: 0 auto 0 auto;
   }
 }
-.loop__content {
+.allWorks__inner {
   padding-top: 80px;
 }
 
-.loop__contentsWrapper {
+.allWorks__container {
   display: flex;
   justify-content: space-around;
 }
 
-.loop__contentsWrapper li {
+.allWorks__card {
   padding-bottom: 20px;
   width: 30%;
 }
 
-.loop__contentsWrapper li .post_thumbnail {
+.allWorks__thumbnail {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-.loop__contentsWrapper li .post_thumbnail img {
+.allWorks__thumbnail img {
   transition: 0.3s all;
 }
 
-.loop__contentsWrapper li .post_thumbnail img:hover {
-  transform: scale(1.05, 1.1);
+.allWorks__thumbnail img:hover {
+  transform: scale(1.05, 1.05);
 }
 
-.acf__container {
+.allWorks__body {
   padding-top: 20px;
   margin-left: 12px;
   margin-right: 12px;
   border-top: solid #333333 1px;
 }
 
-.acf__container .acf__text {
+.allWorks__text {
   font-weight: bold;
   word-break: break-all;
 }
 
-.news-pagination-wrapper {
+.allWorks__wrapPagination {
   margin-top: 40px;
   text-align: center;
 }
 
-.news-pagination-wrapper .pagination {
+.pagination {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
 }
 
-.news-pagination-wrapper .page-item {
+.page-item {
   margin: 0 5px;
 }
 
-.news-pagination-wrapper .page-link {
+.page-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1353,31 +1350,29 @@ ul {
   height: 30px;
   border-radius: 50%;
   background-color: #f0f0f0;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
 }
 
-.news-pagination-wrapper .page-item.active .page-link {
+.page-link:hover {
   background-color: #e6adb7;
   color: #ffffff;
 }
 
-.news-pagination-wrapper .page-link:hover {
+.page-item.active .page-link {
   background-color: #e6adb7;
   color: #ffffff;
 }
 
 @media (max-width: 767px) {
-  .loop__contentsWrapper {
+  .allWorks__container {
     flex-direction: column;
   }
 }
 @media (max-width: 767px) {
-  .loop__contentsWrapper li {
+  .allWorks__card {
     margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
     width: auto;
   }
 }
@@ -1400,20 +1395,23 @@ ul {
   }
 }
 .priceTable__container {
-  margin-top: 100px;
+  margin-top: 80px;
   border: 20px solid #4fc0ac;
   background-color: #ffffff;
-  padding-top: 100px;
 }
-.priceTable__container .priceTable__area {
+.priceTable__container .priceTable__inner {
+  margin-top: -80px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-.priceTable__container .priceTable__area .priceTable__wrap {
+.priceTable__container .priceTable__inner .priceTable--campaignColor {
+  color: red;
+}
+.priceTable__container .priceTable__inner .priceTable__wrap {
   padding-bottom: 80px;
 }
-.priceTable__container .priceTable__area .priceTable__wrap .priceTable__item {
+.priceTable__container .priceTable__inner .priceTable__wrap .priceTable__item {
   padding-top: 28px;
 }
 
@@ -1447,7 +1445,8 @@ ul {
   }
 }
 .contact__container {
-  margin: 100px 0 80px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
   background: #f9f9f9;
   border: solid 1px #333333;
 }

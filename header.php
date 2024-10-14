@@ -77,33 +77,33 @@
                 <div class="header__hamburger">
                     <nav class="header__hamburgerNav">
                         <ul class="header__hamburgerMenu">
-                            <li class="header__hamburgerItem border1 border-width1">
-                                <a href="<?php echo home_url('/'); ?>#main" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/'); ?>#main" class="header__hamburgerLink ">
                                     TOP
                                 </a>
                             </li>
-                            <li class="header__hamburgerItem border1 border-width1">
-                                <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink ">
                                     WORKS
                                 </a>
                             </li>
-                            <li class="header__hamburgerItem border1 border-width2">
-                                <a href="<?php echo home_url('/'); ?>#services" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/'); ?>#services" class="header__hamburgerLink ">
                                     SERVICES
                                 </a>
                             </li>
-                            <li class="header__hamburgerItem border1 border-width2">
-                                <a href="<?php echo home_url('/'); ?>#about" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/'); ?>#about" class="header__hamburgerLink ">
                                     ABOUT
                                 </a>
                             </li>
-                            <li class="header__hamburgerItem border1 border-width2">
-                                <a href="<?php echo home_url('/price'); ?>" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/price'); ?>" class="header__hamburgerLink ">
                                     PRICE
                                 </a>
                             </li>
-                            <li class="header__hamburgerItem border1 border-width2">
-                                <a href="<?php echo home_url('/contact'); ?>" class="header__hamburgerLink font1">
+                            <li class="header__hamburgerItem  ">
+                                <a href="<?php echo home_url('/contact'); ?>" class="header__hamburgerLink ">
                                     CONTACT
                                 </a>
                             </li>
