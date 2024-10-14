@@ -1002,19 +1002,19 @@ ul {
 // footer
 .footer {
   .footer__container {
-    .gnav {
-      .gnav__wrap--list {
+    .footer-listNav {
+      .footer-listMenu {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
         font-family: $font-family2;
         @media (max-width: 767px) {
-          li {
+          .footer-listItem {
             margin-bottom: 40px;
           }
         }
-        .gnav__link {
+        .footer-listLink {
           display: block;
           padding: 10px 20px;
           text-decoration: none;
@@ -1022,15 +1022,15 @@ ul {
           overflow: hidden;
           transition: all 0.2s;
         }
-        .gnav__link:hover {
+        .footer-listLink:hover {
           background-color: $ColorMain;
           color: #fff;
         }
-        .gnav__link:hover {
+        .footer-listLink:hover {
           transition-delay: 0.5s;
         }
-        .gnav__link::before,
-        .gnav__link::after {
+        .footer-listLink::before,
+        .footer-listLink::after {
           content: "";
           position: absolute;
           left: 0;
@@ -1039,33 +1039,33 @@ ul {
           background-color: $ColorMain;
           transition: all 0.5s;
         }
-        .gnav__link::before {
+        .footer-listLink::before {
           top: 0;
           transform: translateX(-100%);
         }
-        .gnav__link::after {
+        .footer-listLink::after {
           bottom: 0;
           transform: translateX(100%);
         }
-        .gnav__link:hover::before,
-        .gnav__link:hover::after {
+        .footer-listLink:hover::before,
+        .footer-listLink:hover::after {
           transform: translateX(0);
         }
       }
       @media (max-width: 767px) {
-        .gnav__wrap--list {
+        .footer-listMenu {
           flex-direction: column;
           height: auto;
         }
       }
     }
     @media (max-width: 767px) {
-      .gnav {
+      .footer-listNav {
         margin-top: 40px;
       }
     }
 
-    .footer__text--copyright {
+    .footer__textCopyright {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1363,12 +1363,12 @@ ul {
   }
 }
 
-.price__br--sp {
+.price__brSp {
   display: none;
 }
 
 @media (max-width: 767px) {
-  .price__br--sp {
+  .price__brSp {
     display: block;
   }
 }

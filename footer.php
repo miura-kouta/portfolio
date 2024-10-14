@@ -1,45 +1,42 @@
     <footer id="footer" class="footer">
-        <div class="outer__container--margin">
-            <div class="footer__container whole__container">
-                <nav class="gnav">
-                    <ul class="gnav__wrap--list">
-                        <li>
-                            <a href="<?php echo home_url('/'); ?>#main" class="gnav__link">
+            <div class="footer__container">
+                <nav class="footer-listNav">
+                    <ul class="footer-listMenu">
+                        <li class="footer-listItem">
+                            <a href="<?php echo home_url('/'); ?>#main" class="footer-listLink">
                                 TOP
                             </a>
                         </li>
-                        <li>
-                            <a href="<?php echo home_url('/allworks'); ?>" class="gnav__link">
+                        <li class="footer-listItem">
+                            <a href="<?php echo home_url('/allworks'); ?>" class="footer-listLink">
                                 WORKS
                             </a>
                         </li>
-                        <li>
-                            <a href="#services" class="gnav__link">    
+                        <li class="footer-listItem">
+                            <a href="#services" class="footer-listLink">    
                                 SERVICES
                             </a>
                         </li>
-                        <li>
-                            <a href="<?php echo home_url('/'); ?>#about" class="gnav__link">
+                        <li class="footer-listItem">
+                            <a href="<?php echo home_url('/'); ?>#about" class="footer-listLink">
                                 ABOUT
                             </a>
                         </li>
-                        <li>
-                            <a href="<?php echo home_url('/price'); ?>" class="gnav__link">
+                        <li class="footer-listItem">
+                            <a href="<?php echo home_url('/price'); ?>" class="footer-listLink">
                                 PRICE
                             </a>
                         </li>
-                        <li>
-                            <a href="<?php echo home_url('/contact'); ?>" class="gnav__link">
+                        <li class="footer-listItem">
+                            <a href="<?php echo home_url('/contact'); ?>" class="footer-listLink">
                                 CONTACT
                             </a>
                         </li>
                     </ul>
                 </nav>
-
-                <p class="footer__text--copyright">© Kota Miura All rights reserved.</p>
-
+                <p class="footer__textCopyright">© Kota Miura All rights reserved.</p>
             </div>
-        </div>
+            <!-- /.footer__container -->
     </footer>
     <!-- splide -->
     <?php if (is_front_page()) : ?>

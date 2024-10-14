@@ -15,7 +15,7 @@
                         <div class="priceTable__inner">
                             <div class="c-headingLv2">
                                 <h2 class="c-headingLv2__main priceTable--campaignColor">
-                                    サイトOPEN<br class="price__br--sp">記念価格
+                                    サイトOPEN<br class="price__brSp">記念価格
                                 </h2>
                             </div>
                             <!-- /.priceTable__title -->
