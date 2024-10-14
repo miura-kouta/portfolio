@@ -1,3 +1,33 @@
+// スクロールしたらheaderの背景が白くなる
+// window.addEventListener("scroll", function () {
+//   const headerInner = document.querySelector(".header__inner");
+//   if (window.scrollY > window.innerHeight) {
+//     // スクロール量がウィンドウズ画面の高さより下にいったら
+//     headerInner.classList.add("header__inner--scrollBgDown");
+//   } else {
+//     headerInner.classList.remove("header__inner--scrollBgDown");
+//   }
+// });
+
+// スクロールしたらheaderの背景が白くなる
+window.addEventListener("scroll", function () {
+  const headerInner = document.querySelector(".header__inner");
+
+  // スクロール量がウィンドウの高さより下に行ったら
+  if (window.scrollY > window.innerHeight) {
+    headerInner.classList.add("header__inner--scrollBgDown");
+  } else {
+    headerInner.classList.remove("header__inner--scrollBgDown");
+  }
+
+  //スクロール量がウィンドウの高さより上に戻ったら;
+  if (window.scrollY < window.innerHeight) {
+    headerInner.classList.add("header__inner--scrollBgUp");
+  } else {
+    headerInner.classList.remove("header__inner--scrollBgUp");
+  }
+});
+
 //ハンバーガ―メニュー
 const drawerMenu = document.querySelector(".header__hamburgerBox");
 const navi = document.querySelector(".header__hamburgerNav");
@@ -194,7 +224,6 @@ if (element) {
   });
 }
 
-
 //ローディングアニメーション
 class Main {
   constructor() {
@@ -225,8 +254,8 @@ class Main {
           // クラスを削除する処理
           const removeClasses = (delay) => {
             setTimeout(() => {
-              if (lodingContainer)
-                lodingContainer.classList.remove("loding__container");
+              // if (lodingContainer)
+              //   lodingContainer.classList.remove("loding__container");
               if (lodingContainer2)
                 lodingContainer2.classList.remove("loding__box");
               if (lodingContainer3)
@@ -244,8 +273,19 @@ class Main {
             }, delay);
           };
 
-          removeClasses(3000);
+          // クラスを追加する処理
+          const addClass2 = (delay) => {
+            setTimeout(() => {
+              if (lodingContainer)
+                lodingContainer.classList.add(
+                  "loding__container--disyplayNone"
+                );
+            }, delay);
+          };
+
           addClass(2000);
+          addClass2(3000);
+          removeClasses(3000);
         }
       };
 
