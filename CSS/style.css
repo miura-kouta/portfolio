@@ -1306,6 +1306,15 @@ ul {
 
 .loop__contentsWrapper li .post_thumbnail {
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.loop__contentsWrapper li .post_thumbnail img {
+  transition: 0.3s all;
+}
+
+.loop__contentsWrapper li .post_thumbnail img:hover {
+  transform: scale(1.05, 1.1);
 }
 
 .acf__container {
