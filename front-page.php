@@ -178,6 +178,7 @@
                         <h2 class="c-headingLv2__main">ABOUT</h2>
                         <p class="c-headingLv2__sub">私について</p>
                     </div>
+                    <!-- /.c-headingLv2 -->
                     <div class="about__media fade-in fade-in-up">
                         <figure class="about__imgWrap">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.jpg" alt="自分の顔のイメージ" width="400" height="240" decoding="async">
@@ -190,7 +191,9 @@
                                 ぜひ、お気軽にご相談ください。
                             </p>
                         </div>
+                        <!-- /.about__body -->
                     </div>
+                    <!-- /.about__media -->
                 </section>
                 <section id="inquiry" > 
                     <div class="inquiry__inner">

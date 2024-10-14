@@ -40,7 +40,6 @@
                     <nav class="header-listNav">
                         <ul class="header__listMenu">    
                             <li class="header__listItem">
-                                <!-- <a href="<?php echo home_url('/'); ?>#main" class="header__listLink"> -->
                                 <a href="<?php echo home_url('/'); ?>#main" class="header__listLink">
                                 TOP
                                 </a>

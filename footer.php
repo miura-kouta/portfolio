@@ -1,5 +1,5 @@
     <footer id="footer" class="footer">
-            <div class="footer__container">
+            <div class="footer__inner">
                 <nav class="footer-listNav">
                     <ul class="footer-listMenu">
                         <li class="footer-listItem">
@@ -35,8 +35,8 @@
                     </ul>
                 </nav>
                 <p class="footer__textCopyright">© Kota Miura All rights reserved.</p>
-            </div>
-            <!-- /.footer__container -->
+            </div> 
+            <!-- /.footer__inner -->
     </footer>
     <!-- splide -->
     <?php if (is_front_page()) : ?>
