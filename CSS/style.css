@@ -36,7 +36,7 @@ video {
 }
 
 a {
-  color: #000000;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background: #333333;
+  background-color: #333333;
 }
 
 .c-headingLv1__sub::after {
@@ -101,7 +101,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background: #333333;
+  background-color: #333333;
 }
 
 .c-headingLv2 {
@@ -133,7 +133,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background: #333333;
+  background-color: #333333;
 }
 
 .c-headingLv2__sub::after {
@@ -147,7 +147,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background: #333333;
+  background-color: #333333;
 }
 
 .c-headingLv3 {
@@ -254,7 +254,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .header__inner .header__container {
   display: flex;
@@ -300,7 +300,7 @@ ul {
   transition: all 0.2s;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
-  background: #e6adb7;
+  background-color: #e6adb7;
   color: #fff;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
@@ -313,7 +313,7 @@ ul {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #e6adb7;
+  background-color: #e6adb7;
   transition: all 0.5s;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink::before {
@@ -394,7 +394,7 @@ ul {
 .header__inner .header__container .header__hamburger .header__hamburgerBox .header__hamburgerLine {
   width: 30px;
   height: 2px;
-  background: #ffffff;
+  background-color: #ffffff;
   position: absolute;
   transition: 0.4s ease-in-out;
 }
@@ -409,20 +409,20 @@ ul {
 }
 @media (max-width: 767px) {
   .header__inner .header__container .header__hamburger .header__hamburgerBox .header__hamburgerLine {
-    background: #333333;
+    background-color: #333333;
   }
 }
 .header__inner .header__container .header__hamburger .header__hamburgerBox.active .header__hamburgerLine:nth-child(1) {
   top: 8px;
   left: 0px;
   transform: rotate(-45deg);
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .header__inner .header__container .header__hamburger .header__hamburgerBox.active .header__hamburgerLine:nth-child(2),
 .header__inner .header__container .header__hamburger .header__hamburgerBox.active .header__hamburgerLine:nth-child(3) {
   top: 8px;
   transform: rotate(45deg);
-  background: #ffffff;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .header__inner .header__container .header__hamburger {
@@ -502,7 +502,7 @@ ul {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 60px;
   font-size: 6rem;
   font-weight: bold;
@@ -566,7 +566,7 @@ ul {
   width: 0;
   height: 7px;
   z-index: 100;
-  background: #8cfae6;
+  background-color: #8cfae6;
 }
 .works__container .works__item .line2Active::before,
 .works__container .works__item .line2Active::after {
@@ -575,7 +575,7 @@ ul {
   width: 7px;
   height: 0;
   z-index: 100;
-  background: #8cfae6;
+  background-color: #8cfae6;
 }
 .works__container .works__item .lineActive::before {
   top: 0;
@@ -804,8 +804,8 @@ ul {
 .services__media {
   display: flex;
   margin-bottom: 80px;
-  border: 1px #000000 solid;
-  background: #ffffff;
+  border: 1px #333333 solid;
+  background-color: #ffffff;
 }
 .services__media .services__imgWrap--pc {
   margin: 2.5% 2.5% 2.5% 2.5%;
@@ -1038,7 +1038,7 @@ ul {
   transition: all 0.2s;
 }
 .footer .footer__container .gnav .gnav__wrap--list .gnav__link:hover {
-  background: #e6adb7;
+  background-color: #e6adb7;
   color: #fff;
 }
 .footer .footer__container .gnav .gnav__wrap--list .gnav__link:hover {
@@ -1051,7 +1051,7 @@ ul {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #e6adb7;
+  background-color: #e6adb7;
   transition: all 0.5s;
 }
 .footer .footer__container .gnav .gnav__wrap--list .gnav__link::before {
@@ -1095,7 +1095,7 @@ ul {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: #333333;
+  background-color: #333333;
   opacity: 0;
   visibility: hidden;
 }
@@ -1149,7 +1149,7 @@ ul {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background: #e6adb7;
+  background-color: #e6adb7;
   left: 15%;
   transform-origin: 50%;
   -webkit-animation: lodingCircle 0.5s alternate infinite ease;
@@ -1345,13 +1345,13 @@ ul {
 }
 
 .news-pagination-wrapper .page-item.active .page-link {
-  background-color: #ffc0cb;
-  color: white;
+  background-color: #e6adb7;
+  color: #ffffff;
 }
 
 .news-pagination-wrapper .page-link:hover {
   background-color: #e6adb7;
-  color: white;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -1388,7 +1388,7 @@ ul {
 .priceTable__container {
   margin-top: 100px;
   border: 20px solid #4fc0ac;
-  background: #ffffff;
+  background-color: #ffffff;
   padding-top: 100px;
 }
 .priceTable__container .priceTable__area {
@@ -1565,7 +1565,7 @@ ul {
   border-radius: 10px;
   background-color: #808080;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   text-align: center;
 }
@@ -1596,7 +1596,7 @@ ul {
   border-radius: 10px;
   background-color: #808080;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 .contact__container #wpcf7cpcnf .wpcf7cp-btns .wpcf7-form-control:hover {
