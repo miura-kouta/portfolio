@@ -10,7 +10,7 @@ $ColorLink: #1a73e8;
 $ColorRequired: red;
 $ColorCampaign: red;
 $ColorBlack: #333333;
-$ColorWhite: #ffffff;
+$ColorWhiteMain: #ffffff;
 $ColorWhiteSub: #f9f9f9;
 $ColorGrayMain: #808080;
 $ColorGraySub: #bebebe;
@@ -765,12 +765,17 @@ ul {
   position: relative;
   margin: 40px auto 0 auto;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $ColorBlack;
   width: 140px;
   max-width: 90%;
   font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
+  transition: 2s all;
+}
+
+.works__btn:hover {
+  transform: rotateY(360deg);
 }
 
 // services
