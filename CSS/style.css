@@ -241,7 +241,15 @@ ul {
 }
 
 .header__inner--scrollBgDown {
-  background-color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+.header__logo--scrollBgDown {
+  filter: brightness(0) invert(1);
+}
+
+.header__listLink--scrollBgDown {
+  color: #f9f9f9;
 }
 
 .header__inner {
@@ -298,12 +306,10 @@ ul {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  transition: all 0.2s;
   transition: 1s all;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   background-color: #e6adb7;
-  color: #ffffff;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   transition-delay: 0.5s;
@@ -387,6 +393,7 @@ ul {
   width: 30px;
   height: 23px;
   position: absolute;
+  top: 20px;
   right: 28px;
   z-index: 100;
   cursor: pointer;

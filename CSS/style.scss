@@ -9,7 +9,8 @@ $ColorSub: #8cfae6;
 $ColorLink: #1a73e8;
 $ColorRequired: red;
 $ColorCampaign: red;
-$ColorBlack: #333333;
+$ColorBlackMain: #333333;
+$ColorBlackSub: rgba(51, 51, 51, 0.9);
 $ColorWhiteMain: #ffffff;
 $ColorWhiteSub: #f9f9f9;
 $ColorGrayMain: #808080;
@@ -27,7 +28,7 @@ body {
   font-family: $font-family1;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  color: $ColorBlack;
+  color: $ColorBlackMain;
   overflow-x: hidden;
 }
 
@@ -60,7 +61,7 @@ video {
 }
 
 a {
-  color: $ColorBlack;
+  color: $ColorBlackMain;
   text-decoration: none;
 }
 
@@ -113,7 +114,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background-color: $ColorBlack;
+  background-color: $ColorBlackMain;
 }
 
 .c-headingLv1__sub::after {
@@ -127,7 +128,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background-color: $ColorBlack;
+  background-color: $ColorBlackMain;
 }
 
 .c-headingLv2 {
@@ -159,7 +160,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background-color: $ColorBlack;
+  background-color: $ColorBlackMain;
 }
 .c-headingLv2__sub::after {
   content: "";
@@ -172,7 +173,7 @@ ul {
   z-index: 1;
   height: 1px;
   width: 3rem;
-  background-color: $ColorBlack;
+  background-color: $ColorBlackMain;
 }
 
 .c-headingLv3 {
@@ -271,7 +272,16 @@ ul {
 
 // header
 .header__inner--scrollBgDown {
-  background-color: $ColorWhiteMain;
+  background-color: $ColorBlackSub;
+}
+
+.header__logo--scrollBgDown {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.header__listLink--scrollBgDown {
+  color: $ColorWhiteSub;
 }
 
 .header__inner {
@@ -295,7 +305,6 @@ ul {
 
     .header__logo {
       width: 140px;
-
       transition: 1s all;
       .header__logoLink {
         display: flex;
@@ -330,13 +339,10 @@ ul {
           text-decoration: none;
           position: relative;
           overflow: hidden;
-          transition: all 0.2s;
-
           transition: 1s all;
         }
         .header__listLink:hover {
           background-color: $ColorMain;
-          color: $ColorWhiteMain;
         }
         .header__listLink:hover {
           transition-delay: 0.5s;
@@ -404,7 +410,7 @@ ul {
         z-index: 99;
         text-align: center;
         transition: 0.8s ease;
-        background-color: rgba(51, 51, 51, 0.9);
+        background-color: $ColorBlackSub;
         padding-top: 6rem;
 
         .header__hamburgerItem {
@@ -449,7 +455,7 @@ ul {
         }
         @media (max-width: 767px) {
           .header__hamburgerLine {
-            background-color: $ColorBlack;
+            background-color: $ColorBlackMain;
           }
         }
       }
@@ -773,7 +779,7 @@ ul {
   position: relative;
   margin: 40px auto 0 auto;
   border: none;
-  border-bottom: 1px solid $ColorBlack;
+  border-bottom: 1px solid $ColorBlackMain;
   width: 140px;
   max-width: 90%;
   font-size: 2.4rem;
@@ -791,7 +797,7 @@ ul {
 .services__media {
   display: flex;
   margin-bottom: 80px;
-  border: 1px $ColorBlack solid;
+  border: 1px $ColorBlackMain solid;
   background-color: $ColorWhiteMain;
   .services__imgWrap--pc {
     margin: 2.5% 2.5% 2.5% 2.5%;
@@ -806,7 +812,7 @@ ul {
     width: 60%;
     .services__titleMedia {
       margin: 40px 0 40px 0;
-      border-bottom: 1px solid $ColorBlack;
+      border-bottom: 1px solid $ColorBlackMain;
       text-align: left;
     }
     .services__imgWrap--sp {
@@ -958,7 +964,7 @@ ul {
   }
   .inquiry__itemBtn:hover {
     transition: 0.6s all;
-    background: $ColorBlack;
+    background: $ColorBlackMain;
     border-radius: 50px;
 
     .inquiry__textBtn {
@@ -980,7 +986,7 @@ ul {
   bottom: 0;
   border-radius: 45px;
   border: 6px solid transparent;
-  background: $ColorBlack border-box border-box;
+  background: $ColorBlackMain border-box border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0) border-box;
   -webkit-mask-composite: destination-out;
@@ -1089,7 +1095,7 @@ ul {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-color: $ColorBlack;
+  background-color: $ColorBlackMain;
   opacity: 0;
   visibility: hidden;
 }
@@ -1266,7 +1272,7 @@ ul {
   padding-top: 20px;
   margin-left: 12px;
   margin-right: 12px;
-  border-top: solid $ColorBlack 1px;
+  border-top: solid $ColorBlackMain 1px;
 }
 
 .allWorks__text {
@@ -1298,7 +1304,7 @@ ul {
   height: 30px;
   border-radius: 50%;
   background-color: #f0f0f0;
-  color: $ColorBlack;
+  color: $ColorBlackMain;
   text-decoration: none;
   font-weight: bold;
   transition: 0.2s all;
@@ -1407,7 +1413,7 @@ ul {
   margin-top: 80px;
   margin-bottom: 80px;
   background: $ColorWhiteSub;
-  border: solid 1px $ColorBlack;
+  border: solid 1px $ColorBlackMain;
 
   .contact__boxProgress {
     margin: 0 auto;
@@ -1467,7 +1473,7 @@ ul {
             align-items: center;
 
             .contact__item--form {
-              border: 1px solid $ColorBlack;
+              border: 1px solid $ColorBlackMain;
               background: $ColorWhiteMain;
               width: 100%;
               padding: 4px;
