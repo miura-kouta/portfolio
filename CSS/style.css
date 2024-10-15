@@ -242,31 +242,8 @@ ul {
 
 .header__inner--scrollBgDown {
   background-color: #ffffff;
-  transition: background-color 1s;
 }
 
-.header__inner--scrollBgUp {
-  background-color: #ffffff;
-  transition: scrollBgUpAnime 1s;
-}
-
-@-webkit-keyframes scrollBgUpAnime {
-  0% {
-    background-color: #ffffff;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-@keyframes scrollBgUpAnime {
-  0% {
-    background-color: #ffffff;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
 .header__inner {
   position: fixed;
   top: 0;
@@ -277,13 +254,14 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  transition: background-color 1s;
 }
 .header__inner .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1720px;
-  height: 80px;
+  height: 56px;
 }
 .header__inner .header__container .header__logo {
   width: 140px;
@@ -299,7 +277,7 @@ ul {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 80px;
+    height: 56px;
   }
 }
 @media (max-width: 767px) {
@@ -321,10 +299,11 @@ ul {
   position: relative;
   overflow: hidden;
   transition: all 0.2s;
+  transition: 1s all;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   background-color: #e6adb7;
-  color: #fff;
+  color: #ffffff;
 }
 .header__inner .header__container .header__listMenu .header__listItem .header__listLink:hover {
   transition-delay: 0.5s;
@@ -363,7 +342,7 @@ ul {
   .header__inner .header__container .header__listMenu {
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 56px;
   }
 }
 @media (max-width: 767px) {
@@ -382,7 +361,7 @@ ul {
 .header__inner .header__container .header__hamburger .header__hamburgerNav {
   width: 100%;
   height: 100vh;
-  color: #fff;
+  color: #ffffff;
   position: fixed;
   top: 0;
   left: -100%;
@@ -408,7 +387,6 @@ ul {
   width: 30px;
   height: 23px;
   position: absolute;
-  top: 32px;
   right: 28px;
   z-index: 100;
   cursor: pointer;
@@ -455,7 +433,7 @@ ul {
 @media (max-width: 1280px) {
   .header__inner .header__container {
     display: block;
-    height: 160px;
+    height: 112px;
   }
 }
 @media (max-width: 767px) {
@@ -463,7 +441,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 56px;
   }
 }
 
@@ -1068,7 +1046,7 @@ ul {
 }
 .footer-listMenu .footer-listLink:hover {
   background-color: #e6adb7;
-  color: #fff;
+  color: #ffffff;
 }
 .footer-listMenu .footer-listLink:hover {
   transition-delay: 0.5s;
@@ -1297,7 +1275,7 @@ ul {
   font-family: "Lato";
   font-size: 20px;
   letter-spacing: 12px;
-  color: #fff;
+  color: #ffffff;
   left: 15%;
 }
 
@@ -1525,7 +1503,7 @@ ul {
 }
 .contact__container .contact__containerForm .wpcf7-form .contact__tr--form label .contact__th--form .required {
   font-size: 0.8em;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   padding: 0.3em 0.3em 0.2em;
   margin-left: 8px;
@@ -1571,7 +1549,7 @@ ul {
 }
 .contact__container .contact__containerForm table tr th .required {
   font-size: 0.8em;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   padding: 0.3em 0.3em 0.2em;
   background: red;

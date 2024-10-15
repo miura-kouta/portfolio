@@ -1,32 +1,14 @@
 // スクロールしたらheaderの背景が白くなる
-// window.addEventListener("scroll", function () {
-//   const headerInner = document.querySelector(".header__inner");
-//   if (window.scrollY > window.innerHeight) {
-//     // スクロール量がウィンドウズ画面の高さより下にいったら
-//     headerInner.classList.add("header__inner--scrollBgDown");
-//   } else {
-//     headerInner.classList.remove("header__inner--scrollBgDown");
-//   }
-// });
-
-// スクロールしたらheaderの背景が白くなる
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header__inner");
-
-  // スクロール量がウィンドウの高さより下に行ったら
   if (window.scrollY > window.innerHeight) {
+    // スクロール量がウィンドウズ画面の高さより下にいったら
     headerInner.classList.add("header__inner--scrollBgDown");
   } else {
     headerInner.classList.remove("header__inner--scrollBgDown");
   }
-
-  //スクロール量がウィンドウの高さより上に戻ったら;
-  if (window.scrollY < window.innerHeight) {
-    headerInner.classList.add("header__inner--scrollBgUp");
-  } else {
-    headerInner.classList.remove("header__inner--scrollBgUp");
-  }
 });
+
 
 //ハンバーガ―メニュー
 const drawerMenu = document.querySelector(".header__hamburgerBox");

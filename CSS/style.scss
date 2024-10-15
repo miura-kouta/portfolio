@@ -272,21 +272,6 @@ ul {
 // header
 .header__inner--scrollBgDown {
   background-color: $ColorWhiteMain;
-  transition: background-color 1s;
-}
-
-.header__inner--scrollBgUp {
-  background-color: $ColorWhiteMain;
-  transition: scrollBgUpAnime 1s;
-}
-
-@keyframes scrollBgUpAnime {
-  0% {
-    background-color: $ColorWhiteMain;
-  }
-  100% {
-    background-color: transparent;
-  }
 }
 
 .header__inner {
@@ -300,12 +285,13 @@ ul {
   margin-right: auto;
   width: 100%;
 
+  transition: background-color 1s;
   .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1720px;
-    height: 80px;
+    height: 56px;
 
     .header__logo {
       width: 140px;
@@ -323,7 +309,7 @@ ul {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        height: 80px;
+        height: 56px;
       }
     }
     @media (max-width: 767px) {
@@ -334,8 +320,10 @@ ul {
     .header__listMenu {
       display: flex;
       font-family: $font-family2;
+
       .header__listItem {
         padding-right: 40px;
+
         .header__listLink {
           display: block;
           padding: 10px 20px;
@@ -343,10 +331,12 @@ ul {
           position: relative;
           overflow: hidden;
           transition: all 0.2s;
+
+          transition: 1s all;
         }
         .header__listLink:hover {
           background-color: $ColorMain;
-          color: #fff;
+          color: $ColorWhiteMain;
         }
         .header__listLink:hover {
           transition-delay: 0.5s;
@@ -387,7 +377,7 @@ ul {
       .header__listMenu {
         justify-content: space-around;
         align-items: center;
-        height: 80px;
+        height: 56px;
       }
     }
     @media (max-width: 767px) {
@@ -407,7 +397,7 @@ ul {
       .header__hamburgerNav {
         width: 100%;
         height: 100vh;
-        color: #fff;
+        color: $ColorWhiteMain;
         position: fixed;
         top: 0;
         left: -100%;
@@ -435,7 +425,7 @@ ul {
         width: 30px;
         height: 23px;
         position: absolute;
-        top: 32px;
+        top: 20px;
         right: 28px;
         z-index: 100;
         cursor: pointer;
@@ -485,7 +475,7 @@ ul {
   @media (max-width: 1280px) {
     .header__container {
       display: block;
-      height: 160px;
+      height: 112px;
     }
   }
   @media (max-width: 767px) {
@@ -493,7 +483,7 @@ ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 80px;
+      height: 56px;
     }
   }
 }
@@ -1040,7 +1030,7 @@ ul {
   }
   .footer-listLink:hover {
     background-color: $ColorMain;
-    color: #fff;
+    color: $ColorWhiteMain;
   }
   .footer-listLink:hover {
     transition-delay: 0.5s;
@@ -1220,7 +1210,7 @@ ul {
   font-family: "Lato";
   font-size: 20px;
   letter-spacing: 12px;
-  color: #fff;
+  color: $ColorWhiteMain;
   left: 15%;
 }
 
@@ -1463,7 +1453,7 @@ ul {
 
             .required {
               font-size: 0.8em;
-              color: #fff;
+              color: $ColorWhiteMain;
               display: inline-block;
               padding: 0.3em 0.3em 0.2em;
               margin-left: 8px;
@@ -1513,7 +1503,7 @@ ul {
 
           .required {
             font-size: 0.8em;
-            color: #fff;
+            color: $ColorWhiteMain;
             display: inline-block;
             padding: 0.3em 0.3em 0.2em;
             background: $ColorRequired;
