@@ -1412,36 +1412,47 @@ ul {
     width: 40%;
   }
 }
-.priceTable__container {
+.price__tableInner {
+  border-collapse: collapse;
   margin-top: 80px;
-  border: 20px solid #4fc0ac;
-  background-color: #ffffff;
-}
-.priceTable__container .priceTable__inner {
-  margin-top: -80px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
-.priceTable__container .priceTable__inner .priceTable--campaignColor {
-  color: red;
+.price__tableInner .price__table--border {
+  border: 1px solid #333333;
 }
-.priceTable__container .priceTable__inner .priceTable__wrap {
-  padding-bottom: 80px;
+.price__tableInner .price__tableLeft--widthColumn {
+  width: 25%;
+  min-width: 240px;
 }
-.priceTable__container .priceTable__inner .priceTable__wrap .priceTable__item {
-  padding-top: 28px;
+.price__tableInner .price__tableRight--widthColumn {
+  width: 75%;
+}
+.price__tableInner .price__tableRow {
+  height: 80px;
+}
+.price__tableInner .price__tableHeaders .price__tableHeader {
+  padding: 12px;
+  background-color: #1a63a7;
+  text-align: center;
+  vertical-align: middle;
+  color: #f9f9f9;
+}
+.price__tableInner .price__tableBody .price__tableBodyHeader {
+  padding: 12px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+}
+.price__tableInner .price__tableBody .price__tableBodyText {
+  padding: 12px;
+  background-color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.price__brSp {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .price__brSp {
-    display: block;
-  }
-}
 /* page-contact.php ----------------------------------------------*/
 .contact__imgWrap {
   margin-left: auto;
