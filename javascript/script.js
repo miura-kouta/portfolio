@@ -13,6 +13,8 @@ window.addEventListener("scroll", function () {
 
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.add("header__listLink--scrollBgDown");
+    }
+    for (let i = 0; i < headerHamburgerLine.length; i++) {
       headerHamburgerLine[i].classList.add("header__logo--scrollBgDown");
     }
   } else {
@@ -22,6 +24,8 @@ window.addEventListener("scroll", function () {
 
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.remove("header__listLink--scrollBgDown");
+    }
+    for (let i = 0; i < headerHamburgerLine.length; i++) {
       headerHamburgerLine[i].classList.remove("header__logo--scrollBgDown");
     }
   }

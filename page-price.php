@@ -14,7 +14,7 @@
                             <tr class="price__tableRow">
                                 <th class="price__tableHeader price__table--border price__tableLeft--widthColumn price__tableEmpty"></th>
                                 <th class="price__tableHeader price__table--border price__tableRight--widthColumn">
-                                    ホームページ作成費用(LP or TOPページ)
+                                    ホームページ作成費用<br class="price__brSp">（LP or TOPページ）
                                 </th>
                             </tr>
                     </thead>
@@ -66,6 +66,7 @@
                             ●当ホームページに掲載している費用はあくまでも目安となります。実際の費用は、お客様のご依頼内容やご要望に応じて変動する可能性がございます。詳細な見積もりについては、お気軽にお問い合わせください。
                         </p>
                     </div>
+                    <!-- /.price__cautionWrap -->
                     <div class="price__cautionWrap">
                         <h2 class="price__cautionTitle c-headingLv4">
                             ※【修正について】
@@ -79,8 +80,9 @@
                             は追加料金が発生する場合がございますので、予めご了承ください。
                         </p>
                     </div>
+                    <!-- /.price__cautionWrap -->
                 </div>
-
+                <!-- /.price__cautionContainer -->
 
             </section>
             <section id="inquiry" >    
