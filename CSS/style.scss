@@ -1007,11 +1007,13 @@ ul {
 @media (max-width: 767px) {
   .inquiry__linkBtn {
     .inquiry__itemBtn {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
     }
   }
   .inquiry__itemBtn ::before {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 }
 
@@ -1221,7 +1223,7 @@ ul {
   left: 15%;
 }
 
-/* allWorks.php ----------------------------------------------*/
+/* page-allWorks.php ----------------------------------------------*/
 
 .allWorks__imgWrap {
   margin-left: auto;
@@ -1238,6 +1240,7 @@ ul {
 @media (max-width: 767px) {
   .allWorks__imgWrap {
     width: 40%;
+    min-width: 160px;
     margin: 0 auto 0 auto;
   }
 }
@@ -1334,7 +1337,7 @@ ul {
   }
 }
 
-/* priceTable.html ----------------------------------------------*/
+/* page-price.php ----------------------------------------------*/
 
 .price__imgWrap {
   margin-left: auto;
@@ -1352,6 +1355,7 @@ ul {
   .price__imgWrap {
     margin: 0 auto 0 auto;
     width: 40%;
+    min-width: 160px;
   }
 }
 
@@ -1370,9 +1374,20 @@ ul {
     width: 25%;
     min-width: 240px;
   }
+  @media (max-width: 767px) {
+    .price__tableLeft--widthColumn {
+      width: 100%;
+      min-width: 240px;
+    }
+  }
 
   .price__tableRight--widthColumn {
     width: 75%;
+  }
+  @media (max-width: 767px) {
+    .price__tableRight--widthColumn {
+      width: 100%;
+    }
   }
 
   .price__tableRow {
@@ -1387,6 +1402,19 @@ ul {
       vertical-align: middle;
       color: $ColorWhiteSub;
     }
+    @media (max-width: 767px) {
+      .price__tableHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+      }
+    }
+    @media (max-width: 767px) {
+      .price__tableEmpty {
+        display: none;
+      }
+    }
   }
   .price__tableBody {
     .price__tableBodyHeader {
@@ -1395,6 +1423,15 @@ ul {
       text-align: center;
       vertical-align: middle;
     }
+    @media (max-width: 767px) {
+      .price__tableBodyHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+      }
+    }
+
     .price__tableBodyText {
       padding: 12px;
       background-color: $ColorWhiteMain;
@@ -1402,6 +1439,21 @@ ul {
       text-align: center;
       vertical-align: middle;
     }
+  }
+  @media (max-width: 767px) {
+    .price__tableHeader,
+    .price__tableBodyHeader,
+    .price__tableBodyText {
+      display: block;
+    }
+  }
+}
+
+.price__cautionContainer {
+  padding-top: 20px;
+  .price__cautionTitle {
+    padding-top: 20px;
+    text-align: left;
   }
 }
 
@@ -1415,6 +1467,12 @@ ul {
 @media (max-width: 1280px) {
   .contact__imgWrap {
     width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .contact__imgWrap {
+    width: 40%;
+    min-width: 160px;
   }
 }
 

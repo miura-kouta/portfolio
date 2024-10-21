@@ -12,7 +12,7 @@
                 <table class="price__tableInner">
                     <thead class="price__tableHeaders">
                             <tr class="price__tableRow">
-                                <th class="price__tableHeader price__table--border price__tableLeft--widthColumn"></th>
+                                <th class="price__tableHeader price__table--border price__tableLeft--widthColumn price__tableEmpty"></th>
                                 <th class="price__tableHeader price__table--border price__tableRight--widthColumn">
                                     ホームページ作成費用(LP or TOPページ)
                                 </th>
@@ -40,7 +40,7 @@
                 <table class="price__tableInner">
                     <thead class="price__tableHeaders">
                             <tr class="price__tableRow">
-                                <th class="price__tableHeader price__table--border price__tableLeft--widthColumn"></th>
+                                <th class="price__tableHeader price__table--border price__tableLeft--widthColumn price__tableEmpty"></th>
                                 <th class="price__tableHeader price__table--border price__tableRight--widthColumn">
                                     オプション費用
                                 </th>
@@ -59,15 +59,15 @@
                 </table>
                 <div class="price__cautionContainer">
                     <div class="price__cautionWrap">
-                        <h2 class="price__cautionTitle">
+                        <h4 class="price__cautionTitle c-headingLv4">
                             ※【費用について】
-                        </h2>
+                        </h4>
                         <p class="price__cautionText">
                             ●当ホームページに掲載している費用はあくまでも目安となります。実際の費用は、お客様のご依頼内容やご要望に応じて変動する可能性がございます。詳細な見積もりについては、お気軽にお問い合わせください。
                         </p>
                     </div>
                     <div class="price__cautionWrap">
-                        <h2 class="price__cautionTitle">
+                        <h2 class="price__cautionTitle c-headingLv4">
                             ※【修正について】
                         </h2>
                         <p class="price__cautionText">
@@ -76,7 +76,7 @@
                             ●検収後（納品完了後）の修正対応について
                             ・1ヶ月以内に限り、3回まで無料で対応いたします。1ヶ月を過ぎた修正や4回目以降の修正に関しては、別途料金が発生いたしますので、予めご了承ください。<br>
                             ●お客様のご要望による修正（デザインや仕様変更など）
-                            ・追加料金が発生する場合がございますので、予めご了承ください。
+                            は追加料金が発生する場合がございますので、予めご了承ください。
                         </p>
                     </div>
                 </div>
