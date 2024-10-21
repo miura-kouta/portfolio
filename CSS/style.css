@@ -110,6 +110,11 @@ ul {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .c-headingLv2 {
+    padding-top: 80px;
+  }
+}
 .c-headingLv2__main {
   font-size: 4rem;
   font-weight: bold;
@@ -180,8 +185,8 @@ ul {
 
 @media (max-width: 767px) {
   .c-contentContainer {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .c-content__inner {
@@ -800,7 +805,9 @@ ul {
 }
 .works__btn {
   position: relative;
-  margin: 40px auto 0 auto;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   border-bottom: 1px solid #333333;
   width: 140px;
@@ -809,6 +816,7 @@ ul {
   font-weight: bold;
   text-align: center;
   transition: 1s all;
+  white-space: nowrap;
 }
 
 .works__btn:hover {
@@ -977,7 +985,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px auto 0 auto;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 100px;
   border-radius: 45px;
@@ -985,12 +995,21 @@ ul {
   font-size: 3.2rem;
   font-weight: bold;
 }
-.inquiry__linkBtn .inquiry__itemBtn:hover {
+@media (max-width: 767px) {
+  .inquiry__linkBtn .inquiry__itemBtn {
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+
+.inquiry__itemBtn:hover {
   transition: 0.6s all;
   background: #333333;
   border-radius: 50px;
 }
-.inquiry__linkBtn .inquiry__itemBtn:hover .inquiry__textBtn {
+.inquiry__itemBtn:hover .inquiry__textBtn {
   display: inline-block;
   background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%);
   background: -webkit-linear-gradient(0deg, #8cfae6 0%, #ffc0cb 100%);
@@ -1019,20 +1038,18 @@ ul {
   transition: 0.6s all;
 }
 
+@media (max-width: 767px) {
+  .inquiry__itemBtn ::before {
+    border: 3px solid transparent;
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+  }
+}
 .inquiry__itemBtn :hover::before {
   background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%) border-box border-box;
 }
 
-@media (max-width: 767px) {
-  .inquiry__linkBtn .inquiry__itemBtn {
-    width: 100%;
-    max-width: 300px;
-  }
-  .inquiry__itemBtn ::before {
-    width: 100%;
-    max-width: 300px;
-  }
-}
 .footer-listMenu {
   display: flex;
   justify-content: space-around;

@@ -1,23 +1,28 @@
 // スクロールしたらheaderの背景が白くなる
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header__inner");
-
   const headerLogo = document.querySelector(".header__logo");
-
+  const headerHamburgerLine = document.querySelectorAll(
+    ".header__hamburgerLine"
+  );
   const headerlistLink = document.querySelectorAll(".header__listLink");
   if (window.scrollY > window.innerHeight) {
     // スクロール量がウィンドウズ画面の高さより下にいったら
     headerInner.classList.add("header__inner--scrollBgDown");
     headerLogo.classList.add("header__logo--scrollBgDown");
+
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.add("header__listLink--scrollBgDown");
+      headerHamburgerLine[i].classList.add("header__logo--scrollBgDown");
     }
   } else {
     // スクロール量がウィンドウズ画面の高さより上にいったら
     headerInner.classList.remove("header__inner--scrollBgDown");
     headerLogo.classList.remove("header__logo--scrollBgDown");
+
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.remove("header__listLink--scrollBgDown");
+      headerHamburgerLine[i].classList.remove("header__logo--scrollBgDown");
     }
   }
 });
