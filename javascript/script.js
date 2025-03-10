@@ -8,25 +8,26 @@ window.addEventListener("scroll", function () {
   const headerlistLink = document.querySelectorAll(".header__listLink");
   if (window.scrollY > window.innerHeight) {
     // スクロール量がウィンドウズ画面の高さより下にいったら
-    headerInner.classList.add("header__inner--scrollBgDown");
-    headerLogo.classList.add("header__logo--scrollBgDown");
+    headerInner.classList.add("header__scrollBg");
+    headerLogo.classList.add("header__scrollLogo");
 
     for (let i = 0; i < headerlistLink.length; i++) {
-      headerlistLink[i].classList.add("header__listLink--scrollBgDown");
+      headerlistLink[i].classList.add("header__scrollFont");
+
     }
     for (let i = 0; i < headerHamburgerLine.length; i++) {
-      headerHamburgerLine[i].classList.add("header__logo--scrollBgDown");
+      headerHamburgerLine[i].classList.add("header__scrollLogo");
     }
   } else {
     // スクロール量がウィンドウズ画面の高さより上にいったら
-    headerInner.classList.remove("header__inner--scrollBgDown");
-    headerLogo.classList.remove("header__logo--scrollBgDown");
+    headerInner.classList.remove("header__scrollBg");
+    headerLogo.classList.remove("header__scrollLogo");
 
     for (let i = 0; i < headerlistLink.length; i++) {
-      headerlistLink[i].classList.remove("header__listLink--scrollBgDown");
+      headerlistLink[i].classList.remove("header__scrollFont");
     }
     for (let i = 0; i < headerHamburgerLine.length; i++) {
-      headerHamburgerLine[i].classList.remove("header__logo--scrollBgDown");
+      headerHamburgerLine[i].classList.remove("header__scrollLogo");
     }
   }
 });
@@ -70,9 +71,16 @@ function TextTypingAnime(entries, observer) {
         setTimeout(function () {
           span.style.display = "inline";
           span.style.opacity = 1;
-        }, 100 * i);
+        }, 30 * i);
       });
-      observer.unobserve(textTyping); // アニメーション後に監視を停止
+      observer.unobserve(textTyping);
+
+      if (!textTyping.classList.contains('height-set')) {
+        var textHeight = textTyping.scrollHeight;
+        textTyping.style.height = textHeight + "px";
+        textTyping.classList.add('height-set');
+      }
+
     }
   });
 }
@@ -107,6 +115,22 @@ window.onload = function () {
   });
 };
 
+
+
+//くるりと回転
+let kururi = document.querySelectorAll(".topWorks__item");
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < kururi.length; i++) {
+    const rect = kururi[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 200) {
+      kururi[i].classList.add("rotate-scale-down-ver");
+    }
+  }
+});
+
 //フェードイン
 let fadeInTarget = document.querySelectorAll(".fade-in");
 window.addEventListener("scroll", () => {
@@ -136,58 +160,6 @@ function checkFadeIn() {
 
 window.addEventListener("scroll", checkFadeIn);
 
-//枠線がスーっと伸びる
-let lineActiveTarget = document.querySelectorAll(".works__extend");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < lineActiveTarget.length; i++) {
-    const rect = lineActiveTarget[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight - 200) {
-      lineActiveTarget[i].classList.add("lineActive");
-    }
-  }
-});
-
-let lineActiveTarget2 = document.querySelectorAll(".works__extend2");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < lineActiveTarget2.length; i++) {
-    const rect = lineActiveTarget2[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight - 200) {
-      lineActiveTarget2[i].classList.add("line2Active");
-    }
-  }
-});
-
-let lineActiveTarget3 = document.querySelectorAll(".works__extend3");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < lineActiveTarget3.length; i++) {
-    const rect = lineActiveTarget3[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight - 200) {
-      lineActiveTarget3[i].classList.add("line3Active");
-    }
-  }
-});
-
-let lineActiveTarget4 = document.querySelectorAll(".works__extend4");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < lineActiveTarget4.length; i++) {
-    const rect = lineActiveTarget4[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight - 200) {
-      lineActiveTarget4[i].classList.add("line4Active");
-    }
-  }
-});
 
 // お問い合わせページのプログレス画像変更
 let contactId = "contact-exclusive";
@@ -226,6 +198,27 @@ if (element) {
     }, 2000); // 2秒遅延させる
   });
 }
+
+// 現在のページに基づいて、アクティブなリンクを設定する
+
+  // 現在のページのURLを取得
+        const currentPage = window.location.pathname.split("/").pop();
+        
+        // すべてのナビリンクを取得
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        // 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+
+
+
+
 
 //ローディングアニメーション
 class Main {
