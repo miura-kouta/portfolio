@@ -1,13 +1,14 @@
-// スクロールしたらheaderの背景が白くなる
+// スクロールしたらheaderの背景が黒くなる
 window.addEventListener("scroll", function () {
-  const headerInner = document.querySelector(".header__inner");
+  const headerInner = document.querySelector(".header");
+
   const headerLogo = document.querySelector(".header__logo");
   const headerHamburgerLine = document.querySelectorAll(
     ".header__hamburgerLine"
   );
   const headerlistLink = document.querySelectorAll(".header__listLink");
-  if (window.scrollY > window.innerHeight) {
-    // スクロール量がウィンドウズ画面の高さより下にいったら
+  if (window.scrollY > 0) {
+
     headerInner.classList.add("header__scrollBg");
     headerLogo.classList.add("header__scrollLogo");
 
@@ -19,7 +20,6 @@ window.addEventListener("scroll", function () {
       headerHamburgerLine[i].classList.add("header__scrollLogo");
     }
   } else {
-    // スクロール量がウィンドウズ画面の高さより上にいったら
     headerInner.classList.remove("header__scrollBg");
     headerLogo.classList.remove("header__scrollLogo");
 

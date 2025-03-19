@@ -1,16 +1,16 @@
 <?php get_header(); ?>
-<main class="c-contentInner">
-    <div class="c-contentContainer">
+<main class="u-contentInner">
+    <div class="u-contentContainer">
         <section id="allWorks" class="allWorks">
-            <div class="c-headingLv1Wrap">
-                <h1 class="c-headingLv1__en">WORKS</h1>
-                <p class="c-headingLv1__ja">制作実績一覧</p>
+            <div class="u-headingLv1Wrap">
+                <h1 class="u-headingLv1__en">WORKS</h1>
+                <p class="u-headingLv1__ja">制作実績一覧</p>
                 <div class="allWorks__imgWrap ">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/allWorks1.webp" alt="制作実績のサイトを紹介する人達" width="400" height="200" decoding="async">
                 </div>
                 <!-- /.allWorks__imgWrap -->
             </div>
-            <!-- /.c-headingLv1 -->
+            <!-- /.u-headingLv1 -->
 
             <div class="allWorks__inner">
                 <?php
@@ -112,11 +112,11 @@
 
         <section id="inquiry">
             <div class="inquiry__inner">
-                <div class="c-headingLv2">
-                    <h2 class="c-headingLv2__main">CONTACT</h2>
-                    <p class="c-headingLv2__sub">お問い合わせ</p>
+                <div class="u-headingLv2__wrap">
+                    <h2 class="u-headingLv2__en">CONTACT</h2>
+                    <p class="u-headingLv2__ja">お問い合わせ</p>
                 </div>
-                <!-- /.c-headingLv2 -->
+                <!-- /.u-headingLv2 -->
 
 
                 <div class="inquiry__wrap fade-in">
@@ -138,6 +138,6 @@
             <!-- /.inquiry__inner" -->
         </section>
     </div>
-    <!-- /.c-contentContainer -->
+    <!-- /.u-contentContainer -->
 </main>
 <?php get_footer(); ?>

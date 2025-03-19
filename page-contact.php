@@ -1,16 +1,16 @@
 <?php get_header(); ?>
-<main class="c-contentInner">
-    <div class="c-contentContainer">
+<main class="u-contentInner">
+    <div class="u-contentContainer">
         <section id="contact" class="contact">
-            <div class="c-headingLv1Wrap">
-                <h1 class="c-headingLv1__en">CONTACT</h1>
-                <p class="c-headingLv1__ja">問い合わせ</p>
+            <div class="u-headingLv1Wrap">
+                <h1 class="u-headingLv1__en">CONTACT</h1>
+                <p class="u-headingLv1__ja">問い合わせ</p>
                 <div class="contact__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/contact1.webp" alt="問い合わせに答える人" width="400" height="200" decoding="async">
                 </div>
                 <!-- /.contact__imgWrap -->
             </div>
-            <!-- /.c-headingLv1 -->
+            <!-- /.u-headingLv1 -->
             <div class="contact__container">
                 <div class="contact__WrapProgress">
                     <div class="contact__boxProgress confirm confirm2 confirm3">
@@ -41,8 +41,8 @@
                 </div>
                 <!-- /.contact__containerForm -->
                 <div class="contact__textRecapcha">
-                    This site is protected by reCAPTCHA and the Google
-                    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    This site is protected by reCAPTCHA<br>and the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a><br class="contact__brSp">and
                     <a href="https://policies.google.com/terms">Terms of Service</a> apply.
                 </div>
                 <!-- /.contact__textRecapcha -->
@@ -50,6 +50,6 @@
             <!-- /.contact__container -->
         </section>
     </div>
-    <!-- /.c-contentContainer -->
+    <!-- /.u-contentContainer -->
 </main>
 <?php get_footer(); ?>

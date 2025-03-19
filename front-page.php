@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="main" class="c-contentInner main">
+<main id="main" class="u-contentInner main">
     <div class="goingUp">
         <div class="goingUp__wrapCircle fade-in2 ">
 
@@ -23,11 +23,11 @@
                                 <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4">
                                 </video>
-                                <strong class="firstView__text">
-                                    シンプルさと洗練された技術<br class="firstView__brSp">
-
-                                    <span class="firstView__lineSp">―</span>あなたのサイトを際立たせる<span class="firstView__lineSp">―</span>
-                                </strong>
+                                <div class="firstView__textBox">
+                                    <strong class="firstView__maintText">シンプルさと洗練された技術</strong>
+                                    <p class="firstView__subText">あなたのサイトを際立たせる</p>
+                                </div>
+                                <!-- /.firstView__textBox -->
                             </div>
                             <!-- /.firstView__wrap -->
                         </li>
@@ -36,12 +36,12 @@
                                 <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video2.mp4">
                                 </video>
-                                <strong class="firstView__text">
-                                    デザインとコーディングの融合<br class="firstView__brSp">
-                                    <span class="firstView__lineSp">―</span>
-                                    魅力を形にする
-                                    <span class="firstView__lineSp">―</span>
-                                </strong>
+                                <div class="firstView__textBox">
+                                    <strong class="firstView__maintText">デザインとコーディングの融合</strong>
+                                    <p class="firstView__subText">魅力を形にする</p>
+
+                                </div>
+                                <!-- /.firstView__textBox -->
                             </div>
                             <!-- /.firstView__wrap -->
                         </li>
@@ -50,10 +50,11 @@
                                 <video class="firstView__video" muted autoplay playsinline loop>
                                     <source src="<?php echo get_template_directory_uri(); ?>/images/video3.mp4">
                                 </video>
-                                <strong class="firstView__text">
-                                    クリエイティブなアイデアを<br class="firstView__brSp">
-                                    <span class="firstView__lineSp">―</span>リアルなウェブに映し出す<span class="firstView__lineSp">―</span>
-                                </strong>
+                                <div class="firstView__textBox">
+                                    <strong class="firstView__maintText">クリエイティブなアイデアを</strong>
+                                    <p class="firstView__subText">リアルなウェブに映し出す</p>
+                                </div>
+                                <!-- /.firstView__textBox -->
                             </div>
                             <!-- /.firstView__wrap -->
                         </li>
@@ -65,13 +66,13 @@
         </div>
     </section>
 
-    <div class="c-contentContainer">
+    <div class="u-contentContainer">
         <section id="topWorks">
-            <div class="c-headingLv2">
-                <h2 class="c-headingLv2__main">WORKS</h2>
-                <p class="c-headingLv2__sub">制作実績</p>
+            <div class="u-headingLv2__wrap">
+                <h2 class="u-headingLv2__en">WORKS</h2>
+                <p class="u-headingLv2__ja">制作実績</p>
             </div>
-            <!-- c-headingLv2./ -->
+            <!-- u-headingLv2__wrap./ -->
 
             <?php
             $args = array(
@@ -86,15 +87,11 @@
             <?php if ($the_query->have_posts()) : ?>
                 <ul class="topWorks__container">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-
-
-                        <li class="topWorks__item ">
-
+                        <li class="topWorks__item">
                             <h3 class="topWorks__headingLv3">
                                 <?php the_field('work'); ?>
                             </h3>
-
-                            <a href=" <?php the_field('url'); ?>" class="topWorks__link" target="_blank" rel="noopener noreferrer">
+                            <a href=" <?php the_field('url'); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer">
                                 <div class="topWorks__thumbnail">
                                     <?php if (has_post_thumbnail()) : ?>
                                         <?php the_post_thumbnail(); ?>
@@ -105,7 +102,6 @@
                                 <?php the_category(); ?>
                             </a>
                         </li>
-
                     <?php endwhile; ?>
                 </ul>
             <?php else : ?>
@@ -120,54 +116,54 @@
             <!-- /.works__btn -->
         </section>
         <section id="services">
-            <div class="c-headingLv2">
-                <h2 class="c-headingLv2__main">SERVICES</h2>
-                <p class="c-headingLv2__sub">お手伝いできること</p>
+            <div class="u-headingLv2__wrap">
+                <h2 class="u-headingLv2__en">SERVICES</h2>
+                <p class="u-headingLv2__ja">お手伝いできること</p>
             </div>
             <figure class="services__media fade-in fade-in-left">
-                <h3 class="c-headingLv3 services__titleMedia">1.Webデザイン</h3>
+                <h3 class="u-headingLv3 services__titleMedia">1.Webデザイン</h3>
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async">
                 </div>
                 <figcaption>
                     <p class="services__text">
-                        お客様のニーズを第一に考え、常にユーザー視点でのデザインを心掛けます。ただ美しいだけでなく、直感的に操作できる分かりやすさや、使い心地の良さを重視し、訪れた人が迷うことなく目的を達成でき、訪れるたびに新たな発見や感動があるようなWebサイトを提供します。
+                        お客様のニーズを第一に考え、常にユーザー視点でのデザインを心掛けます。ただ美しいだけでなく、直感的に操作できる分かりやすさや、使い心地の良さを重視し、訪れた人が迷うことなく目的を達成できるようなWebサイトを提供します。
                     </p>
                 </figcaption>
             </figure>
             <figure class="services__media fade-in fade-in-right">
-                <h3 class="c-headingLv3 services__titleMedia">2.Webサイト制作</h3>
+                <h3 class="u-headingLv3 services__titleMedia">2.Webサイト制作</h3>
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async">
                 </div>
                 <figcaption>
                     <p class="services__text">
-                        レイアウトの正確な再現はもちろん、デザイン意図を最大限に尊重し丁寧にコーディングを行います。
-                        さらに、JavaScriptを活用し、ユーザーの操作に応じたアニメーションやエフェクトを加えるなど、より印象に残るWebサイトを実現できます。
+                        デザインカンプを正確に再現し丁寧にコーディングを行います。
+                        さらに、JavaScriptを活用し、ユーザーの操作に応じたアニメーションを加えるなど、より印象に残るWebサイトを実現できます。
                         また、レスポンシブデザインにも対応し、ユーザーにとって使いやすいサイトを構築いたします。
                     </p>
                 </figcaption>
             </figure>
             <figure class="services__media fade-in fade-in-left">
-                <h3 class="c-headingLv3 services__titleMedia">3.WordPressによるWEBサイト構築</h3>
+                <h3 class="u-headingLv3 services__titleMedia">3.WordPress</h3>
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async">
                 </div>
                 <figcaption>
                     <p class="services__text">
-                        完全オリジナルのテーマを一から作成するだけでなく、運用のしやすさを重視し管理画面からも簡単に更新できるような設定にするように心がけています。
-                        また、既存のWordPressテーマを活用しながら、必要に応じて設定を行うことも可能です。WordPressを活用した柔軟なWebサイト制作について、お気軽にご相談ください。
+                        オリジナルのテーマを一から作成するだけでなく、運用のしやすさを重視し管理画面からも簡単に更新できるような設定にするように心がけています。
+                        WordPressを活用した柔軟なWebサイト制作について、お気軽にご相談ください。
                     </p>
                 </figcaption>
             </figure>
 
         </section>
         <section id="about">
-            <div class="c-headingLv2">
-                <h2 class="c-headingLv2__main">ABOUT</h2>
-                <p class="c-headingLv2__sub">私について</p>
+            <div class="u-headingLv2__wrap">
+                <h2 class="u-headingLv2__en">ABOUT</h2>
+                <p class="u-headingLv2__ja">私について</p>
             </div>
-            <!-- /.c-headingLv2 -->
+            <!-- /.u-headingLv2__wrap -->
             <figure class="about__media fade-in fade-in-up">
 
                 <div class="about__imgWrap">
@@ -175,7 +171,7 @@
                 </div>
                 <!-- /.about__imgWrap -->
                 <figcaption class="about__body">
-                    <h4 class="c-headingLv4">自己紹介</h4>
+                    <h4 class="u-headingLv4">自己紹介</h4>
                     <p class="about__text TextTyping">
                         初めまして、三浦　浩太と申します。<br>
                         フリーランスでWeb制作を行っています。HTML、CSS、JavaScriptを駆使しモダンで魅力的なサイト構築をお手伝いします。また、お客様のアイデアを具体的な形にするため、お客様とのコミュニケーションを大切にします。<br>
@@ -186,11 +182,11 @@
         </section>
         <section id="inquiry">
             <div class="inquiry__inner">
-                <div class="c-headingLv2">
-                    <h2 class="c-headingLv2__main">CONTACT</h2>
-                    <p class="c-headingLv2__sub">お問い合わせ</p>
+                <div class="u-headingLv2__wrap">
+                    <h2 class="u-headingLv2__en">CONTACT</h2>
+                    <p class="u-headingLv2__ja">お問い合わせ</p>
                 </div>
-                <!-- /.c-headingLv2 -->
+                <!-- /.u-headingLv2__wrap -->
                 <div class="inquiry__wrap fade-in">
                     <p class="inquiry__text ">
                         Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
@@ -208,7 +204,7 @@
             <!-- /.inquiry__inner" -->
         </section>
     </div>
-    <!-- /.c-contentContainer -->
+    <!-- /.u-contentContainer -->
 
     <!-- ローディングアニメーション -->
     <div class="loding__container">

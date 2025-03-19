@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-<main class="c-contentInner">
-    <div class="c-contentContainer">
+<main class="u-contentInner">
+    <div class="u-contentContainer">
         <section id="price" class="price">
-            <div class="c-headingLv1Wrap">
-                <h1 class="c-headingLv1__en">PRICE</h1>
-                <p class="c-headingLv1__ja">料金</p>
+            <div class="u-headingLv1Wrap">
+                <h1 class="u-headingLv1__en">PRICE</h1>
+                <p class="u-headingLv1__ja">料金</p>
                 <div class="price__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/price1.webp" alt="料金を説明する人" width="400" height="200" decoding="async">
                 </div>
@@ -59,7 +59,7 @@
             <!-- /.price__tableContainer -->
 
             <div class="price__cautionWrap">
-                <h4 class="price__cautionTitle c-headingLv4">
+                <h4 class="price__cautionTitle u-headingLv4">
                     ※【費用について】
                 </h4>
                 <p class="price__cautionText">
@@ -68,7 +68,7 @@
             </div>
             <!-- /.price__cautionWrap -->
             <div class="price__cautionWrap">
-                <h2 class="price__cautionTitle c-headingLv4">
+                <h2 class="price__cautionTitle u-headingLv4">
                     ※【修正について】
                 </h2>
                 <p class="price__cautionText">
@@ -82,16 +82,14 @@
             </div>
             <!-- /.price__cautionWrap -->
 
-
-
         </section>
         <section id="inquiry">
             <div class="inquiry__inner">
-                <div class="c-headingLv2">
-                    <h2 class="c-headingLv2__main">CONTACT</h2>
-                    <p class="c-headingLv2__sub">お問い合わせ</p>
+                <div class="u-headingLv2__wrap">
+                    <h2 class="u-headingLv2__en">CONTACT</h2>
+                    <p class="u-headingLv2__ja">お問い合わせ</p>
                 </div>
-                <!-- /.c-headingLv2 -->
+                <!-- /.u-headingLv2 -->
                 <div class="inquiry__wrap fade-in">
                     <p class="inquiry__text ">
                         Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
@@ -109,6 +107,6 @@
             <!-- /.inquiry__inner" -->
         </section>
     </div>
-    <!-- /.c-contentContainer -->
+    <!-- /.u-contentContainer -->
 </main>
 <?php get_footer(); ?>
