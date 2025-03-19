@@ -15,7 +15,6 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@mk_craft_tokyo" />
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.webp">
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/splide-4.1.3/dist/css/splide.min.css"> -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];

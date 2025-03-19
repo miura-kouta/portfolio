@@ -662,7 +662,7 @@ ul {
 
 .u-contentContainer {
   margin-inline: auto;
-  max-width: 950px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -1091,7 +1091,7 @@ ul {
   justify-content: space-between;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 767px) {
   .topWorks__container {
     display: block;
   }
@@ -1100,19 +1100,14 @@ ul {
   width: 30%;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 767px) {
   .topWorks__item {
-    width: 50%;
+    width: 100%;
     margin-inline: auto;
     padding-top: 40px;
   }
 }
 @media (max-width: 767px) {
-  .topWorks__item {
-    width: 100%;
-  }
-}
-@media (max-width: 1280px) {
   .topWorks__item:first-child {
     padding-top: 0;
   }
@@ -1126,7 +1121,7 @@ ul {
   animation-delay: 0.3s;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 767px) {
   .topWorks__item:nth-child(2).rotate-scale-down-ver {
     animation-delay: 0s;
   }
@@ -1135,7 +1130,7 @@ ul {
   animation-delay: 0.6s;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 767px) {
   .topWorks__item:nth-child(3).rotate-scale-down-ver {
     animation-delay: 0s;
   }
@@ -1238,6 +1233,7 @@ ul {
 @media (max-width: 767px) {
   .services__media {
     width: 100%;
+    display: block;
   }
 }
 .services__media:nth-of-type(2n) {
@@ -1257,6 +1253,11 @@ ul {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .services__titleMedia {
+    width: 100%;
+  }
+}
 .services__media:nth-last-of-type(2n) .services__titleMedia {
   order: 2;
   grid-column: 2/3;
@@ -1274,6 +1275,17 @@ ul {
   padding-left: 20px;
 }
 
+@media (max-width: 767px) {
+  .services__imgWrap {
+    display: block;
+    width: 50%;
+    max-width: 160px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+}
 .services__media:nth-last-of-type(2n) .services__imgWrap {
   order: 1;
   grid-column: 1/2;
@@ -1636,7 +1648,7 @@ ul {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 767px) {
   .allWorks__container {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1647,12 +1659,12 @@ ul {
   padding-bottom: 40px;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 767px) {
   .allWorks__card {
     width: 100%;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 767px) {
   .allWorks__card:last-child {
     margin-bottom: 0;
   }

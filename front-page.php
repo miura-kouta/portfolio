@@ -87,7 +87,7 @@
             <?php if ($the_query->have_posts()) : ?>
                 <ul class="topWorks__container">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <li class="topWorks__item">
+                        <li class="topWorks__item fade-in fade-in-up">
                             <h3 class="topWorks__headingLv3">
                                 <?php the_field('work'); ?>
                             </h3>
