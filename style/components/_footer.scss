@@ -1,0 +1,15 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| footer(footer.php)
+*******************************/
+
+.footer__textCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-family: s.$font-family2;
+  color: s.$ColorWhiteMain;
+  background-color: s.$ColorBlack;
+}

@@ -42,118 +42,118 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header">
-        <div class="header__inner">
-            <div class="header__container">
-                <div class="header__logo">
-                    <h1 class="header__logoTitle ">
-                        <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
+        <!-- <div class="header__inner"> -->
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__logoTitle ">
+                    <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
+                    </a>
+                </h1>
+            </div>
+
+            <nav class="header-listNav">
+                <ul class="header__listMenu">
+                    <?php
+                    $current_page = basename($_SERVER['PHP_SELF']);
+                    ?>
+
+                    <li class="header__listItem">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__listLink">
+                            TOP
                         </a>
-                    </h1>
-                </div>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo esc_url(home_url('/allworks')); ?>" class="header__listLink <?php if (is_page('allworks')) {
+                                                                                                            echo 'navActive';
+                                                                                                        } ?>">
+                            WORKS
+                        </a>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo home_url('/'); ?>#services" class="header__listLink">
+                            SERVICES
+                        </a>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo home_url('/'); ?>#about" class="header__listLink">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo esc_url(home_url('/price')); ?>" class="header__listLink <?php if (is_page('price')) {
+                                                                                                            echo 'navActive';
+                                                                                                        } ?>">
+                            PRICE
+                        </a>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="header__listLink <?php if (is_page('contact')) {
+                                                                                                            echo 'navActive';
+                                                                                                        } ?>">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="header__listItem">
+                        <a href="<?php echo home_url('/blog'); ?>" target="_blank" class="header__listLink">
+                            BLOG
+                        </a>
+                    </li>
 
-                <nav class="header-listNav">
-                    <ul class="header__listMenu">
-                        <?php
-                        $current_page = basename($_SERVER['PHP_SELF']);
-                        ?>
+                </ul>
+            </nav>
 
-                        <li class="header__listItem">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="header__listLink">
+            <!-- ハンバーガーメニュー -->
+            <div class="header__hamburger">
+                <nav class="header__hamburgerNav">
+                    <ul class="header__hamburgerMenu">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/'); ?>#main" class="header__hamburgerLink ">
                                 TOP
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo esc_url(home_url('/allworks')); ?>" class="header__listLink <?php if (is_page('allworks')) {
-                                                                                                                echo 'navActive';
-                                                                                                            } ?>">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink ">
                                 WORKS
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo home_url('/'); ?>#services" class="header__listLink">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/'); ?>#services" class="header__hamburgerLink ">
                                 SERVICES
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo home_url('/'); ?>#about" class="header__listLink">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/'); ?>#about" class="header__hamburgerLink ">
                                 ABOUT
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo esc_url(home_url('/price')); ?>" class="header__listLink <?php if (is_page('price')) {
-                                                                                                                echo 'navActive';
-                                                                                                            } ?>">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/price'); ?>" class="header__hamburgerLink ">
                                 PRICE
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="header__listLink <?php if (is_page('contact')) {
-                                                                                                                echo 'navActive';
-                                                                                                            } ?>">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/contact'); ?>" class="header__hamburgerLink ">
                                 CONTACT
                             </a>
                         </li>
-                        <li class="header__listItem">
-                            <a href="<?php echo home_url('/blog'); ?>" target="_blank" class="header__listLink">
+                        <li class="header__hamburgerItem  ">
+                            <a href="<?php echo home_url('/blog'); ?>" class="header__hamburgerLink " target="_blank">
                                 BLOG
                             </a>
                         </li>
-
                     </ul>
                 </nav>
-
-                <!-- ハンバーガーメニュー -->
-                <div class="header__hamburger">
-                    <nav class="header__hamburgerNav">
-                        <ul class="header__hamburgerMenu">
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/'); ?>#main" class="header__hamburgerLink ">
-                                    TOP
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink ">
-                                    WORKS
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/'); ?>#services" class="header__hamburgerLink ">
-                                    SERVICES
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/'); ?>#about" class="header__hamburgerLink ">
-                                    ABOUT
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/price'); ?>" class="header__hamburgerLink ">
-                                    PRICE
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/contact'); ?>" class="header__hamburgerLink ">
-                                    CONTACT
-                                </a>
-                            </li>
-                            <li class="header__hamburgerItem  ">
-                                <a href="<?php echo home_url('/blog'); ?>" class="header__hamburgerLink " target="_blank">
-                                    BLOG
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__hamburgerBox">
-                        <span class="header__hamburgerLine"></span>
-                        <span class="header__hamburgerLine"></span>
-                        <span class="header__hamburgerLine"></span>
-                    </div>
-                    <!-- ./header__hamburgerBox -->
+                <div class="header__hamburgerBox">
+                    <span class="header__hamburgerLine"></span>
+                    <span class="header__hamburgerLine"></span>
+                    <span class="header__hamburgerLine"></span>
                 </div>
-                <!-- /.header__hamburger -->
+                <!-- ./header__hamburgerBox -->
             </div>
-
+            <!-- /.header__hamburger -->
         </div>
+
+        <!-- </div> -->
         <!-- / .header__inner -->
     </header>

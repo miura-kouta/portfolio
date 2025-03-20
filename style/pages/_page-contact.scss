@@ -1,0 +1,387 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| contact(page-contact.php)
+*******************************/
+.contact {
+  padding-top: 80px;
+}
+
+.contact__imgWrap {
+  margin-inline: auto;
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .contact__imgWrap {
+    width: 80px;
+  }
+}
+.contact__container {
+  margin-top: 80px;
+  border: solid 1px s.$ColorBlack;
+  background-color: s.$ColorWhiteMain;
+}
+
+@media (max-width: 767px) {
+  .contact__container {
+    margin-top: 40px;
+  }
+}
+
+.contact__stepFlowMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-inline: auto;
+  font-size: 1.6rem;
+  width: 90%;
+}
+
+.contact__stepFlowItem {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  text-overflow: ellipsis;
+  -ms-flex: 1;
+  -moz-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+
+  color: s.$ColorBlack;
+}
+
+.contact__stepFlowItem .bubble {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 0.5em;
+  border-radius: 1000px;
+  background-color: s.$ColorGray;
+}
+
+.contact__stepFlowItem .bubble::after,
+.contact__stepFlowItem .bubble::before {
+  position: absolute;
+  top: 9px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  content: "";
+  background-color: s.$ColorGray;
+}
+
+.contact__stepCompleted .bubble,
+.contact__stepCompleted .bubble::after,
+.contact__stepCompleted .bubble::before {
+  background-color: s.$ColorLightBlue;
+}
+
+.contact__stepFlowItem:last-child .bubble::after,
+.contact__stepFlowItem:last-child .bubble::before {
+  width: 0%;
+  margin-right: 50%;
+}
+.contact__stepFlowItem.contact__stepFlowActive,
+.contact__stepFlowItem.contact__stepFlowActive .bubble {
+  font-weight: bold;
+  color: s.$ColorBlack;
+  font-weight: bold;
+}
+.contact__stepFlowItem.contact__stepFlowActive .bubble,
+.contact__stepFlowItem.contact__stepFlowActive .bubble::after,
+.contact__stepFlowItem.contact__stepFlowActive .bubble::before {
+  background-color: s.$ColorPink;
+}
+
+.wpcf7-form {
+  text-align: left;
+  margin-inline: auto;
+  width: 80%;
+  .contact__tr--form {
+    border-top: 1px #ddd solid;
+    text-align: center;
+
+    label {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .contact__th--form,
+      .contact__td--form {
+        text-align: left;
+      }
+      .contact__th--form {
+        display: flex;
+        align-items: center;
+        width: 200px;
+
+        font-weight: bold;
+        .required {
+          font-size: 0.8em;
+          color: s.$ColorWhiteMain;
+          display: inline-block;
+          padding: 0.3em 0.3em 0.2em;
+          margin-left: 8px;
+          background: s.$ColorRequired;
+          border-radius: 2px;
+        }
+      }
+      .contact__th--formRequired::after {
+        content: "必須";
+        position: static;
+        display: inline-block;
+        margin-left: 8px;
+        padding: 0.3em 0.3em 0.2em;
+        background: s.$ColorRequired;
+        border-radius: 2px;
+        font-size: 0.8em;
+        color: s.$ColorWhiteMain;
+      }
+
+      @media (max-width: 767px) {
+        .contact__th--form {
+          width: 100%;
+        }
+      }
+
+      .contact__td--form {
+        display: flex;
+        width: 60%;
+        align-items: center;
+
+        .contact__item--form {
+          border: 1px solid s.$ColorBlack;
+          background: s.$ColorWhiteMain;
+          width: 100%;
+          padding: 4px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .contact__td--form {
+          width: 100%;
+        }
+      }
+
+      .wpcf7-form-control-wrap {
+        width: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      label {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  tr:first-child {
+    border-top: none;
+  }
+}
+@media (max-width: 767px) {
+  .wpcf7-form {
+    width: 90%;
+  }
+}
+
+.contact__RecapchaWrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .contact__RecapchaWrap {
+    width: 90%;
+  }
+}
+
+.contact__RecapchaLink {
+  font-weight: normal;
+  color: s.$ColorPink;
+
+  transition: 0.3s all;
+}
+
+.contact__RecapchaLink:hover {
+  opacity: 0.6;
+}
+
+.contact__brSp {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .contact__brSp {
+    display: block;
+  }
+}
+
+.contact__wrapper--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+.contact__item--button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  color: s.$ColorWhiteMain;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s all;
+  background-color: s.$ColorBlack;
+}
+
+@media (max-width: 767px) {
+  .contact__item--button {
+    padding: 6px;
+    width: 120px;
+  }
+}
+
+.contact__item--button:hover {
+  background-color: s.$ColorPink;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+// 確認画面
+#wpcf7cpcnf {
+  height: auto;
+
+  table {
+    margin-inline: auto;
+    width: 60%;
+    word-break: break-all;
+    word-wrap: break-all;
+
+    tr {
+      display: flex;
+      justify-content: flex-start;
+      th,
+      td {
+        text-align: left;
+        padding-bottom: 40px;
+      }
+      th {
+        width: 240px;
+        white-space: nowrap;
+
+        .required {
+          font-size: 0.8em;
+          color: s.$ColorWhiteMain;
+          display: inline-block;
+          padding: 0.3em 0.3em 0.2em;
+          background: s.$ColorRequired;
+          border-radius: 2px;
+        }
+      }
+      td {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        p {
+          pointer-events: none;
+          text-decoration: none;
+        }
+      }
+    }
+
+    tr:last-child {
+      td {
+        overflow-y: scroll;
+        align-items: flex-start;
+        height: 200px;
+      }
+    }
+  }
+
+  .wpcf7cp-btns {
+    text-align: center;
+    .wpcf7-form-control {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-size: 20px;
+      font-weight: bold;
+      width: 200px;
+      margin-top: 40px;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: s.$ColorBlack;
+      border: none;
+      color: s.$ColorWhiteMain;
+      cursor: pointer;
+      transition: 0.3s all;
+    }
+    .wpcf7-form-control:hover {
+      background-color: s.$ColorPink;
+    }
+
+    .wpcf7cp-cfm-edit-btn:hover {
+      background-color: s.$ColorLightBlue;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #wpcf7cpcnf {
+    table {
+      width: 90%;
+      max-width: 520px;
+      tr {
+        display: block;
+        padding-top: 20px;
+        th,
+        td {
+          padding-bottom: 0;
+        }
+      }
+      tr:first-child {
+        padding-top: 0;
+      }
+    }
+    .wpcf7cp-btns {
+      text-align: center;
+      .wpcf7-form-control {
+        font-size: 12px;
+        padding: 8px;
+        max-width: 120px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.wpcf7cp-form-hide {
+  .contact__item--button {
+    display: none !important;
+  }
+}

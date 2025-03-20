@@ -1,0 +1,21 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| notFound(404.php)
+*******************************/
+.notFound {
+  height: calc(100svh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.notFound__button {
+  display: block;
+  padding-top: 40px;
+  color: s.$ColorBlueLink;
+  text-decoration: underline solid 1px;
+  text-underline-offset: 0.15em;
+}

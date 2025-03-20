@@ -160,42 +160,56 @@ function checkFadeIn() {
 
 window.addEventListener("scroll", checkFadeIn);
 
-
-// お問い合わせページのプログレス画像変更
-let contactId = "contact-exclusive";
-let element = document.getElementById(contactId);
+//問い合わせ画面のステップフロー
+let stepFlowActive = "contact__stepFlowActive";
+let element = document.getElementsByClassName(stepFlowActive);
 
 if (element) {
-  const submitBtn = document.querySelector(".contact-exclusive__item--button");
+  const submitBtn = document.querySelector(".contact__item--button");
+
 
   submitBtn.addEventListener("click", () => {
-    setTimeout(() => {
+   setTimeout(() => {
       const confirmElement = document.getElementById("wpcf7cpcnf");
       if (confirmElement) {
-        const confirmImgWrapper = document.querySelector(".confirmImgWrapper");
+        const confirm = document.querySelector(".confirm");
+        const confirm2 = document.querySelector(".confirm2");
+        const confirm3 = document.querySelector(".confirm3");
+
         const toggleConfirmClasses = (action) => {
-          confirmImgWrapper.classList[action]("confirm");
-          confirmImgWrapper.classList[action]("confirm2");
+          confirm2.classList[action]("contact__stepFlowActive");
+          confirm.classList[action]("contact__stepCompleted");
         };
 
         toggleConfirmClasses("add");
 
+        const toggleConfirmClasses2= (action) => {
+          confirm.classList[action]("contact__stepFlowActive");
+        };
+
+        toggleConfirmClasses2("remove");
+
+
         const editBtn = document.querySelector(".wpcf7cp-cfm-edit-btn");
         if (editBtn) {
-          editBtn.addEventListener("click", () =>
-            toggleConfirmClasses("remove")
-          );
+          editBtn.addEventListener("click", () => {
+              confirm.classList.add("contact__stepFlowActive");
+            confirm2.classList.remove("contact__stepFlowActive");
+
+        });
         }
 
         const sendBtn = document.querySelector(".wpcf7cp-cfm-submit-btn");
         if (sendBtn) {
           sendBtn.addEventListener("click", () => {
-            toggleConfirmClasses("remove");
-            confirmImgWrapper.classList.add("confirm3");
+            confirm3.classList.add("contact__stepFlowActive");
+            confirm2.classList.remove("contact__stepFlowActive");
+            confirm2.classList.add("contact__stepCompleted");
+
           });
         }
       }
-    }, 2000); // 2秒遅延させる
+   }, 1000); 
   });
 }
 

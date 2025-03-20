@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <main class="main">
-<div class="not-found__container">
-  <h1 class="not-found__text--title">404 Page Not Found</h1>
-  <p>お探しのページは見つかりませんでした</p>
-  <?php // トップに戻るボタン ?>
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-top__button">トップに戻る</a>
-</div>
-
+  <section id="notFound" class="notFound">
+    <h1 class="u-headingLv1__en">404 Page Not Found</h1>
+    <p>お探しのページは見つかりませんでした</p>
+    <a href="<?php echo esc_url(home_url('/')); ?>" class="notFound__button">トップに戻る</a>
+  </section>
+</main>
 <?php get_footer(); ?>

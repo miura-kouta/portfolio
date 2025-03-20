@@ -1,0 +1,125 @@
+@use "../setting/variables" as s;
+
+/*******************************
+|price(page-price.php)
+*******************************/
+.price {
+  padding-top: 80px;
+  margin-inline: auto;
+  max-width: 1000px;
+}
+
+.price__imgWrap {
+  margin-inline: auto;
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .price__imgWrap {
+    width: 80px;
+  }
+}
+
+.price__tableContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .price__tableContainer {
+    display: block;
+  }
+}
+
+.price__table {
+  border-collapse: collapse;
+  margin-top: 80px;
+  width: 48%;
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 767px) {
+  .price__table {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+
+.price__table--border {
+  border: 1px solid s.$ColorBlack;
+}
+
+.price__tableRow {
+  height: 80px;
+}
+
+@media (max-width: 767px) {
+  .price__tableRow {
+    height: 40px;
+  }
+}
+
+.price__tableHeader {
+  padding: 12px;
+  height: 60px;
+  background-color: s.$ColorBlack;
+  color: s.$ColorWhiteMain;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .price__tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+}
+
+.price__tableBodyHeader {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+  background-color: s.$ColorPink;
+}
+@media (max-width: 767px) {
+  .price__tableBodyHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 240px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .price__brSp {
+    display: none;
+  }
+}
+
+.price__tableBodyText {
+  padding: 12px;
+  background-color: s.$ColorWhiteMain;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .price__tableBodyText {
+    display: block;
+    font-size: 2rem;
+    height: 40px;
+    padding: 4px;
+  }
+}
+
+.price__cautionTitle {
+  padding-top: 20px;
+  text-align: left;
+}
