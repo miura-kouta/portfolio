@@ -7,33 +7,51 @@
                     <?php while (have_posts()) : the_post(); ?>
 
                         <li class="loop__contentItem">
-                            <a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer">
-                                <div class="singleAllWorks__imgWrap">
+                            <div class="singleAllWorks__imgWrap">
                                 <?php the_post_thumbnail(); ?>
-                                </div>
-
-                                <p class="allWorks__text">
-                                    <?php the_field('name'); ?>
-                                </p>
-                                <p class="allWorks__text ">
-                                    作業内容：<?php the_field('work'); ?>
-                                </p>
-                                <p class="allWorks__text">
-                                    <?php the_field('development'); ?>
-                                </p>
-                                <p class="allWorks__text">
-                                    <?php the_field('cms'); ?>
-                                </p>
-                                <p class="allWorks__text">
-                                    <?php the_field('technology'); ?>
-                                </p>
-                                <p class="allWorks__text">
-                                    <?php the_field('theme'); ?>
-                                </p>
-                                <p class="allWorks__text">
-                                    <?php the_field('period'); ?>
-                                </p>
-                            </a>
+                            </div>
+                            <ul class="singleAllWorks__menu">
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('name'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text ">
+                                        作業内容：<?php the_field('work'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('development'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('cms'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('technology'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('theme'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <p class="allWorks__text">
+                                        <?php the_field('period'); ?>
+                                    </p>
+                                </li>
+                                <li class="singleAllWorks__item">
+                                    <a href="<?php the_field('url'); ?>" class="singleAllWorks__link" target="_blank" rel="noopener noreferrer">
+                                        URL：<?php the_field('url'); ?>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     <?php endwhile; ?>
                 </ul>

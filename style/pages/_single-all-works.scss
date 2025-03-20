@@ -12,10 +12,35 @@
   overflow: hidden;
 }
 
-.singleAllWorks__imgWrap img {
+// .singleAllWorks__menu {
+// list-style-type: disc;
+// list-style-position: outside;
+// }
+
+.singleAllWorks__item {
+  // padding-top: 20px;
+  margin-top: 20px;
+
+  position: relative;
+  padding-left: 24px;
+}
+
+.singleAllWorks__item::before {
+  content: "●"; /* マーカー */
+  color: s.$ColorBlack; /* 色 */
+  font-size: 1.2em; /* サイズ */
+  position: absolute;
+  left: 0; /* 左端に配置 */
+  top: 50%; /* テキストの中央に揃える */
+  transform: translateY(-50%);
+}
+
+.singleAllWorks__link {
+  font-weight: bold;
+  color: s.$ColorPink;
   transition: 0.3s all;
 }
 
-.singleAllWorks__imgWrap img:hover {
-  transform: scale(1.05, 1.05);
+.singleAllWorks__link:hover {
+  opacity: 0.7;
 }

@@ -46,21 +46,7 @@
                                         <p class="allWorks__text ">
                                             作業内容：<?php the_field('work'); ?>
                                         </p>
-                                        <p class="allWorks__text">
-                                            <?php the_field('development'); ?>
-                                        </p>
-                                        <p class="allWorks__text">
-                                            <?php the_field('cms'); ?>
-                                        </p>
-                                        <p class="allWorks__text">
-                                            <?php the_field('technology'); ?>
-                                        </p>
-                                        <p class="allWorks__text">
-                                            <?php the_field('theme'); ?>
-                                        </p>
-                                        <p class="allWorks__text">
-                                            <?php the_field('period'); ?>
-                                        </p>
+
                                     </div>
                                     <!-- /.allWorks__body -->
                                 </a>

@@ -161,6 +161,9 @@ function checkFadeIn() {
 window.addEventListener("scroll", checkFadeIn);
 
 //問い合わせ画面のステップフロー
+
+if (window.location.pathname.includes("contact")) {
+
 let stepFlowActive = "contact__stepFlowActive";
 let element = document.getElementsByClassName(stepFlowActive);
 
@@ -213,6 +216,8 @@ if (element) {
   });
 }
 
+}
+
 // 現在のページに基づいて、アクティブなリンクを設定する
 
   // 現在のページのURLを取得
@@ -220,7 +225,8 @@ if (element) {
         
         // すべてのナビリンクを取得
         const navLinks = document.querySelectorAll('.nav-link');
-        
+          // console.log(navLinks);
+
         // 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
         navLinks.forEach(link => {
             const linkPage = link.getAttribute('href');

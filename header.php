@@ -64,9 +64,9 @@
                         </a>
                     </li>
                     <li class="header__listItem">
-                        <a href="<?php echo esc_url(home_url('/allworks')); ?>" class="header__listLink <?php if (is_page('allworks')) {
-                                                                                                            echo 'navActive';
-                                                                                                        } ?>">
+                        <a href="<?php echo esc_url(home_url('/all-works')); ?>" class="header__listLink <?php if (is_page('all-works') || is_post_type_archive('all-works') || is_singular('all-works')) {
+                                                                                                                echo 'navActive';
+                                                                                                            } ?>">
                             WORKS
                         </a>
                     </li>
@@ -113,7 +113,7 @@
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
-                            <a href="<?php echo home_url('/allworks'); ?>" class="header__hamburgerLink ">
+                            <a href="<?php echo home_url('/all-works'); ?>" class="header__hamburgerLink ">
                                 WORKS
                             </a>
                         </li>

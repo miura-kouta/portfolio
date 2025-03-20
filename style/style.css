@@ -2235,10 +2235,28 @@ ul {
   overflow: hidden;
 }
 
-.singleAllWorks__imgWrap img {
+.singleAllWorks__item {
+  margin-top: 20px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.singleAllWorks__item::before {
+  content: "●"; /* マーカー */
+  color: #333333; /* 色 */
+  font-size: 1.2em; /* サイズ */
+  position: absolute;
+  left: 0; /* 左端に配置 */
+  top: 50%; /* テキストの中央に揃える */
+  transform: translateY(-50%);
+}
+
+.singleAllWorks__link {
+  font-weight: bold;
+  color: #e6adb7;
   transition: 0.3s all;
 }
 
-.singleAllWorks__imgWrap img:hover {
-  transform: scale(1.05, 1.05);
+.singleAllWorks__link:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
