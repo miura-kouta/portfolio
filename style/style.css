@@ -2105,7 +2105,7 @@ ul {
 }
 
 /*******************************
-| allWorks(page-allworks.php)
+| allWorks(archive-allworks.php)
 *******************************/
 .allWorks {
   padding-top: 80px;
@@ -2221,4 +2221,24 @@ ul {
 .page-item.active .page-link {
   background-color: #e6adb7;
   color: #ffffff;
+}
+
+/*******************************
+| singleAllWorks(single-all-works.php)
+*******************************/
+.singleAllWorks {
+  padding-top: 80px;
+}
+
+.singleAllWorks__imgWrap {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.singleAllWorks__imgWrap img {
+  transition: 0.3s all;
+}
+
+.singleAllWorks__imgWrap img:hover {
+  transform: scale(1.05, 1.05);
 }/*# sourceMappingURL=style.css.map */

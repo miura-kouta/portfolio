@@ -29,7 +29,7 @@
                     <ul class="allWorks__container">
                         <?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
                             <li class="allWorks__card">
-                                <a href="<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
+                                <a href="<?php the_permalink(); ?>" rel="noopener noreferrer">
                                     <div class="allWorks__thumbnail">
                                         <?php if (has_post_thumbnail()) :  ?>
                                             <?php the_post_thumbnail(); ?>
