@@ -77,7 +77,7 @@
 
             <?php
             $args = array(
-                'post_type'      => 'production',
+                'post_type'      => 'all-works',
                 'posts_per_page' => 3,
                 'paged'          => $paged
             );
@@ -110,7 +110,7 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
             <div class="topWorks__btn">
-                <a href="<?php echo home_url('/allworks'); ?>" class="topWorks__linkBtn">
+                <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
                     view more
                 </a>
             </div>

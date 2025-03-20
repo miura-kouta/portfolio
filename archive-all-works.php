@@ -15,30 +15,28 @@
             <div class="allWorks__inner">
                 <?php
                 $args = array(
-                    'post_type' => 'production', /* 取得したい投稿タイプ */
-                    'posts_per_page' => 6, //１ページの表示数
-                    'paged' => $paged //何ページ目の情報を取得するかを指定
+                    'post_type' => 'all-works',
+                    'posts_per_page' => 6,
+                    'paged' => $paged
 
                 );
 
-                $the_query = new WP_Query($args); /* クエリの作成と発行をし、取得したデータを「$the_query」に格納 */
+                $the_query = new WP_Query($args);
                 ?>
 
-                <?php ?> <!-- 取得した投稿の表示 -->
-                <?php if ($the_query->have_posts()) : ?> <!-- もし、投稿がある場合 -->
+                <?php ?>
+                <?php if ($the_query->have_posts()) : ?>
                     <ul class="allWorks__container">
-                        <?php while ($the_query->have_posts()) : $the_query->the_post();  ?> <!-- 投稿のループ開始 -->
+                        <?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
                             <li class="allWorks__card">
-
-                                <a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <a href="<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
                                     <div class="allWorks__thumbnail">
-                                        <?php if (has_post_thumbnail()) :  ?> <!-- もし、投稿にサムネイルが設定されている場合 -->
-                                            <?php the_post_thumbnail(); ?> <!-- 投稿のサムネイルを表示 -->
-                                        <?php else :  ?> <!-- もし、サムネイルが設定されていない場合 -->
+                                        <?php if (has_post_thumbnail()) :  ?>
+                                            <?php the_post_thumbnail(); ?>
+                                        <?php else :  ?>
                                             <img src="https://placehold.jp/16px/999/ffffff/352x198.png?text=No%20Image" alt="制作実績のサイト">
-                                        <?php endif; ?> <!-- サムネイルのif文終了 -->
+                                        <?php endif; ?>
                                     </div>
-                                    <!-- /.allWorks__thumbnail -->
                                     <?php the_category(); ?>
                                     <div class="allWorks__body">
 
@@ -68,16 +66,14 @@
                                 </a>
 
                             </li>
-                        <?php endwhile; ?> <!-- 投稿のループ終了 -->
+                        <?php endwhile; ?>
                     </ul>
 
-                <?php else : ?> <!-- もし、投稿がない場合 -->
+                <?php else : ?>
                     <p>まだ投稿がありません。</p>
-                <?php endif; ?><!-- 投稿の条件分岐を終了 -->
-                <?php wp_reset_postdata(); ?> <!-- クエリ(サブループ)のリセット -->
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
 
-
-                <!-- ページネーション -->
                 <div class="allWorks__wrapPagination">
                     <?php
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -94,7 +90,6 @@
                     if ($pagination_links) {
                         echo '<ul class="pagination">';
                         foreach ($pagination_links as $link) {
-                            // 数字のリンクにクラスを追加
                             if (strpos($link, 'current') !== false) {
                                 echo '<li class="page-item active">' . str_replace('page-numbers', 'page-link', $link) . '</li>';
                             } else {
@@ -106,10 +101,13 @@
                     ?>
                 </div>
                 <!-- /.allWorks__wrapPagination -->
+
             </div>
             <!-- /.allWorks__inner -->
+
+            <?php get_template_part('components/inquiry'); ?>
         </section>
-        <?php get_template_part('components/inquiry'); ?>
+
     </div>
     <!-- /.u-contentContainer -->
 </main>
