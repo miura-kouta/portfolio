@@ -10,21 +10,16 @@
 .contact__imgWrap {
   margin-inline: auto;
   width: 120px;
-}
-
-@media (max-width: 767px) {
-  .contact__imgWrap {
+  @include s.mq(tab) {
     width: 80px;
   }
 }
+
 .contact__container {
   margin-top: 80px;
   border: solid 1px s.$ColorBlack;
   background-color: s.$ColorWhiteMain;
-}
-
-@media (max-width: 767px) {
-  .contact__container {
+  @include s.mq(tab) {
     margin-top: 40px;
   }
 }
@@ -121,7 +116,6 @@
         display: flex;
         align-items: center;
         width: 200px;
-
         font-weight: bold;
         .required {
           font-size: 0.8em;

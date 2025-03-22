@@ -14,10 +14,8 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-}
 
-@media (max-width: 767px) {
-  .singleAllWorks__headingLv1 {
+  @include s.mq(tab) {
     font-size: 2rem;
   }
 }
@@ -34,7 +32,7 @@
 
 .singleAllWorks__item {
   position: relative;
-  padding-left: 24px;
+  padding-left: 16px;
 }
 
 .singleAllWorks__item::before {

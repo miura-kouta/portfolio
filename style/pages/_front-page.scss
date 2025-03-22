@@ -31,11 +31,9 @@
   white-space: nowrap;
   text-align: center;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
 
-@media (max-width: 767px) {
-  .firstView__maintText {
-    font-size: 2.5rem;
+  @include s.mq(tab) {
+    font-size: 3rem;
   }
 }
 
@@ -47,11 +45,9 @@
   font-weight: bold;
   white-space: nowrap;
   text-align: center;
-}
 
-@media (max-width: 767px) {
-  .firstView__subText {
-    font-size: 1.5rem;
+  @include s.mq(tab) {
+    font-size: 2rem;
   }
 }
 
@@ -84,29 +80,24 @@
 .topWorks__container {
   display: flex;
   justify-content: space-between;
-}
 
-@media (max-width: 767px) {
-  .topWorks__container {
+  @include s.mq(tab) {
     display: block;
   }
 }
 
 .topWorks__item {
   width: 30%;
-}
 
-@media (max-width: 767px) {
-  .topWorks__item {
+  @include s.mq(tab) {
     width: 100%;
-
     margin-inline: auto;
     padding-top: 40px;
   }
 }
 
-@media (max-width: 767px) {
-  .topWorks__item:first-child {
+.topWorks__item:first-child {
+  @include s.mq(tab) {
     padding-top: 0;
   }
 }
@@ -118,20 +109,16 @@
 
 .topWorks__item:nth-child(2).rotate-scale-down-ver {
   animation-delay: 0.3s;
-}
 
-@media (max-width: 767px) {
-  .topWorks__item:nth-child(2).rotate-scale-down-ver {
+  @include s.mq(tab) {
     animation-delay: 0s;
   }
 }
 
 .topWorks__item:nth-child(3).rotate-scale-down-ver {
   animation-delay: 0.6s;
-}
 
-@media (max-width: 767px) {
-  .topWorks__item:nth-child(3).rotate-scale-down-ver {
+  @include s.mq(tab) {
     animation-delay: 0s;
   }
 }
@@ -165,11 +152,6 @@
   }
 }
 
-.topWorks__headingLv3 {
-  text-align: center;
-  font-weight: bold;
-}
-
 .topWorks__link {
   display: block;
   margin-top: 20px;
@@ -190,22 +172,28 @@
   transform: scale(1.05, 1.05);
 }
 
-.topWorks__btn {
-  position: relative;
+.topWorks__linkBtn {
+  display: block;
+  width: 136px;
+  max-width: 100%;
   margin-top: 40px;
   margin-inline: auto;
-  border: none;
   border-bottom: 1px solid s.$ColorBlack;
-  width: 140px;
-  max-width: 90%;
   font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
   transition: 1s all;
   white-space: nowrap;
+  @include s.mq(l-pc) {
+    width: 120px;
+  }
+
+  @include s.mq(tab) {
+    width: 92px;
+  }
 }
 
-.topWorks__btn:hover {
+.topWorks__linkBtn:hover {
   transform: rotateY(360deg);
 }
 
@@ -227,17 +215,17 @@
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   min-height: 210px;
   box-sizing: border-box;
+
+  @include s.mq(tab) {
+    width: 100%;
+    display: block;
+
+    padding: 20px;
+  }
 }
 
 .services__media:nth-of-type(1) {
   margin-top: 0;
-}
-
-@media (max-width: 767px) {
-  .services__media {
-    width: 100%;
-    display: block;
-  }
 }
 
 .services__media:nth-of-type(2n) {
@@ -255,11 +243,10 @@
   height: 32px;
   border-bottom: 1px solid s.$ColorBlack;
   text-align: left;
-}
 
-@media (max-width: 767px) {
-  .services__titleMedia {
+  @include s.mq(tab) {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -278,16 +265,11 @@
   align-items: center;
   width: 100%;
   padding-left: 20px;
-}
-
-@media (max-width: 767px) {
-  .services__imgWrap {
+  @include s.mq(tab) {
     display: block;
-    width: 50%;
-    max-width: 160px;
+    max-width: 120px;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     padding-left: 0;
   }
 }
@@ -300,8 +282,8 @@
   padding-right: 20px;
 }
 
-@media (max-width: 1280px) {
-  .services__text {
+.services__text {
+  @include s.mq(tab) {
     margin-top: 20px;
   }
 }
@@ -319,23 +301,20 @@
 .about__media {
   display: flex;
   justify-content: space-around;
-}
-@media (max-width: 767px) {
-  .about__media {
+
+  @include s.mq(tab) {
     display: block;
   }
 }
 
 .about__imgWrap {
   width: 30%;
-}
-@media (max-width: 1280px) {
-  .about__imgWrap {
+
+  @include s.mq(l-pc) {
     margin-top: 40px;
   }
-}
-@media (max-width: 767px) {
-  .about__imgWrap {
+
+  @include s.mq(tab) {
     margin-top: 0;
     width: 60%;
     margin-inline: auto;
@@ -350,18 +329,21 @@
 .about__body {
   width: 50%;
   margin-top: 40px;
-}
-@media (max-width: 767px) {
-  .about__body {
+
+  @include s.mq(tab) {
     width: 100%;
   }
 }
+// @media (max-width: 767px) {
+//   .about__body {
+//     width: 100%;
+//   }
+// }
 
 .about__text {
   margin-top: 40px;
-}
-@media (max-width: 767px) {
-  .about__text {
+
+  @include s.mq(tab) {
     min-height: 78px;
   }
 }

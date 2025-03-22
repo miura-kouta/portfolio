@@ -29,17 +29,13 @@
   max-width: 950px;
   height: 56px;
   margin-inline: auto;
-}
 
-@media (max-width: 1280px) {
-  .header__container {
+  @include s.mq(l-pc) {
     display: block;
     width: 90%;
     height: 112px;
   }
-}
-@media (max-width: 767px) {
-  .header__container {
+  @include s.mq(tab) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,10 +46,8 @@
 .header__logoLink {
   transition: 1s all;
   width: 100px;
-}
 
-@media (max-width: 1280px) {
-  .header__logoLink {
+  @include s.mq(l-pc) {
     display: flex;
     align-items: center;
     margin-inline: auto;
@@ -68,26 +62,20 @@
 .header__listMenu {
   display: flex;
   font-family: s.$font-family2;
-}
 
-@media (max-width: 1280px) {
-  .header__listMenu {
+  @include s.mq(l-pc) {
     height: 56px;
     justify-content: space-between;
   }
-}
-@media (max-width: 767px) {
-  .header__listMenu {
+  @include s.mq(tab) {
     height: auto;
   }
 }
 
 .header__listItem {
   padding-right: 20px;
-}
 
-@media (max-width: 1280px) {
-  .header__listItem {
+  @include s.mq(l-pc) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +84,7 @@
 }
 
 .header__listItem:last-child {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .header__listLink {
@@ -137,8 +125,8 @@
   color: s.$ColorWhiteMain;
 }
 
-@media (max-width: 767px) {
-  .header-listNav {
+.header-listNav {
+  @include s.mq(tab) {
     display: none;
   }
 }
@@ -151,8 +139,8 @@
   display: none;
 }
 
-@media (max-width: 767px) {
-  .header__hamburger {
+.header__hamburger {
+  @include s.mq(tab) {
     display: block;
   }
 }
@@ -217,8 +205,8 @@
   transition: 0.4s ease-in-out;
 }
 
-@media (max-width: 767px) {
-  .header__hamburgerLine {
+.header__hamburgerLine {
+  @include s.mq(tab) {
     background-color: s.$ColorBlack;
   }
 }

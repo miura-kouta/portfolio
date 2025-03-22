@@ -10,20 +10,15 @@
 .allWorks__imgWrap {
   margin-inline: auto;
   width: 120px;
-}
 
-@media (max-width: 767px) {
-  .allWorks__imgWrap {
+  @include s.mq(tab) {
     width: 80px;
   }
 }
 
 .allWorks__inner {
   padding-top: 80px;
-}
-
-@media (max-width: 767px) {
-  .allWorks__inner {
+  @include s.mq(tab) {
     padding-top: 40px;
   }
 }
@@ -32,10 +27,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
 
-@media (max-width: 767px) {
-  .allWorks__container {
+  @include s.mq(tab) {
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -44,17 +37,15 @@
 .allWorks__card {
   width: 30%;
   padding-bottom: 40px;
-}
 
-@media (max-width: 767px) {
-  .allWorks__card {
+  @include s.mq(tab) {
     width: 100%;
   }
 }
 
-@media (max-width: 767px) {
-  .allWorks__card:last-child {
-    margin-bottom: 0;
+.allWorks__card:last-child {
+  @include s.mq(tab) {
+    padding-bottom: 0;
   }
 }
 

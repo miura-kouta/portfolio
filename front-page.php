@@ -89,10 +89,6 @@
                 <ul class="topWorks__container">
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <li class="topWorks__item fade-in fade-in-up">
-                            <h3 class="topWorks__headingLv3">
-                                <?php the_field('work'); ?>
-                            </h3>
-                            <!-- <a href=" <?php the_field('url'); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer"> -->
                             <a href="<?php the_permalink(); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer">
 
                                 <div class="topWorks__thumbnail">
@@ -111,16 +107,9 @@
                 <p>まだ投稿がありません。</p>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
-
-
-
-
-
-            <div class="topWorks__btn">
-                <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
-                    view more
-                </a>
-            </div>
+            <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
+                view more
+            </a>
             <!-- /.works__btn -->
         </section>
         <section id="services">
@@ -133,6 +122,7 @@
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async">
                 </div>
+                <!-- /.services__imgWrap -->
                 <figcaption>
                     <p class="services__text">
                         お客様のニーズを第一に考え、常にユーザー視点でのデザインを心掛けます。ただ美しいだけでなく、直感的に操作できる分かりやすさや、使い心地の良さを重視し、訪れた人が迷うことなく目的を達成できるようなWebサイトを提供します。
@@ -144,6 +134,7 @@
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async">
                 </div>
+                <!-- /.services__imgWrap -->
                 <figcaption>
                     <p class="services__text">
                         デザインカンプを正確に再現し丁寧にコーディングを行います。
@@ -157,6 +148,7 @@
                 <div class="services__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async">
                 </div>
+                <!-- /.services__imgWrap -->
                 <figcaption>
                     <p class="services__text">
                         オリジナルのテーマを一から作成するだけでなく、運用のしやすさを重視し管理画面からも簡単に更新できるような設定にするように心がけています。
@@ -192,7 +184,6 @@
     </div>
     <!-- /.u-contentContainer -->
 
-    <!-- ローディングアニメーション -->
     <div class="loding__container">
         <div class="loding__box">
             <div class="loding__circle"></div>

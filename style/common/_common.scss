@@ -1,16 +1,8 @@
 @use "../setting/variables" as s;
 
 html {
-  font-size: 62.5%;
-  /* 1rem = 10px;   100:x = 16:10*/
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-
-@media (max-width: 767px) {
-  html {
-    font-size: 50%;
-  }
 }
 
 body {

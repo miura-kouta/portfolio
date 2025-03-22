@@ -37,6 +37,7 @@ $breakpoints: (
 /* フォントサイズ============================== */
 html {
   font-size: 62.5%;
+  /* 1rem = 10px;   100:x = 16:10*/
 
   @include mq(l-pc) {
     font-size: 52.5%;
