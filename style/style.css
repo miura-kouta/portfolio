@@ -1009,6 +1009,15 @@ ul {
   text-align: center;
 }
 
+.inquiry__brSp {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .inquiry__brSp {
+    display: block;
+  }
+}
 .inquiry__itemBtn {
   position: relative;
   display: flex;
@@ -1023,21 +1032,7 @@ ul {
   font-weight: bold;
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   background: linear-gradient(to right, #8cfae6 0%, #e6adb7 100%);
-}
-
-.inquiry__itemBtn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-inline: auto;
-  width: 400px;
-  height: 100px;
-  border-radius: 45px;
-  font-size: 3.2rem;
-  font-weight: bold;
-  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -1092,6 +1087,47 @@ ul {
   background: linear-gradient(90deg, #8cfae6 0%, #e6adb7 100%) border-box border-box;
 }
 
+.inquiry__itemBtn::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.inquiry__itemBtn::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fbfbfb;
+  animation: btn_animation 2.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes btn_animation {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
 /*******************************
 | firstView(front-page.php)
 *******************************/
@@ -2208,15 +2244,22 @@ ul {
 *******************************/
 .singleAllWorks {
   padding-top: 80px;
+  max-width: 640px;
+  margin-inline: auto;
 }
 
 .singleAllWorks__headingLv1 {
   padding-top: 80px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .singleAllWorks__headingLv1 {
+    font-size: 2rem;
+  }
+}
 .singleAllWorks__imgWrap {
   margin-top: 20px;
   border-radius: 15px;
@@ -2234,12 +2277,10 @@ ul {
 
 .singleAllWorks__item::before {
   content: "●";
-  color: #333333;
-  font-size: 1.2em;
   position: absolute;
+  top: 0;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #333333;
 }
 
 .singleAllWorks__link {

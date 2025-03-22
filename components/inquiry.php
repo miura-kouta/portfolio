@@ -7,20 +7,13 @@
                 <!-- /.u-headingLv2__wrap -->
                 <div class="inquiry__wrap fade-in">
                     <p class="inquiry__text ">
-                        Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
+                        Web制作に関するご相談、お見積もり依頼など、<br class="inquiry__brSp">お気軽にお問い合わせください。
                     </p>
                     <a href="<?php echo home_url('/contact'); ?>" class="inquiry__itemBtn">
-                        <!-- <div class="inquiry__textBtn">
-                            CONTACT
-                        </div> -->
-
                         <p class="inquiry__textBtn">
                             CONTACT
                         </p>
-
-                        <!-- /.inquiry__textBtn -->
                     </a>
-
                 </div>
                 <!-- /.inquiry__wrap -->
             </div>

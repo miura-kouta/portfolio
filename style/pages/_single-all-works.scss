@@ -5,13 +5,21 @@
 *******************************/
 .singleAllWorks {
   padding-top: 80px;
+  max-width: 640px;
+  margin-inline: auto;
 }
 
 .singleAllWorks__headingLv1 {
   padding-top: 80px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .singleAllWorks__headingLv1 {
+    font-size: 2rem;
+  }
 }
 
 .singleAllWorks__imgWrap {
@@ -26,18 +34,15 @@
 
 .singleAllWorks__item {
   position: relative;
-
   padding-left: 24px;
 }
 
 .singleAllWorks__item::before {
   content: "●";
-  color: s.$ColorBlack;
-  font-size: 1.2em;
   position: absolute;
+  top: 0;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  color: s.$ColorBlack;
 }
 
 .singleAllWorks__link {
