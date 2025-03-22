@@ -14,23 +14,23 @@
 
                     <thead class="price__tableHeaders">
                         <tr class="price__tableRow">
-                            <th class="price__tableHeader price__table--border" colspan="2">
+                            <th class="price__tableHeader " colspan="2">
                                 ホームページ作成費用
                             </th>
                         </tr>
                     </thead>
                     <tbody class="price__tableBody">
                         <tr class="price__tableRow">
-                            <th class="price__tableBodyHeader price__table--border ">
+                            <th class="price__tableBodyHeader  ">
                                 コーディング
                             </th>
-                            <td class="price__tableBodyText price__table--border">
+                            <td class="price__tableBodyText">
                                 10,000円~
                             </td>
                         </tr>
                         <tr class="price__tableRow">
-                            <th class="price__tableBodyHeader price__table--border ">デザイン</th>
-                            <td class="price__tableBodyText price__table--border ">10,000円~</td>
+                            <th class="price__tableBodyHeader  ">デザイン</th>
+                            <td class="price__tableBodyText  ">10,000円~</td>
 
                         </tr>
                     </tbody>
@@ -38,19 +38,19 @@
                 <table class="price__table">
                     <thead class="price__tableHeaders">
                         <tr class="price__tableRow">
-                            <th class="price__tableHeader price__table--border " colspan="2">
+                            <th class="price__tableHeader  " colspan="2">
                                 オプション費用
                             </th>
                         </tr>
                     </thead>
                     <tbody class="price__tableBody">
                         <tr class="price__tableRow">
-                            <th class="price__tableBodyHeader price__table--border ">下層ページ<br class="price__brSp">（1ページ毎）</th>
-                            <td class="price__tableBodyText price__table--border">10,000円~</td>
+                            <th class="price__tableBodyHeader ">下層ページ<br>（1ページ毎）</th>
+                            <td class="price__tableBodyText ">10,000円~</td>
                         </tr>
                         <tr class="price__tableRow">
-                            <th class="price__tableBodyHeader price__table--border">WordPress化</th>
-                            <td class="price__tableBodyText price__table--border ">50,000円~</td>
+                            <th class="price__tableBodyHeader">WordPress化</th>
+                            <td class="price__tableBodyText  ">50,000円~</td>
 
                         </tr>
                     </tbody>

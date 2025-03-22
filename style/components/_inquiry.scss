@@ -33,6 +33,22 @@
     s.$ColorPink 100%
   );
 }
+
+.inquiry__itemBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-inline: auto;
+  width: 400px;
+  height: 100px;
+  border-radius: 45px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 767px) {
   .inquiry__itemBtn {
     width: 100%;

@@ -7,31 +7,36 @@
   padding-top: 80px;
 }
 
+.singleAllWorks__headingLv1 {
+  padding-top: 80px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .singleAllWorks__imgWrap {
+  margin-top: 20px;
   border-radius: 15px;
   overflow: hidden;
 }
 
-// .singleAllWorks__menu {
-// list-style-type: disc;
-// list-style-position: outside;
-// }
+.singleAllWorks__menu {
+  margin-top: 20px;
+}
 
 .singleAllWorks__item {
-  // padding-top: 20px;
-  margin-top: 20px;
-
   position: relative;
+
   padding-left: 24px;
 }
 
 .singleAllWorks__item::before {
-  content: "●"; /* マーカー */
-  color: s.$ColorBlack; /* 色 */
-  font-size: 1.2em; /* サイズ */
+  content: "●";
+  color: s.$ColorBlack;
+  font-size: 1.2em;
   position: absolute;
-  left: 0; /* 左端に配置 */
-  top: 50%; /* テキストの中央に揃える */
+  left: 0;
+  top: 50%;
   transform: translateY(-50%);
 }
 

@@ -2,7 +2,7 @@
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header");
 
-  const headerLogo = document.querySelector(".header__logo");
+  const headerLogo = document.querySelector(".header__logoTitle");
   const headerHamburgerLine = document.querySelectorAll(
     ".header__hamburgerLine"
   );
@@ -61,6 +61,65 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// 現在のページに基づいて、アクティブなリンクを設定する
+
+  // 現在のページのURLを取得
+        const currentPage = window.location.pathname.split("/").pop();
+        
+        // すべてのナビリンクを取得
+        const navLinks = document.querySelectorAll('.nav-link');
+          // console.log(navLinks);
+
+        // 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+//くるりと回転
+let kururi = document.querySelectorAll(".topWorks__item");
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < kururi.length; i++) {
+    const rect = kururi[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 200) {
+      kururi[i].classList.add("rotate-scale-down-ver");
+    }
+  }
+});
+
+//フェードイン
+let fadeInTarget = document.querySelectorAll(".fade-in");
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < fadeInTarget.length; i++) {
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 200) {
+      fadeInTarget[i].classList.add("scroll-in");
+    }
+  }
+});
+
+let fadeInTarget2 = document.querySelectorAll(".fade-in2");
+
+function checkFadeIn() {
+  let scroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (scroll > 1000) {
+    // ～pxスクロールしたら
+    for (let i = 0; i < fadeInTarget2.length; i++) {
+      fadeInTarget2[i].classList.add("scroll-in");
+    }
+    window.removeEventListener("scroll", checkFadeIn); // 一度だけ実行
+  }
+}
+window.addEventListener("scroll", checkFadeIn);
+
 //テキストタイピング
 function TextTypingAnime(entries, observer) {
   entries.forEach((entry) => {
@@ -116,49 +175,18 @@ window.onload = function () {
 };
 
 
+//制作サイトの詳細画面で、テキストが無かった場合は表示をしない
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".singleAllWorks__item").forEach((item) => {
+        const textElement = item.querySelector(".allWorks__text");
 
-//くるりと回転
-let kururi = document.querySelectorAll(".topWorks__item");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < kururi.length; i++) {
-    const rect = kururi[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-    if (scroll > offset - windowHeight + 200) {
-      kururi[i].classList.add("rotate-scale-down-ver");
-    }
-  }
+        if (textElement && textElement.textContent.trim() === "") {
+            item.style.display = "none";
+        }
+    });
 });
 
-//フェードイン
-let fadeInTarget = document.querySelectorAll(".fade-in");
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < fadeInTarget.length; i++) {
-    const rect = fadeInTarget[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-    if (scroll > offset - windowHeight + 200) {
-      fadeInTarget[i].classList.add("scroll-in");
-    }
-  }
-});
 
-let fadeInTarget2 = document.querySelectorAll(".fade-in2");
-
-function checkFadeIn() {
-  let scroll = window.pageYOffset || document.documentElement.scrollTop;
-  if (scroll > 1000) {
-    // ～pxスクロールしたら
-    for (let i = 0; i < fadeInTarget2.length; i++) {
-      fadeInTarget2[i].classList.add("scroll-in");
-    }
-    window.removeEventListener("scroll", checkFadeIn); // 一度だけ実行
-  }
-}
-
-window.addEventListener("scroll", checkFadeIn);
 
 //問い合わせ画面のステップフロー
 
@@ -217,26 +245,6 @@ if (element) {
 }
 
 }
-
-// 現在のページに基づいて、アクティブなリンクを設定する
-
-  // 現在のページのURLを取得
-        const currentPage = window.location.pathname.split("/").pop();
-        
-        // すべてのナビリンクを取得
-        const navLinks = document.querySelectorAll('.nav-link');
-          // console.log(navLinks);
-
-        // 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
-        navLinks.forEach(link => {
-            const linkPage = link.getAttribute('href');
-            if (linkPage === currentPage) {
-                link.classList.add('active');
-            }
-        });
-
-
-
 
 
 

@@ -19,21 +19,8 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 60px;
+  padding: 20px;
   border-radius: 15px;
-}
-@media (max-width: 1280px) {
-  .firstView__textBox {
-    width: 90%;
-    padding: 20px;
-    max-width: 640px;
-  }
-}
-
-@media (max-width: 767px) {
-  .firstView__textBox {
-    max-width: 380px;
-  }
 }
 
 .firstView__maintText {

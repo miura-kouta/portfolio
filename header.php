@@ -42,16 +42,12 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header">
-        <!-- <div class="header__inner"> -->
         <div class="header__container">
-            <div class="header__logo">
-                <h1 class="header__logoTitle ">
-                    <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
-                    </a>
+            <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
+                <h1 class="header__logoTitle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
                 </h1>
-            </div>
-
+            </a>
             <nav class="header-listNav">
                 <ul class="header__listMenu">
                     <?php
@@ -153,7 +149,5 @@
             </div>
             <!-- /.header__hamburger -->
         </div>
-
-        <!-- </div> -->
-        <!-- / .header__inner -->
+        <!--/.header__container  -->
     </header>

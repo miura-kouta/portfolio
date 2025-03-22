@@ -92,7 +92,9 @@
                             <h3 class="topWorks__headingLv3">
                                 <?php the_field('work'); ?>
                             </h3>
-                            <a href=" <?php the_field('url'); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer">
+                            <!-- <a href=" <?php the_field('url'); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer"> -->
+                            <a href="<?php the_permalink(); ?>" class="topWorks__link  " target="_blank" rel="noopener noreferrer">
+
                                 <div class="topWorks__thumbnail">
                                     <?php if (has_post_thumbnail()) : ?>
                                         <?php the_post_thumbnail(); ?>
@@ -109,6 +111,11 @@
                 <p>まだ投稿がありません。</p>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
+
+
+
+
+
             <div class="topWorks__btn">
                 <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
                     view more

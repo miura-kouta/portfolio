@@ -10,9 +10,14 @@
                         Web制作に関するご相談、お見積もり依頼など、お気軽にお問い合わせください。
                     </p>
                     <a href="<?php echo home_url('/contact'); ?>" class="inquiry__itemBtn">
-                        <div class="inquiry__textBtn">
+                        <!-- <div class="inquiry__textBtn">
                             CONTACT
-                        </div>
+                        </div> -->
+
+                        <p class="inquiry__textBtn">
+                            CONTACT
+                        </p>
+
                         <!-- /.inquiry__textBtn -->
                     </a>
 
