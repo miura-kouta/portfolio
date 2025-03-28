@@ -6,44 +6,45 @@
 }
 
 .u-headingLv1__en {
+  display: flex;
+  justify-content: center;
   font-size: 4rem;
   font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: s.$font-family2;
+
+  @include s.mq(tab) {
+    font-size: 3rem;
+  }
 }
 
 .u-headingLv1__ja {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.u-headingLv1__ja::before,
+.u-headingLv1__ja::after {
+  content: "";
+  height: 1px;
+  background-color: s.$ColorBlack;
 }
 
 .u-headingLv1__ja::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -4rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  z-index: 1;
-  height: 1px;
-  width: 3rem;
-  background-color: s.$ColorBlack;
+  width: 20px;
+  margin-right: 10px;
 }
-
 .u-headingLv1__ja::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -4rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  z-index: 1;
-  height: 1px;
-  width: 3rem;
-  background-color: s.$ColorBlack;
+  width: 20px;
+  margin-left: 10px;
 }
 
 .u-headingLv2__wrap {
@@ -92,7 +93,7 @@
 }
 
 .u-headingLv3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
 }

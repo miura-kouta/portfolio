@@ -1,69 +1,25 @@
 <?php get_header(); ?>
 <main id="main" class="u-contentInner">
-
-    <div class="goingUp">
-        <div class="goingUp__wrapCircle fade-in2 ">
-
-            <a href="#firstView" class="goingUp__linkCircle">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top.webp" alt="円" width="273" height="273" decoding="async">
-            </a>
-        </div>
-        <div class="goingUp__wrapArrow  fade-in2">
-            <a href="#firstView" class="goingUp__linkArrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top2.webp" alt="矢印" width="178" height="316" decoding="async">
-            </a>
-        </div>
-    </div>
     <section id="firstView" class="firstView">
         <div class="firstView__container">
-            <div class="splide" aria-label="Splideの基本的なHTML">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="firstView__wrap">
-                                <video class="firstView__video" muted autoplay playsinline loop>
-                                    <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4">
-                                </video>
-                                <div class="firstView__textBox">
-                                    <strong class="firstView__maintText">シンプルさと洗練された技術</strong>
-                                    <p class="firstView__subText">あなたのサイトを際立たせる</p>
-                                </div>
-                                <!-- /.firstView__textBox -->
-                            </div>
-                            <!-- /.firstView__wrap -->
-                        </li>
-                        <li class="splide__slide">
-                            <div class="firstView__wrap">
-                                <video class="firstView__video" muted autoplay playsinline loop>
-                                    <source src="<?php echo get_template_directory_uri(); ?>/images/video2.mp4">
-                                </video>
-                                <div class="firstView__textBox">
-                                    <strong class="firstView__maintText">デザインとコーディングの融合</strong>
-                                    <p class="firstView__subText">魅力を形にする</p>
-
-                                </div>
-                                <!-- /.firstView__textBox -->
-                            </div>
-                            <!-- /.firstView__wrap -->
-                        </li>
-                        <li class="splide__slide">
-                            <div class="firstView__wrap">
-                                <video class="firstView__video" muted autoplay playsinline loop>
-                                    <source src="<?php echo get_template_directory_uri(); ?>/images/video3.mp4">
-                                </video>
-                                <div class="firstView__textBox">
-                                    <strong class="firstView__maintText">クリエイティブなアイデアを</strong>
-                                    <p class="firstView__subText">リアルなウェブに映し出す</p>
-                                </div>
-                                <!-- /.firstView__textBox -->
-                            </div>
-                            <!-- /.firstView__wrap -->
-                        </li>
-                    </ul>
+            <div class="firstView__wrap">
+                <video class="firstView__video" muted autoplay playsinline loop>
+                    <source src="<?php echo get_template_directory_uri(); ?>/images/video1.webm">
+                </video>
+                <div class="firstView__textBox">
+                    <h1 class="u-headingLv1__en">Kota Miura Portfolio<br>
+                    </h1>
+                    <p class="u-headingLv1__ja">ポートフォリオサイトへようこそ</p>
                 </div>
-                <!-- /.splide__track -->
+
+                <div class="firstView__scrollDownWrap">
+                    <a href="#topWorks" class="firstView__scrollDownLink">Scroll</a>
+                </div>
+
+                <!-- /.firstView__textBox -->
             </div>
-            <!-- /.splide -->
+            <!-- /.firstView__wrap -->
+            </li>
         </div>
     </section>
 
@@ -95,7 +51,7 @@
                                     <?php if (has_post_thumbnail()) : ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php else : ?>
-                                        <img src="https://placehold.jp/16px/999/ffffff/352x198.png?text=No%20Image" alt="制作実績のサイト">
+                                        <img src="https://placehold.jp/16px/999/ffffff/352x198.png?text=No%20Image" alt="制作実績のサイト" loading="lazy">
                                     <?php endif; ?>
                                 </div>
                                 <?php the_category(); ?>
@@ -120,7 +76,7 @@
             <figure class="services__media fade-in fade-in-left">
                 <h3 class="u-headingLv3 services__titleMedia">1.Webデザイン</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async" loading="lazy">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>
@@ -132,7 +88,7 @@
             <figure class="services__media fade-in fade-in-right">
                 <h3 class="u-headingLv3 services__titleMedia">2.Webサイト制作</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async" loading="lazy">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>
@@ -146,7 +102,7 @@
             <figure class="services__media fade-in fade-in-left">
                 <h3 class="u-headingLv3 services__titleMedia">3.WordPress</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async" loading="lazy">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>
@@ -167,7 +123,7 @@
             <figure class="about__media fade-in fade-in-up">
 
                 <div class="about__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.webp" alt="自分の顔のイメージ" class="about__img" width="400" height="240" decoding="async">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/about-image1.webp" alt="自分の顔のイメージ" class="about__img" width="400" height="240" decoding="async" loading="lazy">
                 </div>
                 <!-- /.about__imgWrap -->
                 <figcaption class="about__body">
@@ -197,6 +153,20 @@
         <!-- /.loding__box -->
     </div>
     <!-- /.loding__container -->
-
+    <div class="goingUp">
+        <div class="goingUp__wrapCircle fade-in2 ">
+            <a href="#firstView" class="goingUp__linkCircle">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top.webp" alt="円" width="200" height="200" decoding="async" loading="lazy">
+            </a>
+        </div>
+        <!--/.goingUp__wrapCircle  -->
+        <div class="goingUp__wrapArrow  fade-in2">
+            <a href="#firstView" class="goingUp__linkArrow">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top2.webp" alt="矢印" width="30" height="30" decoding="async" loading="lazy">
+            </a>
+        </div>
+        <!--/.goingUp__wrapArrow  -->
+    </div>
+    <!-- /.goingUp -->
 </main>
 <?php get_footer(); ?>

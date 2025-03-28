@@ -35,7 +35,7 @@
   max-width: 400px;
   height: 100px;
   border-radius: 45px;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   background: linear-gradient(
@@ -46,6 +46,9 @@
   overflow: hidden;
   transition: 0.3s all;
 
+  // background-color: s.$ColorBlack;
+  // color: s.$ColorPink;
+  // border: 1px solid s.$ColorPink;
   @include s.mq(l-pc) {
     max-width: 340px;
     height: 80px;
@@ -54,7 +57,7 @@
   @include s.mq(tab) {
     max-width: 220px;
     height: 60px;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -71,6 +74,8 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    background-color: s.$ColorBlack;
   }
 }
 
@@ -105,22 +110,6 @@
     max-width: 220px;
     height: 60px;
   }
-}
-
-.inquiry__itemBtn:hover::before {
-  background: linear-gradient(90deg, s.$ColorLightBlue 0%, s.$ColorPink 100%)
-    border-box border-box;
-}
-
-.inquiry__itemBtn::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: -180px;
-  left: 0;
-  width: 30px;
-  height: 100%;
-  background-color: #fbfbfb;
 }
 
 .inquiry__itemBtn::after {

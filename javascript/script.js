@@ -46,21 +46,6 @@ navi.addEventListener("click", function () {
   navi.classList.toggle("active");
 });
 
-// Splide
-document.addEventListener("DOMContentLoaded", function () {
-  let splideElement = document.querySelector(".splide");
-  if (splideElement) {
-    new Splide(splideElement, {
-      type: "loop",
-      perPage: 1,
-      autoplay: true,
-      interval: 5000,
-      pauseOnHover: false,
-      arrows: false,
-    }).mount();
-  }
-});
-
 // 現在のページに基づいて、アクティブなリンクを設定する
 
   // 現在のページのURLを取得
@@ -110,8 +95,8 @@ let fadeInTarget2 = document.querySelectorAll(".fade-in2");
 
 function checkFadeIn() {
   let scroll = window.pageYOffset || document.documentElement.scrollTop;
-  if (scroll > 1000) {
-    // ～pxスクロールしたら
+  if (scroll > 200) {
+
     for (let i = 0; i < fadeInTarget2.length; i++) {
       fadeInTarget2[i].classList.add("scroll-in");
     }

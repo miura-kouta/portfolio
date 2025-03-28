@@ -8,9 +8,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="三浦浩太のポートフォリオ｜Webデザインとコーディングの実績紹介">
     <meta property="og:description" content="Webコーダー三浦浩太のポートフォリオサイトです。コーディングやデザイン業務を承っています。コーディングやデザインに関して少しでもお困りごとや疑問点などございましたらお気軽にお問い合わせください。" />
-    <meta name="keywords" content="ポートフォリオ, ホームページ制作, みうら こうた, コーディング, Webコーダー">
+    <meta name="description" content="Webコーダー三浦浩太のポートフォリオサイトです。コーディングやデザイン業務を承っています。コーディングやデザインに関して少しでもお困りごとや疑問点などございましたらお気軽にお問い合わせください。" />
+    <meta name="keywords" content="WordPress化, ホームページ制作, みうら こうた, コーディング, Webコーダー">
     <meta property="og:site_name" content="mk craft tokyo" />
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/index-works-image4.jpg" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og-image.webp" />
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@mk_craft_tokyo" />
@@ -31,7 +32,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KRHR28RF');
     </script>
-
+    <title>三浦浩太のポートフォリオサイト</title>
     <?php wp_head(); ?>
 </head>
 
@@ -44,9 +45,9 @@
     <header class="header">
         <div class="header__container">
             <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
-                <h1 class="header__logoTitle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header__image1.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
-                </h1>
+                <div class="header__logoTitle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
+                </div>
             </a>
             <nav class="header-listNav">
                 <ul class="header__listMenu">

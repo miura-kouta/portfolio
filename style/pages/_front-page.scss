@@ -23,54 +23,57 @@
   border-radius: 15px;
 }
 
-.firstView__maintText {
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  font-weight: bold;
-  white-space: nowrap;
-  text-align: center;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+.firstView__scrollDownWrap {
+  position: absolute;
+  bottom: 1%;
+  right: 50%;
+  animation: arrowmove 2s ease-in-out infinite;
+}
 
-  @include s.mq(tab) {
-    font-size: 3rem;
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  00% {
+    bottom: 1%;
   }
 }
 
-.firstView__subText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: bold;
-  white-space: nowrap;
-  text-align: center;
-
-  @include s.mq(tab) {
-    font-size: 2rem;
-  }
-}
-
-.firstView__subText::before,
-.firstView__subText::after {
+.firstView__scrollDownWrap:before {
   content: "";
-  height: 1px;
+  position: absolute;
+  bottom: 5px;
+  right: -6px;
+  width: 2px;
+  height: 20px;
+  background-color: s.$ColorBlack;
+  transform: skewX(-31deg);
+}
+
+.firstView__scrollDownWrap:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 2px;
+  height: 85px;
   background-color: s.$ColorBlack;
 }
 
-.firstView__subText:before {
-  width: 20px;
-  margin-right: 10px;
-}
-.firstView__subText:after {
-  width: 20px;
-  margin-left: 10px;
-}
-
-.splide__pagination__page {
-  margin: 8px;
-  width: 12px;
-  height: 12px;
+.firstView__scrollDownLink {
+  position: absolute;
+  left: -24px;
+  bottom: 17px;
+  color: s.$ColorBlack;
+  font-size: 14px;
+  font-family: s.$font-family2;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*******************************
@@ -179,7 +182,7 @@
   margin-top: 40px;
   margin-inline: auto;
   border-bottom: 1px solid s.$ColorBlack;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   transition: 1s all;
@@ -334,11 +337,6 @@
     width: 100%;
   }
 }
-// @media (max-width: 767px) {
-//   .about__body {
-//     width: 100%;
-//   }
-// }
 
 .about__text {
   margin-top: 40px;
@@ -375,7 +373,31 @@
   }
 }
 
-/*ローディングアニメーション*/
+.goingUp__wrapCircle {
+  position: fixed;
+  bottom: -90px;
+  right: -90px;
+  animation: rotate 10s infinite linear;
+  width: 200px;
+  z-index: 1000;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.goingUp__wrapArrow {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  z-index: 1000;
+}
 
 .loding__container {
   position: fixed;
