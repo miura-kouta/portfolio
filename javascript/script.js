@@ -1,7 +1,9 @@
 // スクロールしたらheaderの背景が黒くなる
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header");
-
+ 
+  const headerContainer = document.querySelector(".header__container");
+ 
   const headerLogo = document.querySelector(".header__logoTitle");
   const headerHamburgerLine = document.querySelectorAll(
     ".header__hamburgerLine"
@@ -12,6 +14,7 @@ window.addEventListener("scroll", function () {
     headerInner.classList.add("header__scrollBg");
     headerLogo.classList.add("header__scrollLogo");
 
+    headerContainer.classList.add("header__scrollContainer");
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.add("header__scrollFont");
 
@@ -23,6 +26,7 @@ window.addEventListener("scroll", function () {
     headerInner.classList.remove("header__scrollBg");
     headerLogo.classList.remove("header__scrollLogo");
 
+           headerContainer.classList.remove("header__scrollContainer");
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.remove("header__scrollFont");
     }
@@ -302,4 +306,6 @@ class Main {
     });
   }
 }
+
 new Main();
+

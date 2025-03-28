@@ -3,23 +3,21 @@
     <section id="firstView" class="firstView">
         <div class="firstView__container">
             <div class="firstView__wrap">
-                <video class="firstView__video" muted autoplay playsinline loop>
-                    <source src="<?php echo get_template_directory_uri(); ?>/images/video1.webm">
+                <video class="firstView__video" muted autoplay loop playsinline>
+                    <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
                 </video>
                 <div class="firstView__textBox">
                     <h1 class="u-headingLv1__en">Kota Miura Portfolio<br>
                     </h1>
                     <p class="u-headingLv1__ja">ポートフォリオサイトへようこそ</p>
                 </div>
-
+                <!-- /.firstView__textBox -->
                 <div class="firstView__scrollDownWrap">
                     <a href="#topWorks" class="firstView__scrollDownLink">Scroll</a>
                 </div>
-
-                <!-- /.firstView__textBox -->
+                <!-- /.firstView__scrollDownWrap -->
             </div>
             <!-- /.firstView__wrap -->
-            </li>
         </div>
     </section>
 
@@ -76,7 +74,7 @@
             <figure class="services__media fade-in fade-in-left">
                 <h3 class="u-headingLv3 services__titleMedia">1.Webデザイン</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services1.webp" alt="できることその1" width="400" height="240" decoding="async">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>
@@ -88,7 +86,7 @@
             <figure class="services__media fade-in fade-in-right">
                 <h3 class="u-headingLv3 services__titleMedia">2.Webサイト制作</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services2.webp" alt="できることその2" width="400" height="240" decoding="async">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>
@@ -102,7 +100,7 @@
             <figure class="services__media fade-in fade-in-left">
                 <h3 class="u-headingLv3 services__titleMedia">3.WordPress</h3>
                 <div class="services__imgWrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/services3.webp" alt="できることその3" width="400" height="240" decoding="async">
                 </div>
                 <!-- /.services__imgWrap -->
                 <figcaption>

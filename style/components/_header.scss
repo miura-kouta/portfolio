@@ -22,18 +22,15 @@
 }
 
 .header__container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   align-items: center;
   width: 100%;
   max-width: 950px;
-  height: 56px;
   margin-inline: auto;
-
+  transition: 1s all;
   @include s.mq(l-pc) {
     display: block;
     width: 90%;
-    height: 112px;
   }
   @include s.mq(tab) {
     display: flex;
@@ -43,16 +40,18 @@
   }
 }
 
-.header__logoLink {
-  transition: 1s all;
-  width: 100px;
+.header__scrollContainer {
+  display: flex;
+  justify-content: space-between;
+}
 
-  @include s.mq(l-pc) {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    height: 56px;
-  }
+.header__logoLink {
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  width: 100px;
+  height: 56px;
+  transition: 1s all;
 }
 
 .header__logoTitle {
@@ -61,11 +60,11 @@
 
 .header__listMenu {
   display: flex;
+  justify-content: space-between;
   font-family: s.$font-family2;
 
   @include s.mq(l-pc) {
     height: 56px;
-    justify-content: space-between;
   }
   @include s.mq(tab) {
     height: auto;
@@ -105,8 +104,8 @@
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: s.$ColorPink;
   transition: all 0.3s;
+  background-color: s.$ColorPink2;
 }
 
 .header__listLink::before {
@@ -134,7 +133,7 @@
 }
 
 .navActive {
-  color: s.$ColorPink;
+  color: s.$ColorPink2;
 }
 
 .header__hamburger {

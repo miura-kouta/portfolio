@@ -10,11 +10,16 @@
 }
 
 .price__imgWrap {
+  padding-top: 20px;
   margin-inline: auto;
-  width: 120px;
+  width: 200px;
+
+  @include s.mq(l-pc) {
+    width: 160px;
+  }
 
   @include s.mq(tab) {
-    width: 80px;
+    width: 120px;
   }
 }
 

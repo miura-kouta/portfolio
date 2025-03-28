@@ -8,10 +8,15 @@
 }
 
 .contact__imgWrap {
+  padding-top: 20px;
   margin-inline: auto;
-  width: 120px;
+  width: 200px;
+  @include s.mq(l-pc) {
+    width: 160px;
+  }
+
   @include s.mq(tab) {
-    width: 80px;
+    width: 120px;
   }
 }
 
@@ -91,7 +96,9 @@
 .contact__stepFlowItem.contact__stepFlowActive .bubble,
 .contact__stepFlowItem.contact__stepFlowActive .bubble::after,
 .contact__stepFlowItem.contact__stepFlowActive .bubble::before {
-  background-color: s.$ColorPink;
+  // background-color: s.$ColorPink;
+
+  background-color: s.$ColorPink2;
 }
 
 .wpcf7-form {
@@ -121,8 +128,10 @@
           display: inline-block;
           padding: 0.3em 0.3em 0.2em;
           margin-left: 8px;
-          background: s.$ColorRequired;
+          // background: s.$ColorRequired;
           border-radius: 2px;
+
+          background-color: s.$ColorPink2;
         }
       }
       .contact__th--formRequired::after {
@@ -131,10 +140,12 @@
         display: inline-block;
         margin-left: 8px;
         padding: 0.3em 0.3em 0.2em;
-        background: s.$ColorRequired;
+        // background: s.$ColorRequired;
         border-radius: 2px;
         font-size: 0.8em;
         color: s.$ColorWhiteMain;
+
+        background-color: s.$ColorPink2;
       }
 
       @media (max-width: 767px) {
@@ -203,8 +214,9 @@
 .contact__RecapchaLink {
   font-weight: normal;
   color: s.$ColorPink;
-
   transition: 0.3s all;
+
+  color: s.$ColorPink2;
 }
 
 .contact__RecapchaLink:hover {
@@ -289,8 +301,10 @@
           color: s.$ColorWhiteMain;
           display: inline-block;
           padding: 0.3em 0.3em 0.2em;
-          background: s.$ColorRequired;
+          // background: s.$ColorRequired;
           border-radius: 2px;
+
+          background-color: s.$ColorPink2;
         }
       }
       td {
@@ -333,7 +347,9 @@
       transition: 0.3s all;
     }
     .wpcf7-form-control:hover {
-      background-color: s.$ColorPink;
+      // background-color: s.$ColorPink;
+
+      background-color: s.$ColorPink2;
     }
 
     .wpcf7cp-cfm-edit-btn:hover {

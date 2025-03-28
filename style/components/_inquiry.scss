@@ -41,14 +41,12 @@
   background: linear-gradient(
     to right,
     s.$ColorLightBlue 0%,
-    s.$ColorPink 100%
+    s.$ColorPink2 100%
   );
+
   overflow: hidden;
   transition: 0.3s all;
 
-  // background-color: s.$ColorBlack;
-  // color: s.$ColorPink;
-  // border: 1px solid s.$ColorPink;
   @include s.mq(l-pc) {
     max-width: 340px;
     height: 80px;
@@ -66,16 +64,23 @@
 
   .inquiry__textBtn {
     display: inline-block;
-    background: linear-gradient(90deg, s.$ColorLightBlue 0%, s.$ColorPink 100%);
+    background: linear-gradient(
+      90deg,
+      s.$ColorLightBlue 0%,
+      s.$ColorPink2 100%
+    );
+    background: linear-gradient(
+      90deg,
+      s.$ColorLightBlue 0%,
+      s.$ColorPink2 100%
+    );
     background: -webkit-linear-gradient(
       0deg,
       s.$ColorLightBlue 0%,
-      s.$ColorPink 100%
+      s.$ColorPink2 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    background-color: s.$ColorBlack;
   }
 }
 
@@ -110,6 +115,11 @@
     max-width: 220px;
     height: 60px;
   }
+}
+
+.inquiry__itemBtn:hover::before {
+  background: linear-gradient(90deg, s.$ColorLightBlue 0%, s.$ColorPink2 100%)
+    border-box border-box;
 }
 
 .inquiry__itemBtn::after {
