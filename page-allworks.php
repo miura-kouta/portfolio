@@ -2,7 +2,7 @@
 <main class="c-contentInner">
     <div class="c-contentContainer">
         <section id="allWorks">
-            <div class="c-headingLv1">
+            <div class="c-headingLv1Wrap">
                 <h1 class="c-headingLv1__main">WORKS</h1>
                 <p class="c-headingLv1__sub">制作実績一覧</p>
                 <div class="allWorks__imgWrap ">

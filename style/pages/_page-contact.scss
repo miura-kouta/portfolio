@@ -53,7 +53,6 @@
   -moz-flex: 1;
   -webkit-box-flex: 1;
   flex: 1;
-
   color: s.$ColorBlack;
 }
 
@@ -68,19 +67,20 @@
 
 .contact__stepFlowItem .bubble::after,
 .contact__stepFlowItem .bubble::before {
+  content: "";
   position: absolute;
   top: 9px;
   display: block;
-  width: 100%;
+  margin-left: 20px;
+  width: calc(100% - 20px);
   height: 3px;
-  content: "";
   background-color: s.$ColorGray;
 }
 
 .contact__stepCompleted .bubble,
 .contact__stepCompleted .bubble::after,
 .contact__stepCompleted .bubble::before {
-  background-color: s.$ColorLightBlue2;
+  background-color: s.$ColorGray;
 }
 
 .contact__stepFlowItem:last-child .bubble::after,
@@ -94,9 +94,8 @@
   color: s.$ColorBlack;
   font-weight: bold;
 }
-.contact__stepFlowItem.contact__stepFlowActive .bubble,
-.contact__stepFlowItem.contact__stepFlowActive .bubble::after,
-.contact__stepFlowItem.contact__stepFlowActive .bubble::before {
+
+.contact__stepFlowItem.contact__stepFlowActive .bubble {
   background-color: s.$ColorPink2;
 }
 
@@ -170,7 +169,6 @@
       @media (max-width: 767px) {
         .contact__td--form {
           width: 100%;
-
           padding-top: 8px;
         }
       }
@@ -216,10 +214,8 @@
 
 .contact__RecapchaLink {
   font-weight: normal;
-  color: s.$ColorPink;
-  transition: 0.3s all;
-
   color: s.$ColorPink2;
+  transition: 0.3s all;
 }
 
 .contact__RecapchaLink:hover {
@@ -301,7 +297,7 @@ div#wpcf7cpcnf {
   position: static;
   table {
     margin-inline: auto;
-    width: 60%;
+    width: 80%;
     word-break: break-all;
     word-wrap: break-all;
 
@@ -315,7 +311,6 @@ div#wpcf7cpcnf {
       th,
       td {
         text-align: left;
-
       }
       th {
         display: flex;
@@ -398,9 +393,8 @@ div#wpcf7cpcnf {
   div#wpcf7cpcnf {
     table {
       width: 90%;
- 
-      tr {
 
+      tr {
         flex-direction: column;
         padding-top: 20px;
         padding-bottom: 20px;

@@ -3,13 +3,59 @@
 /*******************************
 | footer(footer.php)
 *******************************/
-
-.footer__textCopyRight {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  flex-direction: column;
+  background-color: s.$ColorBlack;
+  height: 112px;
+}
+
+.footer__privacyLink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: s.$font-family1;
+  font-weight: bold;
+  color: s.$ColorWhiteMain;
+  overflow: hidden;
+}
+
+.footer__privacyLink::before,
+.footer__privacyLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s;
+  background-color: s.$ColorPink;
+}
+
+.footer__privacyLink::before {
+  top: 0;
+  transform: translateX(-101%);
+}
+.footer__privacyLink::after {
+  bottom: 0;
+  transform: translateX(101%);
+}
+
+.footer__privacyLink:hover::before,
+.footer__privacyLink:hover::after {
+  transform: translateX(0);
+}
+
+.footer__copyRightText {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: s.$font-family2;
   color: s.$ColorWhiteMain;
-  background-color: s.$ColorBlack;
 }

@@ -98,3 +98,12 @@
   text-align: left;
 }
 
+.price__cautionText {
+ padding-left: max(12px, 1.6rem);
+  text-indent: max(-12px, -1.6rem);
+}
+
+.price__cautionItem {
+  padding-left: max(12px, 1.6rem);
+  text-indent: max(-12px, -1.6rem);
+}

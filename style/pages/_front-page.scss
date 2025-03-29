@@ -196,10 +196,9 @@
 }
 
 .topWorks__textBtn {
+  display: block;
   border-bottom: 1px solid s.$ColorBlack;
   transition: 1s all;
-
-  display: block;
 }
 
 .topWorks__linkBtn:hover .topWorks__textBtn {

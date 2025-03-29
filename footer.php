@@ -1,5 +1,8 @@
-    <footer id="footer" class="footer ">
-        <p class="footer__textCopyRight">© Kota Miura All rights reserved.</p>
+    <footer id="footer" class="footer">
+        <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="footer__privacyLink">
+            プライバシーポリシー
+        </a>
+        <p class="footer__copyRightText">© Kota Miura All rights reserved.</p>
     </footer>
     <?php if (is_front_page()) : ?>
     <?php endif; ?>
