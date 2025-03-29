@@ -62,7 +62,7 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
             <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
-                view more
+                <span class="topWorks__textBtn">view more</span>
             </a>
             <!-- /.works__btn -->
         </section>

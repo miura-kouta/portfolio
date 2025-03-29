@@ -24,6 +24,7 @@
   margin-top: 80px;
   border: solid 1px s.$ColorBlack;
   background-color: s.$ColorWhiteMain;
+
   @include s.mq(tab) {
     margin-top: 40px;
   }
@@ -79,7 +80,7 @@
 .contact__stepCompleted .bubble,
 .contact__stepCompleted .bubble::after,
 .contact__stepCompleted .bubble::before {
-  background-color: s.$ColorLightBlue;
+  background-color: s.$ColorLightBlue2;
 }
 
 .contact__stepFlowItem:last-child .bubble::after,
@@ -96,8 +97,6 @@
 .contact__stepFlowItem.contact__stepFlowActive .bubble,
 .contact__stepFlowItem.contact__stepFlowActive .bubble::after,
 .contact__stepFlowItem.contact__stepFlowActive .bubble::before {
-  // background-color: s.$ColorPink;
-
   background-color: s.$ColorPink2;
 }
 
@@ -122,15 +121,23 @@
         display: flex;
         align-items: center;
         width: 200px;
+        padding-right: 20px;
         font-weight: bold;
+
+        @include s.mq(l-pc) {
+          width: 184px;
+        }
+        @include s.mq(tab) {
+          width: 172px;
+          margin-right: auto;
+        }
+
         .required {
           color: s.$ColorWhiteMain;
           display: inline-block;
-          padding: 0.3em 0.3em 0.2em;
+          padding: 0.2px 0.2px 0.2px;
           margin-left: 8px;
-          // background: s.$ColorRequired;
           border-radius: 2px;
-
           background-color: s.$ColorPink2;
         }
       }
@@ -138,20 +145,13 @@
         content: "必須";
         position: static;
         display: inline-block;
-        margin-left: 8px;
-        padding: 0.3em 0.3em 0.2em;
-        // background: s.$ColorRequired;
-        border-radius: 2px;
-        font-size: 0.8em;
+        border-radius: 5px;
+        padding: 2px 6px;
+        margin-left: auto;
+        font-size: 12px;
+        line-height: 1.5;
         color: s.$ColorWhiteMain;
-
         background-color: s.$ColorPink2;
-      }
-
-      @media (max-width: 767px) {
-        .contact__th--form {
-          width: 100%;
-        }
       }
 
       .contact__td--form {
@@ -170,24 +170,27 @@
       @media (max-width: 767px) {
         .contact__td--form {
           width: 100%;
+
+          padding-top: 8px;
         }
       }
 
       .wpcf7-form-control-wrap {
         width: 100%;
       }
+
+      br {
+        display: none;
+      }
     }
     @media (max-width: 767px) {
       label {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        display: block;
       }
     }
   }
-  tr:first-child {
-    border-top: none;
+  .contact__tr--form:nth-child(5) {
+    border-bottom: 1px #ddd solid;
   }
 }
 @media (max-width: 767px) {
@@ -237,6 +240,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-top: 40px;
 }
 
 .wpcf7-spinner {
@@ -257,18 +262,17 @@
   cursor: pointer;
   text-align: center;
   transition: 0.3s all;
-  background-color: s.$ColorBlack;
+  background-color: s.$ColorPink2;
 }
 
 @media (max-width: 767px) {
   .contact__item--button {
-    padding: 6px;
     width: 120px;
   }
 }
 
 .contact__item--button:hover {
-  background-color: s.$ColorPink;
+  opacity: 0.7;
 }
 
 .grecaptcha-badge {
@@ -276,9 +280,25 @@
 }
 
 // 確認画面
-#wpcf7cpcnf {
-  height: auto;
 
+.wpcf7cp-form-hide {
+  display: none;
+
+  .contact__tr--form {
+    border-top: 1px #ddd solid;
+  }
+}
+button.wpcf7cp-cfm-edit-btn {
+  margin-bottom: 0;
+}
+
+button.wpcf7cp-cfm-submit-btn {
+  margin-bottom: 0;
+}
+
+div#wpcf7cpcnf {
+  height: auto;
+  position: static;
   table {
     margin-inline: auto;
     width: 60%;
@@ -288,25 +308,36 @@
     tr {
       display: flex;
       justify-content: flex-start;
+      border-top: 1px #ddd solid;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
       th,
       td {
         text-align: left;
-        padding-bottom: 40px;
+
       }
       th {
+        display: flex;
+        margin-right: 20px;
         width: 240px;
         white-space: nowrap;
-
-        .required {
-          color: s.$ColorWhiteMain;
-          display: inline-block;
-          padding: 0.3em 0.3em 0.2em;
-          // background: s.$ColorRequired;
-          border-radius: 2px;
-
-          background-color: s.$ColorPink2;
-        }
       }
+
+      th::after {
+        content: "必須";
+        position: static;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 2px 6px;
+        margin-left: auto;
+        line-height: 1.5;
+        max-height: 22px;
+        font-size: 12px;
+        color: s.$ColorWhiteMain;
+        background-color: s.$ColorPink2;
+      }
+
       td {
         display: flex;
         align-items: center;
@@ -320,16 +351,21 @@
     }
 
     tr:last-child {
+      border-bottom: 1px #ddd solid;
       td {
         overflow-y: scroll;
         align-items: flex-start;
-        height: 200px;
+        height: auto;
+        max-height: 120px;
+        padding-bottom: 0;
       }
     }
   }
 
   .wpcf7cp-btns {
     text-align: center;
+
+    margin-top: 0;
     .wpcf7-form-control {
       appearance: none;
       -webkit-appearance: none;
@@ -340,45 +376,54 @@
       margin-top: 40px;
       padding: 10px;
       border-radius: 15px;
-      background-color: s.$ColorBlack;
+      background-color: s.$ColorPink2;
       border: none;
       color: s.$ColorWhiteMain;
       cursor: pointer;
       transition: 0.3s all;
     }
     .wpcf7-form-control:hover {
-      // background-color: s.$ColorPink;
-
-      background-color: s.$ColorPink2;
+      opacity: 0.7;
     }
-
+    .wpcf7cp-cfm-edit-btn {
+      background-color: s.$ColorLightBlue2;
+    }
     .wpcf7cp-cfm-edit-btn:hover {
-      background-color: s.$ColorLightBlue;
+      opacity: 0.7;
     }
   }
 }
 
 @media (max-width: 767px) {
-  #wpcf7cpcnf {
+  div#wpcf7cpcnf {
     table {
       width: 90%;
-      max-width: 520px;
+ 
       tr {
-        display: block;
+
+        flex-direction: column;
         padding-top: 20px;
+        padding-bottom: 20px;
         th,
         td {
           padding-bottom: 0;
         }
-      }
-      tr:first-child {
-        padding-top: 0;
+        th {
+          width: 140px;
+
+          p {
+            display: flex;
+            align-items: center;
+          }
+        }
+        td {
+          padding-top: 8px;
+        }
       }
     }
     .wpcf7cp-btns {
       text-align: center;
       .wpcf7-form-control {
-        padding: 8px;
         max-width: 120px;
         width: 100%;
       }

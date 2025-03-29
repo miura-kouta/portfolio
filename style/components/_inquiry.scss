@@ -40,8 +40,8 @@
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
   background: linear-gradient(
     to right,
-    s.$ColorLightBlue 0%,
-    s.$ColorPink2 100%
+    s.$ColorLightBlue2 0%,
+    s.$ColorPink 100%
   );
 
   overflow: hidden;
@@ -66,18 +66,18 @@
     display: inline-block;
     background: linear-gradient(
       90deg,
-      s.$ColorLightBlue 0%,
-      s.$ColorPink2 100%
+      s.$ColorLightBlue2 0%,
+      s.$ColorPink 100%
     );
     background: linear-gradient(
       90deg,
-      s.$ColorLightBlue 0%,
-      s.$ColorPink2 100%
+      s.$ColorLightBlue2 0%,
+      s.$ColorPink 100%
     );
     background: -webkit-linear-gradient(
       0deg,
-      s.$ColorLightBlue 0%,
-      s.$ColorPink2 100%
+      s.$ColorLightBlue2 0%,
+      s.$ColorPink 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,7 +118,7 @@
 }
 
 .inquiry__itemBtn:hover::before {
-  background: linear-gradient(90deg, s.$ColorLightBlue 0%, s.$ColorPink2 100%)
+  background: linear-gradient(90deg, s.$ColorLightBlue2 0%, s.$ColorPink 100%)
     border-box border-box;
 }
 

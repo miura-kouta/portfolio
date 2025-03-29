@@ -178,14 +178,13 @@
 .topWorks__linkBtn {
   display: block;
   width: 136px;
+  margin-inline: auto;
   max-width: 100%;
   margin-top: 40px;
   margin-inline: auto;
-  border-bottom: 1px solid s.$ColorBlack;
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  transition: 1s all;
   white-space: nowrap;
   @include s.mq(l-pc) {
     width: 120px;
@@ -196,7 +195,14 @@
   }
 }
 
-.topWorks__linkBtn:hover {
+.topWorks__textBtn {
+  border-bottom: 1px solid s.$ColorBlack;
+  transition: 1s all;
+
+  display: block;
+}
+
+.topWorks__linkBtn:hover .topWorks__textBtn {
   transform: rotateY(360deg);
 }
 

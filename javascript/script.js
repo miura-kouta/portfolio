@@ -1,10 +1,8 @@
 // スクロールしたらheaderの背景が黒くなる
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header");
- 
   const headerContainer = document.querySelector(".header__container");
- 
-  const headerLogo = document.querySelector(".header__logoTitle");
+    const headerLogo = document.querySelector(".header__logoLink");
   const headerHamburgerLine = document.querySelectorAll(
     ".header__hamburgerLine"
   );
