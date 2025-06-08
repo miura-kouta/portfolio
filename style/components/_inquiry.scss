@@ -38,12 +38,7 @@
   font-size: 3rem;
   font-weight: bold;
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(
-    to right,
-    s.$ColorLightBlue2 0%,
-    s.$ColorPink 100%
-  );
-
+  background-color: s.$ColorPink;
   overflow: hidden;
   transition: 0.3s all;
 
@@ -64,23 +59,7 @@
 
   .inquiry__textBtn {
     display: inline-block;
-    background: linear-gradient(
-      90deg,
-      s.$ColorLightBlue2 0%,
-      s.$ColorPink 100%
-    );
-    background: linear-gradient(
-      90deg,
-      s.$ColorLightBlue2 0%,
-      s.$ColorPink 100%
-    );
-    background: -webkit-linear-gradient(
-      0deg,
-      s.$ColorLightBlue2 0%,
-      s.$ColorPink 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: s.$ColorPink;
   }
 }
 
@@ -92,34 +71,24 @@
   right: 0;
   bottom: 0;
   border-radius: 45px;
-  border: 2px solid transparent;
-  background: s.$ColorBlack;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(#fff 0 0) border-box;
-  -webkit-mask-composite: destination-out;
-  mask: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(#fff 0 0) border-box;
-  mask-composite: exclude;
+  border: 2px solid s.$ColorBlack;
   width: 100%;
   max-width: 400px;
   height: 100px;
   transition: 0.3s all;
-
   @include s.mq(l-pc) {
     max-width: 340px;
     height: 80px;
   }
 
   @include s.mq(tab) {
-    border: 2px solid transparent;
     max-width: 220px;
     height: 60px;
   }
 }
 
 .inquiry__itemBtn:hover::before {
-  background: linear-gradient(90deg, s.$ColorLightBlue2 0%, s.$ColorPink 100%)
-    border-box border-box;
+  border: 2px solid s.$ColorPink;
 }
 
 .inquiry__itemBtn::after {

@@ -3,7 +3,7 @@
     <div class="u-contentContainer">
         <section id="price" class="price">
             <div class="u-headingLv1Wrap">
-                <h1 class="u-headingLv1__en">PRICE</h1>
+                <h1 class="u-headingLv1__en">Price</h1>
                 <p class="u-headingLv1__ja">料金</p>
                 <div class="price__imgWrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/price1.webp" alt="料金を説明する人" width="400" height="200" decoding="async">

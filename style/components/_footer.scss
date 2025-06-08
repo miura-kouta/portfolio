@@ -4,58 +4,46 @@
 | footer(footer.php)
 *******************************/
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: s.$ColorBlack;
-  height: 112px;
 }
 
-.footer__privacyLink {
-  position: relative;
+.footer__recapchaWrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: s.$font-family1;
-  font-weight: bold;
   color: s.$ColorWhiteMain;
-  overflow: hidden;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
-.footer__privacyLink::before,
-.footer__privacyLink::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: block;
-  height: 2px;
-  width: 100%;
-  transition: all 0.3s;
-  background-color: s.$ColorPink;
+.footer__recapchaLink {
+  color: s.$ColorPink2;
+  transition: 0.3s all;
 }
 
-.footer__privacyLink::before {
-  top: 0;
-  transform: translateX(-101%);
-}
-.footer__privacyLink::after {
-  bottom: 0;
-  transform: translateX(101%);
+.footer__recapchaLink:hover {
+  opacity: 0.7;
 }
 
-.footer__privacyLink:hover::before,
-.footer__privacyLink:hover::after {
-  transform: translateX(0);
+.footer__br {
+  display: none;
+
+  @include s.mq(l-tab) {
+    display: block;
+  }
+}
+
+.footer__brSecond {
+  display: none;
+  @include s.mq(sp) {
+    display: block;
+  }
 }
 
 .footer__copyRightText {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: s.$font-family2;
   color: s.$ColorWhiteMain;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

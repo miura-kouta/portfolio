@@ -152,6 +152,11 @@
         color: s.$ColorWhiteMain;
         background-color: s.$ColorPink2;
       }
+      @media (max-width: 767px) {
+        .contact__th--formRequired::after {
+          margin-left: 8px;
+        }
+      }
 
       .contact__td--form {
         display: flex;
@@ -197,46 +202,31 @@
   }
 }
 
-.contact__RecapchaWrap {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .contact__RecapchaWrap {
-    width: 90%;
-  }
-}
-
-.contact__RecapchaLink {
-  font-weight: normal;
+.contact__privacyLink {
+  display: block;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 172px;
+  font-family: s.$font-family1;
+  font-weight: bold;
   color: s.$ColorPink2;
+  text-align: center;
   transition: 0.3s all;
-}
-
-.contact__RecapchaLink:hover {
-  opacity: 0.6;
-}
-
-.contact__brSp {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .contact__brSp {
-    display: block;
+  white-space: nowrap;
+  @include s.mq(l-pc) {
+    width: 128px;
   }
+}
+
+.contact__privacyLink:hover {
+  opacity: 0.7;
 }
 
 .contact__wrapper--button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-top: 40px;
 }
 

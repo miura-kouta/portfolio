@@ -1,7 +1,7 @@
         <section id="inquiry">
             <div class="inquiry__inner">
                 <div class="u-headingLv2__wrap">
-                    <h2 class="u-headingLv2__en">CONTACT</h2>
+                    <h2 class="u-headingLv2__en">Contact</h2>
                     <p class="u-headingLv2__ja">お問い合わせ</p>
                 </div>
                 <!-- /.u-headingLv2__wrap -->
@@ -11,7 +11,7 @@
                     </p>
                     <a href="<?php echo home_url('/contact'); ?>" class="inquiry__itemBtn">
                         <p class="inquiry__textBtn">
-                            CONTACT
+                            Contact
                         </p>
                     </a>
                 </div>

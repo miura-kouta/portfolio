@@ -45,6 +45,17 @@
                             </p>
                         </li>
                         <li class="singleAllWorks__item">
+                            <p class="allWorks__text">
+                                <?php the_field('target'); ?>
+                            </p>
+                        </li>
+                        <li class="singleAllWorks__item">
+                            <p class="allWorks__text">
+                                <?php the_field('overview'); ?>
+                            </p>
+                        </li>
+
+                        <li class="singleAllWorks__item">
                             <a href="<?php the_field('url'); ?>" class="singleAllWorks__link" target="_blank" rel="noopener noreferrer">
                                 URL：<?php the_field('url'); ?>
                             </a>

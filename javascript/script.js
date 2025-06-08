@@ -2,20 +2,18 @@
 window.addEventListener("scroll", function () {
   const headerInner = document.querySelector(".header");
   const headerContainer = document.querySelector(".header__container");
-    const headerLogo = document.querySelector(".header__logoLink");
+  const headerLogo = document.querySelector(".header__logoLink");
   const headerHamburgerLine = document.querySelectorAll(
     ".header__hamburgerLine"
   );
   const headerlistLink = document.querySelectorAll(".header__listLink");
   if (window.scrollY > 0) {
-
     headerInner.classList.add("header__scrollBg");
     headerLogo.classList.add("header__scrollLogo");
 
     headerContainer.classList.add("header__scrollContainer");
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.add("header__scrollFont");
-
     }
     for (let i = 0; i < headerHamburgerLine.length; i++) {
       headerHamburgerLine[i].classList.add("header__scrollLogo");
@@ -24,7 +22,7 @@ window.addEventListener("scroll", function () {
     headerInner.classList.remove("header__scrollBg");
     headerLogo.classList.remove("header__scrollLogo");
 
-           headerContainer.classList.remove("header__scrollContainer");
+    headerContainer.classList.remove("header__scrollContainer");
     for (let i = 0; i < headerlistLink.length; i++) {
       headerlistLink[i].classList.remove("header__scrollFont");
     }
@@ -50,20 +48,20 @@ navi.addEventListener("click", function () {
 
 // 現在のページに基づいて、アクティブなリンクを設定する
 
-  // 現在のページのURLを取得
-        const currentPage = window.location.pathname.split("/").pop();
-        
-        // すべてのナビリンクを取得
-        const navLinks = document.querySelectorAll('.nav-link');
-          // console.log(navLinks);
+// 現在のページのURLを取得
+const currentPage = window.location.pathname.split("/").pop();
 
-        // 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
-        navLinks.forEach(link => {
-            const linkPage = link.getAttribute('href');
-            if (linkPage === currentPage) {
-                link.classList.add('active');
-            }
-        });
+// すべてのナビリンクを取得
+const navLinks = document.querySelectorAll(".nav-link");
+// console.log(navLinks);
+
+// 各リンクをチェックして、現在のページと一致するものにactiveクラスを追加
+navLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href");
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
 
 //くるりと回転
 let kururi = document.querySelectorAll(".topWorks__item");
@@ -98,7 +96,6 @@ let fadeInTarget2 = document.querySelectorAll(".fade-in2");
 function checkFadeIn() {
   let scroll = window.pageYOffset || document.documentElement.scrollTop;
   if (scroll > 200) {
-
     for (let i = 0; i < fadeInTarget2.length; i++) {
       fadeInTarget2[i].classList.add("scroll-in");
     }
@@ -107,7 +104,7 @@ function checkFadeIn() {
 }
 window.addEventListener("scroll", checkFadeIn);
 
-//テキストタイピング
+// //テキストタイピングアニメーション
 function TextTypingAnime(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -121,16 +118,15 @@ function TextTypingAnime(entries, observer) {
       });
       observer.unobserve(textTyping);
 
-      if (!textTyping.classList.contains('height-set')) {
+      if (!textTyping.classList.contains("height-set")) {
         var textHeight = textTyping.scrollHeight;
         textTyping.style.height = textHeight + "px";
-        textTyping.classList.add('height-set');
+        textTyping.classList.add("height-set");
       }
-
     }
   });
 }
-
+//
 window.onload = function () {
   var textTypings = document.querySelectorAll(".TextTyping");
   textTypings.forEach(function (textTyping) {
@@ -161,149 +157,307 @@ window.onload = function () {
   });
 };
 
-
 //制作サイトの詳細画面で、テキストが無かった場合は表示をしない
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".singleAllWorks__item").forEach((item) => {
-        const textElement = item.querySelector(".allWorks__text");
+  document.querySelectorAll(".singleAllWorks__item").forEach((item) => {
+    const textElement = item.querySelector(".allWorks__text");
 
-        if (textElement && textElement.textContent.trim() === "") {
-            item.style.display = "none";
-        }
-    });
+    if (textElement && textElement.textContent.trim() === "") {
+      item.style.display = "none";
+    }
+  });
 });
-
-
 
 //問い合わせ画面のステップフロー
 
 if (window.location.pathname.includes("contact")) {
+  let stepFlowActive = "contact__stepFlowActive";
+  let element = document.getElementsByClassName(stepFlowActive);
 
-let stepFlowActive = "contact__stepFlowActive";
-let element = document.getElementsByClassName(stepFlowActive);
+  if (element) {
+    const submitBtn = document.querySelector(".contact__item--button");
 
-if (element) {
-  const submitBtn = document.querySelector(".contact__item--button");
+    submitBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        const confirmElement = document.getElementById("wpcf7cpcnf");
+        if (confirmElement) {
+          const confirm = document.querySelector(".confirm");
+          const confirm2 = document.querySelector(".confirm2");
+          const confirm3 = document.querySelector(".confirm3");
 
+          const toggleConfirmClasses = (action) => {
+            confirm2.classList[action]("contact__stepFlowActive");
+            confirm.classList[action]("contact__stepCompleted");
+          };
 
-  submitBtn.addEventListener("click", () => {
-   setTimeout(() => {
-      const confirmElement = document.getElementById("wpcf7cpcnf");
-      if (confirmElement) {
-        const confirm = document.querySelector(".confirm");
-        const confirm2 = document.querySelector(".confirm2");
-        const confirm3 = document.querySelector(".confirm3");
+          toggleConfirmClasses("add");
 
-        const toggleConfirmClasses = (action) => {
-          confirm2.classList[action]("contact__stepFlowActive");
-          confirm.classList[action]("contact__stepCompleted");
-        };
+          const toggleConfirmClasses2 = (action) => {
+            confirm.classList[action]("contact__stepFlowActive");
+          };
 
-        toggleConfirmClasses("add");
+          toggleConfirmClasses2("remove");
 
-        const toggleConfirmClasses2= (action) => {
-          confirm.classList[action]("contact__stepFlowActive");
-        };
-
-        toggleConfirmClasses2("remove");
-
-
-        const editBtn = document.querySelector(".wpcf7cp-cfm-edit-btn");
-        if (editBtn) {
-          editBtn.addEventListener("click", () => {
+          const editBtn = document.querySelector(".wpcf7cp-cfm-edit-btn");
+          if (editBtn) {
+            editBtn.addEventListener("click", () => {
               confirm.classList.add("contact__stepFlowActive");
-            confirm2.classList.remove("contact__stepFlowActive");
-
-        });
-        }
-
-        const sendBtn = document.querySelector(".wpcf7cp-cfm-submit-btn");
-        if (sendBtn) {
-          sendBtn.addEventListener("click", () => {
-            confirm3.classList.add("contact__stepFlowActive");
-            confirm2.classList.remove("contact__stepFlowActive");
-            confirm2.classList.add("contact__stepCompleted");
-
-          });
-        }
-      }
-   }, 1000); 
-  });
-}
-
-}
-
-
-
-//ローディングアニメーション
-class Main {
-  constructor() {
-    this._loading();
-  }
-
-  _loading() {
-    document.addEventListener("DOMContentLoaded", () => {
-      const webStorage = () => {
-        const lodingContainer = document.querySelector(".loding__container");
-        const lodingContainer2 = document.querySelector(".loding__box");
-        const lodingContainer3 = document.querySelector(".loding__text");
-
-        if (sessionStorage.getItem("access")) {
-          // 2回目以降アクセス時の処理
-          // 最初から必要なクラスを持たせる
-          if (lodingContainer) {
-            lodingContainer.style.display = "none";
-          }
-        } else {
-          // 初回アクセス時の処理
-          sessionStorage.setItem("access", "true");
-          // 初回アクセス時に .showLoading クラスを追加
-          if (lodingContainer) {
-            lodingContainer.classList.add("showLoading");
+              confirm2.classList.remove("contact__stepFlowActive");
+            });
           }
 
-          // クラスを削除する処理
-          const removeClasses = (delay) => {
-            setTimeout(() => {
-              // if (lodingContainer)
-              //   lodingContainer.classList.remove("loding__container");
-              if (lodingContainer2)
-                lodingContainer2.classList.remove("loding__box");
-              if (lodingContainer3)
-                lodingContainer3.classList.remove(
-                  "loding__text--disyplayBlock"
-                );
-            }, delay);
-          };
-
-          // クラスを追加する処理
-          const addClass = (delay) => {
-            setTimeout(() => {
-              if (lodingContainer)
-                lodingContainer.classList.add("showLoadingAnime");
-            }, delay);
-          };
-
-          // クラスを追加する処理
-          const addClass2 = (delay) => {
-            setTimeout(() => {
-              if (lodingContainer)
-                lodingContainer.classList.add(
-                  "loding__container--disyplayNone"
-                );
-            }, delay);
-          };
-
-          addClass(2000);
-          addClass2(3000);
-          removeClasses(3000);
+          const sendBtn = document.querySelector(".wpcf7cp-cfm-submit-btn");
+          if (sendBtn) {
+            sendBtn.addEventListener("click", () => {
+              confirm3.classList.add("contact__stepFlowActive");
+              confirm2.classList.remove("contact__stepFlowActive");
+              confirm2.classList.add("contact__stepCompleted");
+            });
+          }
         }
-      };
-
-      webStorage();
+      }, 1000);
     });
   }
 }
 
-new Main();
+//オープニングアニメーション + 文字が上から落ちてくるアニメーション
+function _loading() {
+  const webStorage = () => {
+    const lodingContainer = document.querySelector(".loding__container");
+    const lodingContainer2 = document.querySelector(".loding__box");
+    const lodingContainer3 = document.querySelector(".loding__text");
 
+    const scrollDownContainer = document.querySelector(
+      ".firstView__scrollDownWrap"
+    );
+
+    if (sessionStorage.getItem("access")) {
+      // 2回目以降アクセス時の処理
+      //文字が上から降っていくアニメーション
+
+      const visibles = document.querySelectorAll(".visible");
+
+      visibles.forEach((el) => {
+        const text = el.textContent;
+        const newHTML = [...text]
+          .map((char) => {
+            const displayChar = char === " " ? "&nbsp;" : char;
+            return `<span class="visible-up">${displayChar}</span>`;
+          })
+          .join("");
+        el.innerHTML = newHTML;
+      });
+
+      function animateVisibleElement(el) {
+        return new Promise((resolve) => {
+          const spans = el.querySelectorAll(".visible-up");
+
+          spans.forEach((span, i) => {
+            setTimeout(() => {
+              span.classList.add("visible-in");
+
+              if (spans[2] || spans[7] || spans[13] || spans[16] || spans[19]) {
+                spans[2].classList.add("color--pink");
+                spans[7].classList.add("color--pink");
+                spans[13].classList.add("color--pink");
+                spans[16].classList.add("color--pink");
+                spans[19].classList.add("color--pink");
+              }
+
+              if (i === spans.length - 1) {
+                setTimeout(resolve, 50);
+              }
+            }, i * 50);
+          });
+        });
+      }
+
+      async function visibleEvent() {
+        for (let i = 0; i < visibles.length; i++) {
+          await animateVisibleElement(visibles[i]);
+        }
+      }
+      visibleEvent();
+
+      if (lodingContainer) {
+        lodingContainer.style.display = "none"; // ローディングを非表示
+      }
+
+      const addClass4 = (delay) => {
+        setTimeout(() => {
+          if (lodingContainer) scrollDownContainer.classList.add("arrow");
+        }, delay);
+      };
+      // addClass4(2300);
+      addClass4(1400);
+    } else {
+      // 初回アクセス時の処理
+      sessionStorage.setItem("access", "true");
+
+      // 初回アクセス時に .showLoading クラスを追加
+      if (lodingContainer) {
+        lodingContainer.classList.add("showLoading");
+      }
+
+      // クラスを削除する処理
+      const removeClasses = (delay) => {
+        setTimeout(() => {
+          if (lodingContainer)
+            lodingContainer.classList.remove("loding__container");
+          if (lodingContainer2)
+            lodingContainer2.classList.remove("loding__box");
+          if (lodingContainer3)
+            lodingContainer3.classList.remove("loding__text--disyplayBlock");
+        }, delay);
+      };
+
+      const addClass = (delay) => {
+        setTimeout(() => {
+          if (lodingContainer)
+            lodingContainer.classList.add("showLoadingAnime");
+        }, delay);
+      };
+
+      const addClass2 = (delay) => {
+        setTimeout(() => {
+          if (lodingContainer)
+            lodingContainer.classList.add("loding__container--disyplayNone");
+        }, delay);
+      };
+
+      const addClass3 = (delay) => {
+        setTimeout(() => {
+          if (lodingContainer) scrollDownContainer.classList.add("arrow");
+        }, delay);
+      };
+
+      addClass(2000);
+      addClass2(3000);
+      addClass3(3400);
+      removeClasses(3000);
+
+      //文字が上から降っていくアニメーション
+      const visibles = document.querySelectorAll(".visible");
+
+      visibles.forEach((el) => {
+        const text = el.textContent;
+        const newHTML = [...text]
+          .map((char) => {
+            const displayChar = char === " " ? "&nbsp;" : char;
+            return `<span class="visible-up">${displayChar}</span>`;
+          })
+          .join("");
+        el.innerHTML = newHTML;
+      });
+
+      function animateVisibleElement(el) {
+        return new Promise((resolve) => {
+          const spans = el.querySelectorAll(".visible-up");
+
+          spans.forEach((span, i) => {
+            setTimeout(() => {
+              span.classList.add("visible-in");
+
+              if (spans[2] || spans[7] || spans[13] || spans[16] || spans[19]) {
+                spans[2].classList.add("color--pink");
+                spans[7].classList.add("color--pink");
+                spans[13].classList.add("color--pink");
+                spans[16].classList.add("color--pink");
+                spans[19].classList.add("color--pink");
+              }
+
+              if (i === spans.length - 1) {
+                setTimeout(resolve, 50);
+              }
+            }, i * 50);
+          });
+        });
+      }
+
+      async function visibleEvent() {
+        for (let i = 0; i < visibles.length; i++) {
+          await animateVisibleElement(visibles[i]);
+        }
+      }
+
+      setTimeout(() => {
+        visibleEvent();
+      }, 2000);
+    }
+  };
+  webStorage();
+}
+
+_loading();
+
+//スムーススクロール
+
+// ページ内リンククリック時の処理
+function setupSmoothScroll() {
+  // ハッシュを含むすべてのアンカーリンクを取得
+  const anchors = document.querySelectorAll('a[href*="#"]');
+
+  // 各アンカーにクリックイベントを設定
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      // 同じページ内のリンクの場合のみデフォルト動作を防止
+      const currentPath = window.location.pathname; //今現在表示しているページのパス部分（/about/ や /contact/ など）を取得。
+      const linkPath = this.pathname || "/"; //クリックされたリンク (<a>) のパス部分を取得。
+      const linkHostname = this.hostname;
+
+      // リンクが別ページの場合は通常の遷移を許可
+      if (
+        currentPath !== linkPath ||
+        window.location.hostname !== linkHostname //クリックされたリンクのホスト名（ドメイン名）を取得。例 "example.com"
+      ) {
+        return; // デフォルトの挙動を許可
+      }
+
+      // 同一ページ内リンクの場合はデフォルト動作を防止
+      e.preventDefault();
+
+      // リンク先の要素を取得
+      const hash = this.hash;
+      if (!hash || hash === "#") {
+        // ハッシュがない、または#だけの場合はページトップへ
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+
+      const target = document.querySelector(hash);
+
+      // 対象要素が見つからなければ処理を終了
+      if (!target) {
+        return;
+      }
+
+      // ヘッダーの高さを取得
+      const header = document.querySelector(".header");
+      const headerHeight = header ? header.offsetHeight : 0;
+
+      // 要素の位置を取得
+      const elementPosition = target.getBoundingClientRect().top;
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      // スクロール位置を計算（ヘッダーの高さだけオフセット）
+      const scrollPosition =
+        currentScrollPosition + elementPosition - headerHeight;
+
+      // スムーズにスクロール
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+
+      // URLにハッシュを残す（オプション）
+      // history.pushState(null, null, hash);
+    });
+  });
+}
+
+// DOMの読み込み完了時に実行
+document.addEventListener("DOMContentLoaded", function () {
+  // ページ内リンクのスムーズスクロール設定
+  setupSmoothScroll();
+});

@@ -3,7 +3,7 @@
     <div class="c-contentContainer">
         <section id="allWorks">
             <div class="c-headingLv1Wrap">
-                <h1 class="c-headingLv1__main">WORKS</h1>
+                <h1 class="c-headingLv1__main">Works</h1>
                 <p class="c-headingLv1__sub">制作実績一覧</p>
                 <div class="allWorks__imgWrap ">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/allWorks-image1.png" alt="制作実績のサイトを紹介する人達" width="400" height="200" decoding="async">
@@ -63,6 +63,7 @@
                                         <p class="allWorks__text">
                                             <?php the_field('period'); ?>
                                         </p>
+
                                     </div>
                                     <!-- /.allWorks__body -->
                                 </a>

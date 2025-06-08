@@ -38,13 +38,17 @@
 .header__scrollContainer {
   display: flex;
   justify-content: space-between;
+
+  @include s.mq(tab) {
+    justify-content: center;
+  }
 }
 
 .header__logoLink {
   display: flex;
   align-items: center;
   margin-inline: auto;
-  width: 100px;
+  width: 128px;
   height: 56px;
   transition: 1s all;
 }
@@ -106,7 +110,7 @@
   height: 2px;
   width: 100%;
   transition: all 0.3s;
-  background-color: s.$ColorPink;
+  background-color: s.$ColorPink2;
 }
 
 .header__listLink::before {
@@ -134,6 +138,10 @@
 }
 
 .navActive {
+  color: s.$ColorPink2;
+}
+
+.navActive.header__scrollFont {
   color: s.$ColorPink;
 }
 

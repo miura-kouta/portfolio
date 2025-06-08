@@ -42,9 +42,9 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__container">
-            <a href="<?php echo home_url('/'); ?>" class="header__logoLink">
+            <a href="<?php echo home_url('/'); ?>#main" class="header__logoLink">
                 <div class="header__logoTitle">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="三浦浩太のポートフォリオ" width="140" height="55" decoding="async">
                 </div>
@@ -56,44 +56,44 @@
                     ?>
 
                     <li class="header__listItem">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__listLink">
-                            TOP
+                        <a href="<?php echo esc_url(home_url('/')); ?>#main" class="header__listLink">
+                            Top
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo esc_url(home_url('/all-works')); ?>" class="header__listLink <?php if (is_page('all-works') || is_post_type_archive('all-works') || is_singular('all-works')) {
                                                                                                                 echo 'navActive';
                                                                                                             } ?>">
-                            WORKS
+                            Works
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo home_url('/'); ?>#services" class="header__listLink">
-                            SERVICES
+                            Services
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo home_url('/'); ?>#about" class="header__listLink">
-                            ABOUT
+                            About
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo esc_url(home_url('/price')); ?>" class="header__listLink <?php if (is_page('price')) {
                                                                                                             echo 'navActive';
                                                                                                         } ?>">
-                            PRICE
+                            Price
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo esc_url(home_url('/contact')); ?>" class="header__listLink <?php if (is_page('contact')) {
                                                                                                             echo 'navActive';
                                                                                                         } ?>">
-                            CONTACT
+                            Contact
                         </a>
                     </li>
                     <li class="header__listItem">
                         <a href="<?php echo home_url('/blog'); ?>" target="_blank" class="header__listLink">
-                            BLOG
+                            Blog
                         </a>
                     </li>
 
@@ -106,37 +106,37 @@
                     <ul class="header__hamburgerMenu">
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/'); ?>#main" class="header__hamburgerLink ">
-                                TOP
+                                Top
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/all-works'); ?>" class="header__hamburgerLink ">
-                                WORKS
+                                Works
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/'); ?>#services" class="header__hamburgerLink ">
-                                SERVICES
+                                Services
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/'); ?>#about" class="header__hamburgerLink ">
-                                ABOUT
+                                About
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/price'); ?>" class="header__hamburgerLink ">
-                                PRICE
+                                Price
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/contact'); ?>" class="header__hamburgerLink ">
-                                CONTACT
+                                Contact
                             </a>
                         </li>
                         <li class="header__hamburgerItem  ">
                             <a href="<?php echo home_url('/blog'); ?>" class="header__hamburgerLink " target="_blank">
-                                BLOG
+                                Blog
                             </a>
                         </li>
                     </ul>

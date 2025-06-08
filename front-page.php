@@ -7,13 +7,22 @@
                     <source src="<?php echo get_template_directory_uri(); ?>/images/video1.mp4" type="video/mp4">
                 </video>
                 <div class="firstView__textBox">
-                    <h1 class="u-headingLv1__en">Kota Miura Portfolio<br>
-                    </h1>
-                    <p class="u-headingLv1__ja">ポートフォリオサイトへようこそ</p>
+                    <h1 class="u-headingLv1__en visible">Kota Miura Portfolio</h1>
+                    <p class="firstView__subText">
+                        当サイトをご訪問いただき、<br class="brSp">ありがとうございます
+                    </p>
+                    <p class="firstView__subText">
+                        <span class="pinkLine">コミュニケーションを大切</span>に、<br>
+                        <span class="pinkLine">デザインやコーディングを丁寧</span>に<br class="brSp">おこなっております
+                    </p>
+                    <p class="firstView__subText">
+                        ホームページ制作などのご依頼や<br class="brSp">ご不明な点がございましたら、<br>
+                        Contactページより<br class="brSp">お気軽にお問い合わせください
+                    </p>
                 </div>
                 <!-- /.firstView__textBox -->
                 <div class="firstView__scrollDownWrap">
-                    <a href="#topWorks" class="firstView__scrollDownLink">Scroll</a>
+                    <p class="firstView__scrollDownText">Scroll</p>
                 </div>
                 <!-- /.firstView__scrollDownWrap -->
             </div>
@@ -24,7 +33,7 @@
     <div class="u-contentContainer">
         <section id="topWorks">
             <div class="u-headingLv2__wrap">
-                <h2 class="u-headingLv2__en">WORKS</h2>
+                <h2 class="u-headingLv2__en">Works</h2>
                 <p class="u-headingLv2__ja">制作実績</p>
             </div>
             <!-- u-headingLv2__wrap./ -->
@@ -62,13 +71,13 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
             <a href="<?php echo home_url('/all-works'); ?>" class="topWorks__linkBtn">
-                <span class="topWorks__textBtn">view more</span>
+                <span class="topWorks__textBtn">View More</span>
             </a>
             <!-- /.works__btn -->
         </section>
         <section id="services">
             <div class="u-headingLv2__wrap">
-                <h2 class="u-headingLv2__en">SERVICES</h2>
+                <h2 class="u-headingLv2__en">Services</h2>
                 <p class="u-headingLv2__ja">お手伝いできること</p>
             </div>
             <figure class="services__media fade-in fade-in-left">
@@ -112,9 +121,10 @@
             </figure>
 
         </section>
+        <!-- <section id="about"> -->
         <section id="about">
             <div class="u-headingLv2__wrap">
-                <h2 class="u-headingLv2__en">ABOUT</h2>
+                <h2 class="u-headingLv2__en">About</h2>
                 <p class="u-headingLv2__ja">私について</p>
             </div>
             <!-- /.u-headingLv2__wrap -->
@@ -138,7 +148,7 @@
     </div>
     <!-- /.u-contentContainer -->
 
-    <div class="loding__container">
+    <section class="loding__container">
         <div class="loding__box">
             <div class="loding__circle"></div>
             <div class="loding__circle"></div>
@@ -149,22 +159,7 @@
             <span class="loding__text loding__text--disyplayBlock">Loading</span>
         </div>
         <!-- /.loding__box -->
-    </div>
-    <!-- /.loding__container -->
-    <div class="goingUp">
-        <div class="goingUp__wrapCircle fade-in2 ">
-            <a href="#firstView" class="goingUp__linkCircle">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top.webp" alt="円" width="200" height="200" decoding="async" loading="lazy">
-            </a>
-        </div>
-        <!--/.goingUp__wrapCircle  -->
-        <div class="goingUp__wrapArrow  fade-in2">
-            <a href="#firstView" class="goingUp__linkArrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/page-top2.webp" alt="矢印" width="30" height="30" decoding="async" loading="lazy">
-            </a>
-        </div>
-        <!--/.goingUp__wrapArrow  -->
-    </div>
-    <!-- /.goingUp -->
+    </section>
+
 </main>
 <?php get_footer(); ?>
