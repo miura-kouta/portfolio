@@ -17,9 +17,7 @@
   font-size: max(2.1vw, 28px);
   padding: max(1vw, 10px) max(2vw, 20px);
 
-  @include s.mq(sp) {
-    font-size: max(2.1vw, 20px);
-  }
+  font-size: max(3vw, 24px);
 }
 
 .color--pink {
@@ -85,11 +83,9 @@
 }
 
 .u-headingLv2__wrap {
-  // padding-top: 80px;
+  padding-top: 160px;
   padding-bottom: 40px;
   text-align: center;
-
-  padding-top: 160px;
 }
 
 .u-headingLv2__en {
