@@ -632,9 +632,9 @@ ul {
 }
 
 .u-headingLv2__wrap {
-  padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
+  padding-top: 160px;
 }
 
 .u-headingLv2__en {
@@ -647,34 +647,8 @@ ul {
   display: inline;
   font-size: 2rem;
   text-align: center;
-}
-
-.u-headingLv2__ja::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -4.4rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  z-index: 1;
-  height: 1px;
-  width: 3rem;
-  background-color: #333333;
-}
-
-.u-headingLv2__ja::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -4.4rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  z-index: 1;
-  height: 1px;
-  width: 3rem;
-  background-color: #333333;
+  color: #d89195;
+  font-weight: bold;
 }
 
 .u-headingLv3 {
@@ -1388,7 +1362,7 @@ ul {
 
 .topWorks__linkBtn {
   display: block;
-  width: 152px;
+  width: 140px;
   margin-inline: auto;
   max-width: 100%;
   margin-top: 40px;
@@ -1400,19 +1374,20 @@ ul {
 }
 @media screen and (max-width: 1280px) {
   .topWorks__linkBtn {
-    width: 132px;
+    width: 116px;
   }
 }
 @media screen and (max-width: 767px) {
   .topWorks__linkBtn {
-    width: 100px;
+    width: 88px;
   }
 }
 
 .topWorks__textBtn {
   display: block;
-  border-bottom: 1px solid #333333;
+  font-weight: bold;
   transition: 1s all;
+  border-bottom: 2px solid #d89195;
 }
 
 .topWorks__linkBtn:hover .topWorks__textBtn {

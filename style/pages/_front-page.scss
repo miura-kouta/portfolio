@@ -34,12 +34,10 @@
   font-size: max(1.04vw, 14px);
 
   padding-top: max(1vw, 12px);
-
 }
 
 .firstView__subText:nth-of-type(1) {
   padding-top: max(2vw, 26px);
-
 }
 
 .firstView__scrollDownWrap {
@@ -65,8 +63,6 @@
 .arrow {
   opacity: 1;
 }
-
-
 
 .firstView__scrollDownText {
   position: absolute;
@@ -99,7 +95,7 @@
   bottom: -0.5vw;
   left: 24px;
   width: 4px;
-  height: max(4.43vw , 76px);
+  height: max(4.43vw, 76px);
   background-color: s.$ColorBlack;
 }
 
@@ -204,7 +200,7 @@
 
 .topWorks__linkBtn {
   display: block;
-  width: 152px;
+  width: 140px;
   margin-inline: auto;
   max-width: 100%;
   margin-top: 40px;
@@ -215,18 +211,19 @@
   white-space: nowrap;
 
   @include s.mq(l-pc) {
-    width: 132px;
+    width: 116px;
   }
 
   @include s.mq(tab) {
-    width: 100px;
+    width: 88px;
   }
 }
 
 .topWorks__textBtn {
   display: block;
-  border-bottom: 1px solid s.$ColorBlack;
+  font-weight: bold;
   transition: 1s all;
+  border-bottom: 2px solid s.$ColorPink3;
 }
 
 .topWorks__linkBtn:hover .topWorks__textBtn {
