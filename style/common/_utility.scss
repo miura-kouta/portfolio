@@ -14,7 +14,6 @@
   font-family: s.$font-family2;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
-  font-size: max(2.1vw, 28px);
   padding: max(1vw, 10px) max(2vw, 20px);
 
   font-size: max(3vw, 24px);
@@ -91,6 +90,7 @@
 .u-headingLv2__en {
   font-size: 4rem;
   font-weight: bold;
+  font-family: s.$font-family2;
 }
 
 .u-headingLv2__ja {

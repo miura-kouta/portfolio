@@ -11,7 +11,8 @@
                     </p>
                     <a href="<?php echo home_url('/contact'); ?>" class="inquiry__itemBtn">
                         <p class="inquiry__textBtn">
-                            Contact
+                            <!-- Contact -->
+                            お問い合わせする
                         </p>
                     </a>
                 </div>

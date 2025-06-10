@@ -45,6 +45,7 @@
   @include s.mq(l-pc) {
     max-width: 340px;
     height: 80px;
+
   }
 
   @include s.mq(tab) {
@@ -76,14 +77,17 @@
   max-width: 400px;
   height: 100px;
   transition: 0.3s all;
+
   @include s.mq(l-pc) {
     max-width: 340px;
     height: 80px;
+
   }
 
   @include s.mq(tab) {
     max-width: 220px;
     height: 60px;
+
   }
 }
 
