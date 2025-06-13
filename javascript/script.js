@@ -256,12 +256,10 @@ function _loading() {
             setTimeout(() => {
               span.classList.add("visible-in");
 
-              if (spans[2] || spans[7] || spans[13] || spans[16] || spans[19]) {
-                spans[2].classList.add("color--pink");
-                spans[7].classList.add("color--pink");
-                spans[13].classList.add("color--pink");
-                spans[16].classList.add("color--pink");
-                spans[19].classList.add("color--pink");
+              if (spans[0] || spans[5] || spans[11]) {
+                spans[0].classList.add("color--pink");
+                spans[5].classList.add("color--pink");
+                spans[11].classList.add("color--pink");
               }
 
               if (i === spans.length - 1) {

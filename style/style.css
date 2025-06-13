@@ -565,6 +565,8 @@ ul {
 
 .color--pink {
   color: #d89195;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
 }
 
 .pinkLine {
@@ -607,23 +609,7 @@ ul {
   white-space: nowrap;
   text-align: center;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.u-headingLv1__ja::before,
-.u-headingLv1__ja::after {
-  content: "";
-  height: 1px;
-  background-color: #333333;
-}
-
-.u-headingLv1__ja::before {
-  width: 20px;
-  margin-right: 10px;
-}
-
-.u-headingLv1__ja::after {
-  width: 20px;
-  margin-left: 10px;
+  color: #d69a9e;
 }
 
 .u-headingLv2__wrap {

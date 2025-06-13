@@ -75,7 +75,7 @@
             </a>
             <!-- /.works__btn -->
         </section>
-        <section id="services">
+        <section id="services" >
             <div class="u-headingLv2__wrap">
                 <h2 class="u-headingLv2__en">Services</h2>
                 <p class="u-headingLv2__ja">お手伝いできること</p>
@@ -137,7 +137,7 @@
                 <figcaption class="about__body">
                     <h4 class="u-headingLv4">自己紹介</h4>
                     <p class="about__text TextTyping">
-                        初めまして、三浦　浩太と申します。<br>
+                        初めまして、Webコーダーの三浦　浩太（みうら　こうた）と申します。<br>
                         フリーランスでWeb制作を行っています。HTML、CSS、JavaScriptを駆使しモダンで魅力的なサイト構築をお手伝いします。また、お客様のアイデアを具体的な形にするため、お客様とのコミュニケーションを大切にします。<br>
                         ぜひ、お気軽にご相談ください。
                     </p>
